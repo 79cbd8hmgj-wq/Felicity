@@ -1,0 +1,5 @@
+observation_id,vehicle_id,observed_date,system,detail,value,source_id,certainty,next_check
+obs-001,felicity-001,2026-10-25,vehicle,Owner-reported odometer,100283 mi,src-owner,owner_confirmed,Photograph cluster
+obs-002,felicity-001,2026-10-25,wheels,One photographed tire marking,215/45R18 89V,src-tire,observed,Check other three tires plus DOT date and actual tread
+obs-003,felicity-001,2026-10-25,body,Manufacturer label production month,2003-06,src-label,observed,Compare early production service literature
+obs-004,felicity-001,2026-10-25,drivetrain,Transaxle marking,A245E,src-label,observed,Inspect actual installed unit during service
