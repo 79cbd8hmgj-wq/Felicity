@@ -1,0 +1,30 @@
+# Inexpensive and easy upgrades — practical value guide
+
+**Research date:** 2026-10-25. Vehicle: US 2004 Corolla LE, Canadian-built June 2003; 1ZZ-FE / A245E. User's working definition: **<$50 parts cost, <=30 minutes, basic/no tools, no lifting, wiring changes or calibration.** Prices are observed web listings, before tax/shipping, **not local checkout quotes**. Healthy OEM comparison required.
+
+## Defensible optional purchases
+
+| Candidate | Observed price | Incremental healthy-OEM benefit | Install requirements | Limitations and decision |
+|---|---:|---|---|---|
+| **Veepeak OBDCheck BLE** | **$31.99** manufacturer store https://veepeak.com/products/obdcheck-ble | Real-time readings and emissions diagnostic codes absent from original dash; can read *supported* SAE ECU data like coolant temp/IAT/fuel trims; useful for monitoring car's existing aftermarket intake | Plug into driver footwell diagnostic connector, download Car Scanner ELM OBD2 on iPhone, pair *inside app* (Bluetooth LE). 2–10 min. Free app option, some other apps ~$10 | Genuine **information gain**, **zero hp/mpg gain**. Generic adapter does **not guarantee A245E ATF-temp PID**, ABS or SRS diagnostics. Veepeak suggests remove after >1 week parked to avoid drain. Strong buy if user values telemetry. |
+| **Rain-X Original Glass Water Repellent 3.5 oz** | **$3.26** Walmart https://www.walmart.com/ip/19487526 ; **$4.99** AutoZone https://www.autozone.com/p/rain-x-moisture-repellent-glass-treatment-800002245/107644 | Makes untreated healthy glass hydrophobic, water beads/rolls off, can improve wet-weather visibility; concrete surface-property change, **not demonstrated measured stopping-distance or accident reduction** | Wash/dry exterior uncoated automotive glass, wipe on, let haze, buff off completely. Rain-X specifies apply above 40°F; 10–20 min. https://www.rainx.com/product/rain-x-original-glass-water-repellent/ | Can streak/haze if misapplied and may interact with wipers/coatings. Do not apply to tint/plastic; follow instructions. **Best clear cheap functional benefit.** |
+| **FRAM Fresh Breeze CF10133 cabin filter** | **$4.72** RockAuto closeout https://www1.rockauto.com/en/moreinfo.php?cc=0&pk=1053334&pt=6832 ; **$14.99** Fleet Farm https://www.fleetfarm.com/detail/fram-fresh-breeze-cabin-air-filter-cf10133/0000000048613 | Carbon + baking soda gives odor adsorption functionality **compared with healthy basic particulate-only filter**; manufacturer claims 98% particulate removal. **NOT yet proved better than healthy Toyota OEM charcoal media**, whose composition is uncertain. | Access behind glovebox, remove cabin filter, check airflow direction, slide CF10133 in. 5–15 min, perhaps screwdriver | Manufacturer cross-reference Toyota 88568-02020, Corolla 2002–08 https://www.finditparts.com/products/2037023/fram-cf10133 . Low-risk cost if odor reduction important; watch shipping and closeout terms. |
+
+## Genuine low-watt lighting but minor benefit
+
+- **Correct-socket interior / trunk LED bulbs:** a real decrease in draw and potentially higher cabin/cargo illumination than healthy incandescent bulb, with trivial fuel impact. Reference from Toyota OM12859U printed page 244: cabin double-ended 8 W; trunk variant uses 168 (4.9W) or other dependent lamp. Manual covers October 2003 onward, so confirm June assembly *installed socket* before ordering. No specific LED SKU and no truthful sourced price yet; **do not buy a generic bundle**. Lower priority relative to above because cabin bulbs run briefly.
+
+## Do not buy as an improvement over healthy OEM yet
+
+- **Premium spark plugs:** Toyota original **SK16R11 / IFR5A11 already iridium**; no verified incremental hp/mpg/longevity over healthy correct plugs. Manufacturer marketing that compares vs old copper plugs is not the correct baseline.
+- **Premium replacement ignition coils, oxygen sensors or temperature sensors:** healthy factory hardware has no demonstrated performance deficit; replacement is not an upgrade.
+- **Premium oil filter:** valid FRAM XG4967 filter documentation but no direct comparison proving wear-life improvement over healthy **Toyota NAP OEM filter 90915-YZZN1** (~$4.68 Toyota parts listing) https://www.toyotapartsdeal.com/parts-list/2004-toyota-corolla-nap_sedan_hatchback/engine_fuel_tool/oil_filter.html ; buy correct healthy-equivalent OEM unless independent result justifies more.
+- **Expensive/bright aftermarket 9006 halogens:** can change road illumination but better than healthy Toyota standard is *not yet established in Corolla reflector*, and no watt reduction for 55W product. Generic LED replacement bulbs in existing halogen lamp not purchase-endorsed due to optics/legal questions.
+- **Short-ram air filter kits:** car already has an aftermarket cone; no evidence of meaningful healthy-OEM power gain under actual inlet temperatures.
+- **$200+ Progress sway bar**, Eibach springs or anything requiring lifting/disassembly: outside user's chosen <$50/easy cutoff; not judged ineffective.
+
+## Practical spending conclusion
+
+For **less than $40 before shipping/tax**, user can obtain **Rain-X ($3.26)** and **Veepeak BLE ($31.99)**; these offer **different actual functions**. Adding **FRAM CF10133 at $4.72** makes listed product subtotal **$39.97**, with potentially meaningful odor filtration compared to a healthy noncarbon filter, but not proven improvement over OEM charcoal baseline. Subtotal is not a checkout quote. Don't spend merely because the part is inexpensive.
+
+**No confirmed under-$50, under-30-minute 1ZZ-FE horsepower gain was identified.** This is an evidence outcome, not a judgment that all cheap upgrades are useless.
