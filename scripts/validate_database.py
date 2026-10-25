@@ -9,7 +9,7 @@ FILES = {
     "vehicle": ("vehicle_id", ["source_id"]),
     "components": ("component_id", ["parent_id"]),
     "sources": ("source_id", []),
-    "specifications": ("spec_id", ["source_id"]),
+    "specifications": ("spec_id", ["source_id", "component_id"]),
     "service_tasks": ("task_id", ["component_id"]),
     "observations": ("observation_id", ["vehicle_id", "source_id"]),
     "parts": ("part_record_id", ["component_id", "source_id"]),
@@ -77,8 +77,6 @@ def validate(root: Path):
                 for number, row in rows:
                     if row[column] not in valid:
                         errors.append(f"{name}:{number}: invalid {column}={row[column]!r}")
-    # Existing service_tasks system column is legacy free text, not a foreign key.
-    # Enforce structured component references once a migration is approved.
     if "components" in tables:
         headers, rows, _ = tables["components"]
         if "parent_id" in headers:
@@ -92,6 +90,15 @@ def validate(root: Path):
                         break
                     seen.add(current)
                     current = parents.get(current, "")
+    if "specifications" in tables:
+        headers, rows, _ = tables["specifications"]
+        if "build_applicability" not in headers:
+            errors.append("specifications: missing build_applicability column")
+        else:
+            allowed = {"manual_scope_oct_2003_onward", "individual_vehicle_observed"}
+            for number, row in rows:
+                if row["build_applicability"] not in allowed:
+                    errors.append(f"specifications:{number}: invalid build_applicability")
     return errors
 
 def main():
