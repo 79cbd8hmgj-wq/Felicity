@@ -1,0 +1,29 @@
+component_id,component_name,applicability,verification_status
+engine,Engine and internal lubrication,1ZZ-FE,reference
+oil_pump,Oil pump and pickup,1ZZ-FE,research_pending
+oil_filter,Engine oil filter,1ZZ-FE,research_pending
+timing,Timing chain tensioner and valve train,1ZZ-FE,research_pending
+pcv,PCV and crankcase ventilation,1ZZ-FE,research_pending
+ignition,Ignition coils and spark plugs,1ZZ-FE,reference
+intake,Air intake throttle and filter,1ZZ-FE,research_pending
+fuel,Fuel delivery injectors and pump,2004 Corolla,research_pending
+evap,EVAP and emissions,2004 Corolla,research_pending
+cooling,Radiator water pump thermostat and fans,1ZZ-FE,research_pending
+transmission,Automatic transaxle assembly,A245E,label_verified
+atf,ATF strainer pan gasket and seals,A245E,research_pending
+shift,Shift solenoids sensors and harness,A245E,research_pending
+axles,CV axles and boots,FWD Corolla,research_pending
+brakes,Brake hydraulic system,2004 Corolla,research_pending
+front_brakes,Front calipers discs and pads,2004 Corolla,research_pending
+rear_brakes,Rear friction assemblies,2004 Corolla,equipment_unknown
+abs,ABS control unit sensors and harness,2004 Corolla,equipment_unknown
+steering,Power steering rack pump and hoses,2004 Corolla,research_pending
+suspension,Front struts control arms ball joints,2004 Corolla,research_pending
+rear_suspension,Rear suspension springs and mounts,2004 Corolla,research_pending
+charging,Alternator wiring and battery,2004 Corolla,research_pending
+starting,Starter ignition and relays,A245E Corolla,research_pending
+lighting,Headlight DRL and exterior lamps,2004 Corolla,research_pending
+hvac,Heating blower air conditioning,2004 Corolla,research_pending
+srs,Airbags restraints and crash sensors,2004 Corolla,equipment_unknown
+wheels,Wheels and tires,215/45R18 89V observed once,partially_observed
+structure,Underbody rockers structural mounts,owner vehicle,not_inspected
