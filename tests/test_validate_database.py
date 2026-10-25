@@ -16,6 +16,7 @@ HEADERS = {
     "repairs": "repair_id,vehicle_id,component_id",
     "claims": "claim_id,vehicle_id,source_id",
     "upgrade_candidates": "upgrade_id,fitment_status,research_status",
+    "upgrade_value_matrix": "upgrade_id,source_ids,source_research_id,source_fitment_status,purchase_ready,decision",
     "upgrade_research": "research_id,upgrade_id,fitment_status,source_ids,reviewed_on,verified_facts,production_applicability,fitment_rationale,benefit_basis,measured_vehicle_benefit,engineering_hypothesis,disadvantages,diy_level,diy_requirements,cost_usd,cost_basis,next_validation,review_state",
 }
 
@@ -149,6 +150,41 @@ class DatabaseValidationTests(unittest.TestCase):
     def test_catalog_fitment_disagreement_rejected(self):
         self.research(fitment_status="probable")
         self.assertTrue(any("fitment differs from catalog" in e for e in validate(self.root)))
+
+    def matrix(self, **changes):
+        row = dict(upgrade_id="UPG-001", source_ids="src", source_research_id="UR-001",
+                   source_fitment_status="candidate", purchase_ready="no", decision="promising_but_unverified")
+        row.update(changes)
+        with (self.root / "database/upgrade_value_matrix.csv").open("a", newline="") as f:
+            csv.DictWriter(f, fieldnames=row.keys()).writerow(row)
+
+    def test_valid_matrix_references(self):
+        self.research()
+        self.matrix()
+        self.assertEqual([], validate(self.root))
+
+    def test_matrix_cross_candidate_link_rejected(self):
+        self.research()
+        self.matrix(upgrade_id="UPG-002")
+        errors = validate(self.root)
+        self.assertTrue(any("different candidate" in e for e in errors))
+
+    def test_matrix_missing_source_rejected(self):
+        self.research()
+        self.matrix(source_ids="missing")
+        self.assertTrue(any("missing source" in e for e in validate(self.root)))
+
+    def test_purchase_ready_requires_review_details(self):
+        self.research()
+        self.matrix(purchase_ready="yes")
+        errors = validate(self.root)
+        self.assertTrue(any("purchase-ready missing" in e for e in errors))
+        self.assertTrue(any("decision conflicts" in e for e in errors))
+
+    def test_matrix_fitment_drift_rejected(self):
+        self.research()
+        self.matrix(source_fitment_status="confirmed")
+        self.assertTrue(any("fitment differs from linked research" in e for e in validate(self.root)))
 
 if __name__ == "__main__":
     unittest.main()
