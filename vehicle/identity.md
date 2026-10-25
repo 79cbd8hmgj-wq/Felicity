@@ -1,28 +1,26 @@
-# Vehicle Identity — Verification Required
+# Vehicle Identity — 2004 Toyota Corolla
 
 | Field | Value | Evidence/status |
 |---|---|---|
-| Make/model | Toyota Corolla (reported in prior discussions) | User report, not VIN-verified |
-| Model year | **Unresolved: 2002 mentioned; 2004 manual supplied** | Do not infer year from manual |
-| VIN | Unknown | Await dash/door-jamb/title/registration |
-| Trim | Unknown | Await VIN/trim label and photographs |
-| Assembly date | Unknown | Door-jamb label |
-| Engine | Unknown | Verify year, emissions label and engine |
-| Transmission | Unknown | Verify from vehicle |
-| Odometer | Unknown | Await photograph |
-| Tire size | Unknown | Await tire sidewall and driver-door label |
-| In-service date | Unknown | Await record |
-| Title/registration | Unverified | Do not publish personal ownership records |
+| Make/model | Toyota Corolla | Owner-confirmed 2026-10-25 |
+| Model year | **2004** | Owner-confirmed 2026-10-25 |
+| Transmission | **Automatic** | Owner-confirmed; exact transmission code not verified |
+| Odometer | **100,283 miles** | Owner-reported 2026-10-25; photo pending |
+| Engine | 1ZZ-FE 1.8L inline-four | 2004 U.S. factory manual; actual installation not inspected |
+| Drivetrain | Front-wheel drive | U.S. Corolla model specification; not physically inspected |
+| VIN | Unknown | Await private VIN confirmation |
+| Trim | Unknown (CE/S/LE possibilities) | Inspect vehicle; no trim inferred |
+| Assembly date | Unknown | Door-jamb certification label |
+| Tire size | Unknown | Sidewall/door label to identify installed size |
+| Service history | Unknown | No invoices/records supplied |
 
-**Privacy:** avoid committing full VIN, plate, address, registration documents, insurance policy numbers, or title photographs to a public repository. Store only redacted identifiers or non-sensitive build attributes, unless repository is private and the user knowingly opts in.
+## Identification priorities
+- [x] Confirm model year with owner (2004).
+- [x] Confirm automatic transmission with owner.
+- [x] Record owner-reported odometer (100,283 mi).
+- [ ] Confirm VIN / factory configuration privately.
+- [ ] Verify trim, assembly date, engine and actual transmission.
+- [ ] Photograph driver-door tire placard, engine bay and dashboard.
+- [ ] Inspect condition and collect repair history.
 
-## Identification checklist
-- [ ] Photograph windshield VIN plate privately
-- [ ] Photograph certification label (door jamb)
-- [ ] Confirm model year and trim
-- [ ] Photograph emissions label/engine bay
-- [ ] Record current odometer
-- [ ] Record installed tires/wheel size
-- [ ] Inventory installed/options and modifications
-
-When known, update this page with verified, source-linked specifications.
+**Privacy:** Never commit full VIN, plates, registration, title or insurance documents to a public repository. VIN-specific records may be checked privately and summarized without sensitive identifiers.
