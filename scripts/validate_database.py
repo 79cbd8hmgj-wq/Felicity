@@ -7,15 +7,15 @@ from pathlib import Path
 
 FILES = {
     "vehicle": ("vehicle_id", ["source_id"]),
-    "components": ("component_id", []),
+    "components": ("component_id", ["parent_id"]),
     "sources": ("source_id", []),
     "specifications": ("spec_id", ["source_id"]),
-    "service_tasks": ("task_id", []),
+    "service_tasks": ("task_id", ["component_id"]),
     "observations": ("observation_id", ["vehicle_id", "source_id"]),
     "parts": ("part_record_id", ["component_id", "source_id"]),
     "repairs": ("repair_id", ["vehicle_id", "component_id"]),
 }
-TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources"}
+TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components"}
 STATUS = {
     "components": ("verification_status", {"reference", "research_pending", "label_verified", "equipment_unknown", "partially_observed", "not_inspected"}),
     "specifications": ("status", {"factory_reference", "observed", "owner_confirmed", "pending"}),
