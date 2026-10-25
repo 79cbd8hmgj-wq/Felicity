@@ -1,3 +1,5 @@
+> **PRIORITY UPDATE — 2026-10-25:** Performance includes **electrical draw, alternator load, mechanical losses and efficiency**, not just power. This old list is a *functional-gains shortlist*, **not a ranked electrical-efficiency list**. See the [low-cost electrical-efficiency audit](LOW_COST_ELECTRICAL_EFFICIENCY.md) for 3157 running lamps, license-plate, reverse, dome and trunk lighting, approximate duty-cycle importance, real Toyota incandescent wattages, product families and compliance gates. OBD scanners add electrical draw while providing useful information. Exterior LED retrofits require exact early-build socket, photometry and legal verification; load resistors may cancel savings.
+
 # Inexpensive and easy upgrades — practical value guide
 
 **Research date:** 2026-10-25. Vehicle: US 2004 Corolla LE, Canadian-built June 2003; 1ZZ-FE / A245E. User's working definition: **<$50 parts cost, <=30 minutes, basic/no tools, no lifting, wiring changes or calibration.** Prices are observed web listings, before tax/shipping, **not local checkout quotes**. Healthy OEM comparison required.
