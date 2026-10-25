@@ -5,7 +5,7 @@ Machine-readable CSV tables with stable identifiers, provenance, applicability a
 Tables:
 - `vehicle.csv`: one vehicle/build record, confirmed vs reference attributes.
 - `components.csv`: a 28-item inventory with explicit `parent_id` links for applicable subgroups, checked for missing parents and cycles. Detailed assembly breakdown remains future research.
-- `specifications.csv`: measurable original-factory specification records and source references.
+- `specifications.csv`: 26 reference/observed specifications, now linked to component IDs and explicit production-scope classification.
 - `service_tasks.csv`: tasks and checkpoints; due state is **unknown** without repair history.
 - `observations.csv`: what was seen/reported on this car, separate from reference facts.
 - `sources.csv`: where each claim came from.
@@ -36,10 +36,14 @@ See [Phase 1 audit](../docs/PHASE1_AUDIT.md). The Python validator checks declar
 
 ## Validation commands
 
-Run from repository root: `python -m unittest discover -s tests -v` and `python scripts/validate_database.py`. The GitHub Actions workflow runs on changed database and validation files. It checks existing stable IDs, source references, status values, CSV row shape and forbidden sensitive identifier columns. **Current CSV schema includes hierarchy and a separate claim ledger, but is not yet fully normalized; the validator does not claim all engineering data are verified or that service-task system labels are foreign keys.
+Run from repository root: `python -m unittest discover -s tests -v` and `python scripts/validate_database.py`. The GitHub Actions workflow runs on changed database and validation files. It checks existing stable IDs, source references, status values, CSV row shape and forbidden sensitive identifier columns. **Current CSV schema includes hierarchy, specification component links and a separate claim ledger, but is not yet fully normalized; the validator does not claim all engineering data are verified or that service-task system labels are foreign keys.
 
 ### Additional evidence data
 
 - `claims.csv`: 10 baseline field-level provenance claims referencing the vehicle and specific sources; not a list of measured mechanical conditions.
 - `components.csv`: `parent_id` is optional for root-level categories; where present it must point to another component and not form a cycle.
 - `service_tasks.csv`: `component_id` refers to existing inventory groups; legacy human-readable `system` remains for compatibility.
+
+## Specification migration (2026-10-25)
+
+Every existing specification has a `component_id` referring to `components.csv` and `build_applicability` distinguishing `manual_scope_oct_2003_onward` from `individual_vehicle_observed`. The 18 manual-sourced specification entries retain the printed October-2003-onward limitation; eight vehicle observations are not treated as manual-derived. The validator enforces component links and legal scope values. It does **not** prove production fitment, accurate reference page numbers or successful execution of all tests. No new parts or repairs were asserted.
