@@ -56,6 +56,20 @@ class DatabaseValidationTests(unittest.TestCase):
         self.append("specifications", "s1,src,factory_reference,engine,unverified_scope")
         self.assertTrue(any("invalid build_applicability" in e for e in validate(self.root)))
 
+    def test_specification_requires_component(self):
+        self.append("sources", "src")
+        self.append("specifications", "s1,src,factory_reference,,manual_scope_oct_2003_onward")
+        self.assertTrue(any("blank required reference component_id" in e for e in validate(self.root)))
+
+    def test_service_task_requires_component(self):
+        self.append("service_tasks", "t1,pending,")
+        self.assertTrue(any("blank required reference component_id" in e for e in validate(self.root)))
+
+    def test_claim_requires_source(self):
+        self.append("vehicle", "v1,")
+        self.append("claims", "c1,v1,")
+        self.assertTrue(any("blank required reference source_id" in e for e in validate(self.root)))
+
     def test_invalid_status_is_rejected(self):
         self.append("components", "engine,totally_done,")
         self.assertTrue(any("invalid verification_status" in e for e in validate(self.root)))
