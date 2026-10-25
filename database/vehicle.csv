@@ -1,0 +1,2 @@
+vehicle_id,model_year,make,model,trim,production_month,production_country,model_code,engine_family,transmission_code,transmission_type,axle_code,color_code,interior_code,reported_mileage,reading_date,tire_size_observed,source_id,identity_status
+felicity-001,2004,Toyota,Corolla,LE,2003-06,Canada,ZZE130L-DEPNKA,1ZZ-FE,A245E,4-speed automatic,02A,1C8,FA11,100283,2026-10-25,215/45R18 89V,src-label,partially_verified
