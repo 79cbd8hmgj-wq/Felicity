@@ -2,6 +2,8 @@
 
 Machine-readable CSV tables with stable identifiers, provenance, applicability and verification states. Readable in spreadsheet software, Python, SQLite, DuckDB, or a web app. **No unredacted VIN or ownership documents.**
 
+See [engineering source and interchange evidence standard](../docs/EVIDENCE_STANDARD.md) for applicability, citations, confidence levels and performance-modification research.
+
 Tables:
 - `vehicle.csv`: one vehicle/build record, confirmed vs reference attributes.
 - `components.csv`: a 28-item inventory with explicit `parent_id` links for applicable subgroups, checked for missing parents and cycles. Detailed assembly breakdown remains future research.
@@ -36,7 +38,7 @@ See [Phase 1 audit](../docs/PHASE1_AUDIT.md). The Python validator checks declar
 
 ## Validation commands
 
-Run from repository root: `python -m unittest discover -s tests -v` and `python scripts/validate_database.py`. The GitHub Actions workflow runs on changed database and validation files. It checks existing stable IDs, source references, status values, CSV row shape and forbidden sensitive identifier columns. **Current CSV schema includes hierarchy, specification component links and a separate claim ledger, but is not yet fully normalized; the validator does not claim all engineering data are verified or that service-task system labels are foreign keys.
+Run from repository root: `python -m unittest discover -s tests -v` and `python scripts/validate_database.py`. The GitHub Actions workflow runs on changed database and validation files. It checks existing stable IDs, source references, status values, CSV row shape and forbidden sensitive identifier columns. **Current CSV schema includes hierarchy, specification component links and a separate claim ledger, but is not yet fully normalized; the validator does not claim all engineering data are verified.
 
 ### Additional evidence data
 
@@ -47,3 +49,7 @@ Run from repository root: `python -m unittest discover -s tests -v` and `python 
 ## Specification migration (2026-10-25)
 
 Every existing specification has a `component_id` referring to `components.csv` and `build_applicability` distinguishing `manual_scope_oct_2003_onward` from `individual_vehicle_observed`. The 18 manual-sourced specification entries retain the printed October-2003-onward limitation; eight vehicle observations are not treated as manual-derived. The validator enforces component links and legal scope values. It does **not** prove production fitment, accurate reference page numbers or successful execution of all tests. No new parts or repairs were asserted.
+
+## Integrity verification distinction
+
+On 2026-10-25 a direct cross-table check of the nine current CSV files found zero duplicate primary IDs and zero missing nonblank references in existing records. This is a check of database consistency, not an executed run of the Python tests and not a verification of every engineering specification. GitHub Actions status remains unconfirmed.
