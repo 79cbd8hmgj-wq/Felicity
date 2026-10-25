@@ -26,3 +26,9 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 ## Changelog
 - **2026-10-25:** Confirmed owner-reported 2004 automatic, 100,283 mi. Expanded maintenance and system research.
 - **2026-10-25:** Initialized repo and preliminary 2004 factory reference.
+
+## Structured database
+
+The [machine-readable CSV database](database/README.md) contains identity, 28 component groups, 26 reference specifications, condition observations, 10 service tasks, evidence sources, plus empty parts and completed-repairs ledgers. No part fitment or repair is invented. CSV records are a research foundation, not proof that a subsystem has been physically inspected.
+
+**Important early-build caveat:** the supplied Toyota OM12859U manual expressly addresses 2004 Corolla vehicles produced from October 2003, while this vehicle's label says June 2003. Compare date-specific parts and technical specifications against factory documents for the earlier production period before ordering parts.
