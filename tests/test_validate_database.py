@@ -9,7 +9,7 @@ HEADERS = {
     "vehicle": "vehicle_id,source_id",
     "components": "component_id,verification_status,parent_id",
     "sources": "source_id",
-    "specifications": "spec_id,source_id,status",
+    "specifications": "spec_id,source_id,status,component_id,build_applicability",
     "service_tasks": "task_id,status,component_id",
     "observations": "observation_id,vehicle_id,source_id",
     "parts": "part_record_id,component_id,source_id,verification_status",
@@ -42,8 +42,19 @@ class DatabaseValidationTests(unittest.TestCase):
         self.assertTrue(any("duplicate" in e for e in validate(self.root)))
 
     def test_missing_foreign_key_is_rejected(self):
-        self.append("specifications", "s1,no-such-source,factory_reference")
+        self.append("specifications", "s1,no-such-source,factory_reference,,manual_scope_oct_2003_onward")
         self.assertTrue(any("missing sources reference" in e for e in validate(self.root)))
+
+    def test_bad_spec_component_is_rejected(self):
+        self.append("sources", "src")
+        self.append("specifications", "s1,src,factory_reference,not_a_component,manual_scope_oct_2003_onward")
+        self.assertTrue(any("missing components reference" in e for e in validate(self.root)))
+
+    def test_unknown_spec_build_scope_is_rejected(self):
+        self.append("sources", "src")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,src,factory_reference,engine,unverified_scope")
+        self.assertTrue(any("invalid build_applicability" in e for e in validate(self.root)))
 
     def test_invalid_status_is_rejected(self):
         self.append("components", "engine,totally_done,")
