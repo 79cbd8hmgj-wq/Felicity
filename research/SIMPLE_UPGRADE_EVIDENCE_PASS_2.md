@@ -1,3 +1,5 @@
+> **UPDATE — 2026-10-25:** The earlier note that no carbon Corolla cabin filter SKU was established is superseded by [evidence pass 3](SIMPLE_UPGRADE_EVIDENCE_PASS_3.md). FRAM CF10133 and MAHLE LAK157 are now identified. Other pass-2 findings remain historical evidence.
+
 # Simple upgrades: evidence pass 2 — 2026-10-25
 
 **Vehicle:** June 2003 US-built-model-year 2004 Corolla LE (Canadian assembly), 1ZZ-FE/A245E. Compare against healthy OEM, not worn parts. **Document type:** product evidence audit, not a purchase list.
