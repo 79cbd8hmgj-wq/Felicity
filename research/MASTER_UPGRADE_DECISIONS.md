@@ -1,8 +1,7 @@
-# Felicity — Master upgrade purchasing decisions
+# Felicity — Master upgrade decisions (living summary)
 
-**Prepared:** October 25, 2026  
-**Vehicle:** 2004 U.S. Corolla LE, June 2003 Canadian build, 1ZZ-FE, A245E.  
-**Current owner constraint:** under $50 per option, about 30 minutes or less with ordinary tools. **No LED research in current purchasing round.**
+**Updated October 25 2026.** The [canonical value matrix](../database/upgrade_value_matrix.csv) now contains **162 distinct upgrade candidates**, all linked to initial research. The prior 148 were never a cap; see the [open-ended discovery rules](../docs/OPEN_ENDED_UPGRADE_RESEARCH.md). The buying section below focuses on inexpensive/easy options but does not limit engineering discovery. Two earlier add-ons were assigned permanent IDs **UPG-149** (shade) and **UPG-150** (Rain-X). This decision report remains a snapshot; it does not represent independent performance verification of all 162.
+
 
 ## What's changed
 
