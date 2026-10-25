@@ -14,6 +14,7 @@ FILES = {
     "observations": ("observation_id", ["vehicle_id", "source_id"]),
     "parts": ("part_record_id", ["component_id", "source_id"]),
     "repairs": ("repair_id", ["vehicle_id", "component_id"]),
+    "claims": ("claim_id", ["vehicle_id", "source_id"]),
 }
 TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components"}
 STATUS = {
