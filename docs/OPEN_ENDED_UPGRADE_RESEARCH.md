@@ -1,6 +1,6 @@
 # Felicity open-ended upgrade discovery policy
 
-**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 25 2026, the catalog includes **182** distinct candidate concepts and 182 matching initial research records. Those counts are snapshots and must not be used as a stop condition.
+**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 25 2026, the catalog includes **193** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
 
 ## Continuous discovery scope
 
@@ -11,7 +11,7 @@ A potential upgrade can be cheap/easy, moderate DIY, or a complex longer-term en
 ### Admission criteria for additional candidates
 
 1. Identify a **distinct** intervention or subsystem-level optimization not represented by an existing upgrade ID. Before creating an ID, search all catalog concepts for duplicates; if a specific product is merely an alternative for an existing candidate, add it to evidence under that same candidate rather than create a misleading 'new' upgrade.
-2. Assign next stable ID (`UPG-163` onward, no known upper bound); **never renumber** earlier IDs. Preserve UPG-001–148 historical identities.
+2. Assign next stable ID (one above the highest existing numeric suffix; currently `UPG-194` next, no known upper bound); **never renumber** earlier IDs. Preserve UPG-001–148 historical identities.
 3. Link an initial technical screening record (`UR-<matching numerical suffix>`) and at least one actual, traceable source. An indirect general engineering study is explicitly **hypothesis support**, not proof of Corolla compatibility.
 4. Record **healthy factory baseline** and owner's *currently modified configuration* separately. State improvement mechanism and whether same-vehicle data, independent component tests, manufacturer claims, or hypotheses support it.
 5. Research installation access, special tooling, degree of DIY difficulty, safety, equipment/market/production compatibility, negative tradeoffs, measured performance benefit (or `unknown`), and dated costs (or blank/unknown).

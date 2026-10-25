@@ -75,6 +75,7 @@ def validate(root: Path, require_upgrade_coverage=False):
                 value = row[field].strip()
                 if not value and (name, field) in {
                     ("upgrade_research", "upgrade_id"),
+                    ("upgrade_value_matrix", "source_research_id"),
                     ("specifications", "source_id"),
                     ("specifications", "component_id"),
                     ("service_tasks", "component_id"),
@@ -200,6 +201,8 @@ def validate(root: Path, require_upgrade_coverage=False):
                 if row["decision"] not in {"not_reassessed", "worth_buying", "worth_buying_for_specific_purpose", "promising_but_unverified", "poor_value", "not_an_improvement_over_healthy_oem", "outside_current_diy_scope"}:
                     errors.append(f"upgrade_value_matrix:{number}: invalid decision")
                 if row["purchase_ready"] == "yes":
+                    if row["source_fitment_status"] == "candidate":
+                        errors.append(f"upgrade_value_matrix:{number}: purchase-ready fitment still candidate")
                     for field in {"healthy_oem_baseline", "incremental_function_over_healthy_oem", "observed_product_cost_usd", "price_basis", "procedure_source_ids", "installation_requirements", "benefit_confidence", "buying_scope", "lifting_required", "fabrication_required", "wiring_required", "calibration_required"}:
                         if not row.get(field, "").strip():
                             errors.append(f"upgrade_value_matrix:{number}: purchase-ready missing {field}")

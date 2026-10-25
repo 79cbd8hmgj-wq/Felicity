@@ -186,5 +186,15 @@ class DatabaseValidationTests(unittest.TestCase):
         self.matrix(source_fitment_status="confirmed")
         self.assertTrue(any("fitment differs from linked research" in e for e in validate(self.root)))
 
+    def test_matrix_requires_research_link(self):
+        self.research()
+        self.matrix(source_research_id="")
+        self.assertTrue(any("blank required reference source_research_id" in e for e in validate(self.root)))
+
+    def test_purchase_ready_candidate_rejected(self):
+        self.research()
+        self.matrix(purchase_ready="yes", decision="worth_buying_for_specific_purpose")
+        self.assertTrue(any("purchase-ready fitment still candidate" in e for e in validate(self.root)))
+
 if __name__ == "__main__":
     unittest.main()

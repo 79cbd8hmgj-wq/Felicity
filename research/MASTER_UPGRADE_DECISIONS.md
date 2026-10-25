@@ -1,3 +1,5 @@
+> **Current buying decisions:** use [CHEAP_EASY_BUYING_GUIDE.md](CHEAP_EASY_BUYING_GUIDE.md) and the matrix `purchase_ready` / `buying_scope` fields. Earlier rankings below are historical; they do not establish current stock, early-build fitment or a purchase endorsement.
+
 # Felicity — Master upgrade decisions (living summary)
 
 **Updated October 25 2026.** The [canonical value matrix](../database/upgrade_value_matrix.csv) now contains **182 distinct upgrade candidates**, all linked to initial research. The prior 148 were never a cap; see the [open-ended discovery rules](../docs/OPEN_ENDED_UPGRADE_RESEARCH.md). The buying section below focuses on inexpensive/easy options but does not limit engineering discovery. Two earlier add-ons were assigned permanent IDs **UPG-149** (shade) and **UPG-150** (Rain-X). This decision report remains a snapshot; it does not represent independent performance verification of all 182.

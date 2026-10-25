@@ -1,8 +1,8 @@
 # Felicity — 2004 Toyota Corolla Knowledge Base
 
-An evidence-based research and ownership log for an **owner-confirmed 2004 Toyota Corolla, automatic transmission, 100,283 miles as reported October 25, 2026**.
+An evidence-based research and ownership log for the owner’s **US 2004 Toyota Corolla LE, Canada-built June 2003, ZZE130L-DEPNKA, 1ZZ-FE / A245E automatic**. Aftermarket intake and 18-inch wheels are owner-documented; no current vehicle-condition assessment is part of this upgrade research.
 
-The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explicitly for vehicles produced from October 2003 onward). **Engine configuration, trim, VIN, exact transmission, equipment and actual mechanical condition remain to be independently verified.**
+The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explicitly for vehicles produced from October 2003 onward). Owner-provided identification establishes the research target; individual part fitment and production-specific specifications still require verification. Private identifiers are excluded.
 
 ## Upgrade research
 
@@ -33,12 +33,14 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 
 ## Open-ended upgrade discovery and decisions (October 2026)
 
-**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **182 candidates**, each with an initial linked review, and can grow further. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [182-row healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
+**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **193 catalog IDs**, each with an initial linked review, and can grow further. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
 
-The [Master Upgrade Decisions](research/MASTER_UPGRADE_DECISIONS.md) provides a buying-oriented view, not the limit of research. Current inexpensive/easy preferences apply to purchases, **not** to the long-term discovery catalog. Continue comparing measurable differences against healthy OEM and the actual installed setup, with cost, installation complexity, reliability, thermal/electrical/fuel performance, safety and evidence quality.
+The [current cheap/easy buying guide](research/CHEAP_EASY_BUYING_GUIDE.md) provides the reviewed buying-oriented view, not the limit of research. Current inexpensive/easy preferences apply to purchases, **not** to the long-term discovery catalog. Continue comparing measurable differences against healthy OEM and the actual installed setup, with cost, installation complexity, reliability, thermal/electrical/fuel performance, safety and evidence quality.
 
 ## Structured database
 
 The [machine-readable CSV database](database/README.md) contains identity, 28 component groups, 26 reference specifications, condition observations, 10 service tasks, evidence sources, plus empty parts and completed-repairs ledgers. No part fitment or repair is invented. CSV records are a research foundation, not proof that a subsystem has been physically inspected.
 
 **Important early-build caveat:** the supplied Toyota OM12859U manual expressly addresses 2004 Corolla vehicles produced from October 2003, while this vehicle's label says June 2003. Compare date-specific parts and technical specifications against factory documents for the earlier production period before ordering parts.
+
+Latest pass: five new concepts, two narrative migrations and four restored historical links; 17 existing candidates reassessed. Three scoped purchases (one newly promoted) are supported; none establishes a measured subject-car fuel saving.

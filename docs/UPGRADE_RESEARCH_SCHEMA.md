@@ -1,6 +1,6 @@
 # Upgrade research schema
 
-**Living schema notice (2026-10-25):** the initial 148 IDs are historical seed identifiers, **not a size limit**. New UPG-149–182 entries have been added with linked UR-149–182 screening records; the [canonical matrix](../database/upgrade_value_matrix.csv) now contains 182 unique UPG IDs. The historical ADD-001/ADD-002 aliases became UPG-150/UPG-149. Preserve all historical IDs and add more as credible topics emerge. See [OPEN_ENDED_UPGRADE_RESEARCH.md](OPEN_ENDED_UPGRADE_RESEARCH.md).
+**Living schema notice (2026-10-25):** 193 stable catalog IDs now have matching research and matrix rows. Four orphaned historical links were restored, two narrative leads migrated, and five distinct concepts added in the latest pass. IDs are open-ended; do not renumber or count restored/overlapping studies as new discoveries. See [open-ended policy](OPEN_ENDED_UPGRADE_RESEARCH.md) and [current buying guide](../research/CHEAP_EASY_BUYING_GUIDE.md).
 
 `upgrade_candidates.csv` retains all 148 original IDs, concepts, systems, benefit labels and lead text. Updated research/fitment status and next-validation fields link to `upgrade_research.csv`. Original lead text remains discovery provenance, not an endorsement.
 
@@ -14,7 +14,7 @@
 - `manufacturer`, `product_number`, `product_name`, `oem_number`: documented option or explicitly labeled lead. Empty number means none authenticated. Family names and historical instructions are not purchasable SKUs. Related/disallowed parts can appear for comparison; read applicability before counting products.
 - `supersession_or_interchange`: distinguishes a shared catalog reference from a verified Toyota supersession. Seller claims stay supplier evidence.
 - `verified_facts`: facts about retrieved documents/product identity, **not an assertion of complete fitment**. An unsuccessful search means not established in this pass, not proof that a product does not exist.
-- `production_applicability`, `fitment_status`, `fitment_rationale`: candidate / probable / confirmed / vehicle-validated. None in this pass is confirmed or vehicle-validated. Probable remains conditional, not purchase-ready.
+- `production_applicability`, `fitment_status`, `fitment_rationale`: candidate / probable / confirmed / vehicle-validated. None in this pass is confirmed or vehicle-validated. Probable remains conditional. A universal material/interface purchase can be purpose-ready within a documented narrow scope without establishing exact-car or production-specific fitment. Read the matrix buying_scope; candidate fitment cannot be purchase-ready.
 - `benefit_basis`: hypothesis, manufacturer_claim, factory_reference, oem_corrective_action, independent_test or vehicle_measurement. A maker's dimension/ISO test is distinct from a car-level outcome.
 - `measured_vehicle_benefit`: unknown throughout this pass; no subject-car performance testing occurred.
 - `engineering_hypothesis`, `disadvantages`, `diy_requirements`, `next_validation`: analyst engineering proposals and checks, not copied factory installation procedures. DIY level is an estimate; explicit maker installation qualifications are retained. There are no invented labor hours or torque values.
@@ -30,3 +30,11 @@ python scripts/validate_database.py --require-upgrade-coverage
 ```
 
 The coverage gate requires every original UPG-001–148 ID, linked research for each candidate, valid references, statuses, dates, DIY levels and costs, catalog/research fitment agreement, and explicit evidence before promoting fitment. Automated tests cannot establish physical compatibility, legality, source authenticity or measured gains. Independent technical review remains pending.
+
+## Decision-matrix purchase fields
+
+The matrix retains legacy evaluations and adds `session_reviewed_on`, `decision`, `purchase_ready`, `budget_tier`, `current_vehicle_baseline`, `procedure_source_ids`, `time_basis`, lifting/fabrication/wiring/calibration flags, supporting components/costs, shipping, annual fuel savings, payback, `benefit_confidence` and `buying_scope`. Empty cost/savings/time fields mean unknown, not zero. A legacy numerical time estimate is not a maker procedure or timed measurement; newly researched rows avoid unsupported minutes.
+
+`purchase_ready=no` and `decision=not_reassessed` are conservative defaults for older rows, not fresh rejections. Decision values are worth_buying, worth_buying_for_specific_purpose, promising_but_unverified, poor_value, not_an_improvement_over_healthy_oem, outside_current_diy_scope, and not_reassessed. Budget tiers are screening judgments; unpriced work remains provisional.
+
+Validation checks every matrix-to-research/source reference, cross-candidate linkage, fitment consistency and full coverage. A purchase-ready row requires healthy baseline, incremental function, observed price/basis, procedure sources, installation requirements, benefit confidence, buying scope and modification flags, plus an affirmative decision and fitment above candidate. This is a data-integrity gate, not independent engineering certification. All sources and procedures still need human technical assessment; no automatic test proves safety, stock, performance or physical installation.
