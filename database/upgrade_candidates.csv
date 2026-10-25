@@ -27,42 +27,42 @@ UPG-025,Cooling,Electric fan efficiency improvements,performance_engineering,lit
 UPG-026,Cooling,Fan shroud efficiency,performance_engineering,literature_reviewed,candidate,none_identified,Compare full shroud geometry and fan tip clearance; no universal fit assumed
 UPG-027,Cooling,Expansion tank and radiator cap quality,quality_reliability,literature_reviewed,candidate,none_identified,"Identify cap pressure, neck depth and recovery valve specification"
 UPG-028,Cooling,Coolant temperature monitoring,quality_reliability,literature_reviewed,candidate,none_identified,Confirm protocol and coolant PID support on June ECU
-UPG-029,Intake and fueling,OEM airbox restoration / engineering benchmark,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-030,Intake and fueling,Sealed cold-air intake system,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-031,Intake and fueling,High-flow dry-filter media,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-032,Intake and fueling,MAF housing geometry correction,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-033,Intake and fueling,Intake heat shielding,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-034,Intake and fueling,Intake resonator design comparison,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-035,Intake and fueling,Throttle body cleaning and airflow mapping,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-036,Intake and fueling,Larger throttle-body research,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-037,Intake and fueling,Ported intake manifold,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-038,Intake and fueling,Intake manifold thermal spacer,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-039,Intake and fueling,Fuel injector flow and atomization upgrades,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-040,Intake and fueling,Injector sealing materials,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-041,Intake and fueling,Fuel-pump capacity upgrade,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-042,Intake and fueling,Fuel-pressure monitoring,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-043,Intake and fueling,Wideband oxygen sensor data logging,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-044,Exhaust and engine performance,Mandrel-bent cat-back exhaust,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-045,Exhaust and engine performance,Quiet high-flow muffler,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-046,Exhaust and engine performance,Performance resonator tuning,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-047,Exhaust and engine performance,Exhaust manifold/header design,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-048,Exhaust and engine performance,Compliant high-flow catalytic converter,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-049,Exhaust and engine performance,Thermal exhaust shielding,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-050,Exhaust and engine performance,Performance camshafts,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-051,Exhaust and engine performance,Adjustable cam timing gear research,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-052,Exhaust and engine performance,Cylinder head airflow and valve-seat study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-053,Exhaust and engine performance,Valve spring upgrade,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-054,Exhaust and engine performance,Forged connecting rods,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-055,Exhaust and engine performance,Forged pistons,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-056,Exhaust and engine performance,Lower-compression build comparison,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-057,Exhaust and engine performance,TRD supercharger factory system,performance_engineering,documented_lead,candidate_unverified,TRD SC-COR-002-A,production_fitment_and_quantified_benefit
-UPG-058,Exhaust and engine performance,Modern aftermarket supercharger package,performance_engineering,documented_lead,candidate_unverified,Monkeywrench Racing TVS900,production_fitment_and_quantified_benefit
-UPG-059,Exhaust and engine performance,Low-boost turbocharger engineering,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-060,Exhaust and engine performance,Intercooler packaging and effectiveness,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-061,Exhaust and engine performance,ECU calibration / piggyback management,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-062,Exhaust and engine performance,Knock monitoring and tuning safety,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-063,Exhaust and engine performance,Higher-efficiency ignition coil study,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-064,Exhaust and engine performance,Performance spark plug thermal range,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
+UPG-029,Intake and fueling,OEM airbox restoration / engineering benchmark,performance_engineering,literature_reviewed,probable,none_identified,Get early Corolla EPC airbox numbers and complete duct bill of materials
+UPG-030,Intake and fueling,Sealed cold-air intake system,quality_reliability,literature_reviewed,probable,none_identified,"Check complete kit availability, EO and A245E fit; do not label a relocated cone sealed"
+UPG-031,Intake and fueling,High-flow dry-filter media,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve ISO5011 efficiency/capacity and exact filter SKU
+UPG-032,Intake and fueling,MAF housing geometry correction,performance_engineering,literature_reviewed,candidate,none_identified,Identify original MAF bore and transfer curve; measure current tube
+UPG-033,Intake and fueling,Intake heat shielding,performance_engineering,literature_reviewed,candidate,none_identified,Obtain existing intake geometry; compare IAT after idle and cruise
+UPG-034,Intake and fueling,Intake resonator design comparison,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve resonator dimensions; test complete configurations
+UPG-035,Intake and fueling,Throttle body cleaning and airflow mapping,performance_engineering,literature_reviewed,candidate,none_identified,Obtain June throttle-body service procedure and cleaner restrictions
+UPG-036,Intake and fueling,Larger throttle-body research,performance_engineering,literature_reviewed,candidate,none_identified,Find flow restriction baseline; authenticate donor TPS/IAC and transmission cable compatibility
+UPG-037,Intake and fueling,Ported intake manifold,performance_engineering,literature_reviewed,candidate,none_identified,Find dedicated early-1ZZ manifold test; rule out 2ZZ interchange
+UPG-038,Intake and fueling,Intake manifold thermal spacer,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve manufacturer drawing and material rating; compare heat-soak baseline
+UPG-039,Intake and fueling,Fuel injector flow and atomization upgrades,performance_engineering,literature_reviewed,probable,none_identified,"Obtain flow pressure, latency table and connector/rail dimensions"
+UPG-040,Intake and fueling,Injector sealing materials,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve Toyota upper/lower seal numbers and material compatibility
+UPG-041,Intake and fueling,Fuel-pump capacity upgrade,quality_reliability,literature_reviewed,candidate,none_identified,Find manufacturer pump flow at regulated pressure and module dimensions
+UPG-042,Intake and fueling,Fuel-pressure monitoring,performance_engineering,literature_reviewed,candidate,none_identified,Obtain rail interface and pressure specification; select EFI-rated sensor
+UPG-043,Intake and fueling,Wideband oxygen sensor data logging,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve full installation manual; select data interface and safe bung
+UPG-044,Exhaust and engine performance,Mandrel-bent cat-back exhaust,performance_engineering,literature_reviewed,probable,none_identified,"Retrieve installation drawing, noise evidence and dated purchasable quote"
+UPG-045,Exhaust and engine performance,Quiet high-flow muffler,performance_engineering,literature_reviewed,candidate,none_identified,Find independent sound/pressure comparison; choose actual standalone muffler
+UPG-046,Exhaust and engine performance,Performance resonator tuning,performance_engineering,literature_reviewed,candidate,none_identified,Measure target frequency and gas temperature; obtain resonator acoustic data
+UPG-047,Exhaust and engine performance,Exhaust manifold/header design,performance_engineering,literature_reviewed,candidate,none_identified,Find primary header drawing and applicable EO; preserve catalysts and sensor function
+UPG-048,Exhaust and engine performance,Compliant high-flow catalytic converter,performance_engineering,literature_reviewed,candidate,none_identified,Match engine family to EO and exact location; obtain current supply quote
+UPG-049,Exhaust and engine performance,Thermal exhaust shielding,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve heat-shield EPC and material-temperature limits; measure comparison
+UPG-050,Exhaust and engine performance,Performance camshafts,performance_engineering,literature_reviewed,candidate,none_identified,"Confirm current cam card, VVT compatibility, clearance and A245E torque curve"
+UPG-051,Exhaust and engine performance,Adjustable cam timing gear research,performance_engineering,literature_reviewed,candidate,none_identified,Find exact gear design retaining VVT and trigger compatibility
+UPG-052,Exhaust and engine performance,Cylinder head airflow and valve-seat study,performance_engineering,literature_reviewed,candidate,none_identified,Get flowbench results at stated depression and complete build specification
+UPG-053,Exhaust and engine performance,Valve spring upgrade,performance_engineering,literature_reviewed,candidate,none_identified,Confirm June head/valve geometry and current manufacturer spring recommendation
+UPG-054,Exhaust and engine performance,Forged connecting rods,performance_engineering,literature_reviewed,candidate,none_identified,Get current rod drawing and bolt stretch procedure; distinguish billet from forged
+UPG-055,Exhaust and engine performance,Forged pistons,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve Wiseco drawing/part number; measure block and crown/valve clearances
+UPG-056,Exhaust and engine performance,Lower-compression build comparison,performance_engineering,literature_reviewed,candidate,none_identified,Obtain stock-bore alternative; block wall/sleeve design and full engine cost
+UPG-057,Exhaust and engine performance,TRD supercharger factory system,performance_engineering,literature_reviewed,probable,TRD SC-COR-002-A,Authenticate kit suffix/ECU for A245E; verify historical EO and actual complete-kit availability
+UPG-058,Exhaust and engine performance,Modern aftermarket supercharger package,performance_engineering,literature_reviewed,probable,Monkeywrench Racing TVS900,Obtain written A245E kit/BOM and torque limits; EO/legal applicability; installed quote
+UPG-059,Exhaust and engine performance,Low-boost turbocharger engineering,performance_engineering,literature_reviewed,candidate,none_identified,Find complete kit documentation and tested automatic torque/thermal envelope
+UPG-060,Exhaust and engine performance,Intercooler packaging and effectiveness,performance_engineering,literature_reviewed,candidate,none_identified,"Choose architecture first; obtain compressor map, cooler flow and pressure-drop curves"
+UPG-061,Exhaust and engine performance,ECU calibration / piggyback management,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve 2003-04 adapter SKU and control strategy; retain automatic and emissions functions
+UPG-062,Exhaust and engine performance,Knock monitoring and tuning safety,performance_engineering,literature_reviewed,candidate,none_identified,Obtain sensor bandwidth and ECU knock strategy; select validated monitor
+UPG-063,Exhaust and engine performance,Higher-efficiency ignition coil study,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve DENSO coil catalog and primary energy/dwell comparison
+UPG-064,Exhaust and engine performance,Performance spark plug thermal range,performance_engineering,literature_reviewed,probable,none_identified,Confirm June Toyota plug reference; tune-specific heat range requires evidence
 UPG-065,Automatic transmission,A245E transmission cooling strategy,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-066,Automatic transmission,Auxiliary thermostatic ATF cooler,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-067,Automatic transmission,ATF temperature gauge,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
