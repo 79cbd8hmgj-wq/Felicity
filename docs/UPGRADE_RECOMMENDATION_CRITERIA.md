@@ -27,3 +27,20 @@ Recommendation tiers:
 - **TransGo SK A246:** hydraulic/shift-specific valve-body kit; advanced precision transmission service, model-specific EPC confirmation and instruction verification necessary.
 
 Research should continue independently without waiting on physical inspection. Keep condition assessments out of scope unless requested.
+
+## Mandatory healthy-OEM baseline and value comparison
+
+**Owner decision (2026-10-25):** Compare each proposed replacement against a **new or properly functioning factory-specification equivalent**, not a worn, defective, or neglected original. Report the incremental benefit of paying for the upgrade, not the gains from restoring baseline function.
+
+For each candidate, capture:
+
+1. **Healthy baseline:** identify the OE part/system and how it performs when functioning to factory specification. If data are missing, write `unknown` rather than inventing an OEM performance number.
+2. **Like-for-like conditions:** vehicle, tire and wheel package, engine/transmission calibration, road/track/temperature, test method and relevant maintenance condition held as constant as practical. Note any uncontrolled variables.
+3. **Incremental gains:** report only `upgraded − healthy OEM`; identify source and test method. Separate measurable power, torque, braking distance/fade, body roll, damping, service life, noise, efficiency and subjective feel. Manufacturer estimates and owner anecdotes are not independent measurements.
+4. **Incremental cost:** upgrade installed total minus the total cost of fitting a **healthy standard replacement** when replacement is needed. For an optional modification to a healthy car, compare the full upgrade cost against **keeping the healthy OE system ($0 intervention)**. Include required supporting parts, tools, specialist labor, taxes/fees where sourced and post-install alignment/tuning as applicable. Unknown costs remain unknown.
+5. **Install comparison:** extra labor and tooling *over stock replacement*, complexity and risk, plus downtime and reversible/irreversible changes.
+6. **Tradeoffs and verdict:** document comfort/noise/handling balance/legal/warranty/reliability consequences. Rate `demonstrated improvement`, `plausible but unmeasured`, `restoration only`, or `unsubstantiated/negative` separately from fitment confidence. Only call a product **worth the premium** when evidence of the incremental benefit reasonably supports its additional cost for the stated goal.
+
+A new KYB or OE strut making a worn original ride better is **restoration**, not proof it outperforms a healthy original. A premium oil filter's media specification is not proof of reduced engine wear over a quality OEM filter. An intake manifold gasket revision aimed at a known leak may improve failure resistance but not add horsepower to an airtight healthy baseline. A performance spring or sway bar may have an observable geometry/response difference from factory even when OEM parts are healthy, but any quantified handling improvement needs comparably controlled measurements and comfort/oversteer tradeoffs.
+
+Apply this rule retroactively to the existing 148 research entries before publishing buying recommendations. Do not confuse **fitment verified** with **benefit demonstrated**.
