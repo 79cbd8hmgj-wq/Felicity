@@ -1,33 +1,21 @@
-# Vehicle Condition Baseline
+# Vehicle Condition — Baseline Pending
 
-**Status: inspection not yet entered.** The following are prompts, not diagnoses or confirmed defects.
+**Identity:** owner-confirmed 2004 Toyota Corolla, automatic, reported odometer **100,283 mi on 2026-10-25**.
 
-| Subsystem | Status | Required evidence |
+No current mechanical inspection results were provided. The following are **not diagnosed faults**:
+
+| System | Current knowledge | Next check |
 |---|---|---|
-| Engine / oil consumption | Not inspected | Level, leaks, usage per 1,000 mi, sounds |
-| Cooling | Not inspected | Cold level, leaks, operating temperature |
-| Automatic/manual transmission | Not verified | Type, shifting behavior, leaks |
-| Braking | Not inspected | Pedal, pads/shoes, lines, hoses, fluid |
-| Structural rust | Not inspected | Rockers, pinch welds, subframes, suspension mounts, brake lines |
-| Suspension/steering | Not inspected | Ball joints, tie rods, bushings, struts |
-| Electrical/charging | Not inspected | Resting/running battery voltage, load test |
-| Exterior lights | Not inspected | Function, beam pattern, legality |
-| Tires | Not inspected | Size, DOT dates, tread, sidewall condition |
-| Safety systems | Not inspected | Airbag/ABS lights, recalls by VIN |
+| Engine lubrication | Earlier Corolla discussion mentioned oil nearly empty; unresolved whether same vehicle/current | Check dipstick on level ground before driving; top up correct oil if low; investigate source |
+| Engine / cooling | No observed condition | Check leaks, cold coolant level, temperature and hoses |
+| Automatic transaxle | Owner confirms automatic | Verify shifting and ATF level using correct procedure |
+| Battery / charging | Replacement was previously considered | Inspect terminals and load test |
+| Exterior lights | Low-power LED conversion explored previously | Verify original lamps and DRL compatibility |
+| Brake system | No inspection | Lines, hoses, pads, rotors/drums, pedal response |
+| Structural rust | No inspection | Underbody, corrosion at mounts, brake lines and jacking points |
+| Suspension / steering | No inspection | Tires, bushings, ball joints, tie rods |
+| Tires | Unknown | Sizes, wear, pressure, DOT date |
+| Safety systems | Unknown | Dash lights and VIN recalls |
 
-## Earlier user-reported topics — NOT completed maintenance
-- Battery replacement being considered.
-- Lower-power LED lighting conversion being researched.
-- Oil level previously described as nearly empty; **current oil level and any engine damage are unknown.**
-
-These topics may concern the previously discussed 2002 Corolla; verify applicability before assigning them to this vehicle.
-
-## Baseline inspection entry template
-Date: TBD
-Odometer: TBD
-Photos/records: TBD
-Engine symptoms: TBD
-Fluid checks: TBD
-Safety-critical concerns: TBD
-Fault codes: TBD
-Recommended next action: TBD
+## Field inspection template
+Date | Odometer | System | Observation | Photo/reading | Priority | Status | Next action
