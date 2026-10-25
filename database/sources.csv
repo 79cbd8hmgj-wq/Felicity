@@ -1,0 +1,6 @@
+source_id,kind,title,reference,scope,notes
+src-label,direct_photo,Corolla manufacturer door label,owner supplied 2026-10-25,individual vehicle,Full VIN/photo deliberately withheld
+src-tire,direct_photo,Tire sidewall photo,owner supplied 2026-10-25,one installed tire,215/45R18 89V shown; other wheel locations unknown
+src-owner,owner_report,Owner confirmation,chat 2026-10-25,individual vehicle,2004 automatic 100283 miles
+src-manual,factory_manual,Toyota Corolla owners manual OM12859U,https://assets.sia.toyota.com/publications/en/om-s/OM12859U/pdf/OM12859U.pdf,2004 Corolla from October 2003 production,Owner-supplied matching document but vehicle built June 2003; check applicable earlier-production documentation for differences
+src-recall,official_lookup,NHTSA recall lookup,https://www.nhtsa.gov/recalls,VIN-specific,Not yet checked for this VIN
