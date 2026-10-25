@@ -38,3 +38,12 @@ The matrix retains legacy evaluations and adds `session_reviewed_on`, `decision`
 `purchase_ready=no` and `decision=not_reassessed` are conservative defaults for older rows, not fresh rejections. Decision values are worth_buying, worth_buying_for_specific_purpose, promising_but_unverified, poor_value, not_an_improvement_over_healthy_oem, outside_current_diy_scope, and not_reassessed. Budget tiers are screening judgments; unpriced work remains provisional.
 
 Validation checks every matrix-to-research/source reference, cross-candidate linkage, fitment consistency and full coverage. A purchase-ready row requires healthy baseline, incremental function, observed price/basis, procedure sources, installation requirements, benefit confidence, buying scope and modification flags, plus an affirmative decision and fitment above candidate. This is a data-integrity gate, not independent engineering certification. All sources and procedures still need human technical assessment; no automatic test proves safety, stock, performance or physical installation.
+
+
+## Modernization audit fields (2026-10-25)
+
+The value matrix now adds `modernization_class`, `modernization_priority`, `modernization_rationale`, `modernization_audit_scope` and `evidence_grade`. All193 rows received a semantic assessment against existing evidence, not193 new part verifications. Six role categories are OEM design revision, maintenance/healthy equivalent, measurement/diagnostic, substantive engineering candidate, function/accessory, and outside-program/adverse tradeoff. A substantive candidate is still an investigation, not a purchase recommendation. Priorities P1/P2/P3 mean conditional shortlist/verify next/defer.
+
+Nine rows have `deep_primary_source_review_2026-10-25`; other rows expressly identify semantic screening. `evidence_grade` states both the supported mechanism and the limits of vehicle-level evidence. The `benefit_basis` field retains the existing machine-readable vocabulary. No new physical fitment confirmations or purchase-ready promotions were made. New columns do not replace existing validation or relax purchase gates.
+
+Full-job budget ranges and installation-hour ranges in MODERNIZATION_PROGRAM.md are **analyst planning estimates**, explicitly distinct from observed parts prices, measured DIY times, warranty labor standards and guaranteed checkout totals. Existing historical numerical estimates have not been recast as measurements.

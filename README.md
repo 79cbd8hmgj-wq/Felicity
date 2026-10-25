@@ -6,6 +6,9 @@ The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explici
 
 ## Upgrade research
 
+**Current program:** [Engineering modernization plan](research/MODERNIZATION_PROGRAM.md): six conditional priorities, whole-catalog triage, complete-job cost/time allowances, six integrated packages, OEM revisions and practical installation gates. All 193 IDs retained; nine records deeply updated and 18 dated sources added. No measured vehicle gains or physical fitment confirmations claimed.
+
+
 [Initial 148 reviews (historical foundation)](research/UPGRADE_RESEARCH_RESULTS.md) · [Evidence-linked database](database/upgrade_research.csv) · [Schema and validation](docs/UPGRADE_RESEARCH_SCHEMA.md). Screening coverage is complete; exact fitment and upgrade benefits remain open.
 
 ## Navigate

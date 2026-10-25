@@ -1,3 +1,5 @@
+> **Current modernization program:** See [MODERNIZATION_PROGRAM.md](MODERNIZATION_PROGRAM.md) for the healthy-OEM ranked shortlist, complete-job planning allowances, all-system audit, six packages, OEM revisions and installation gates. This earlier report is retained as research history; its sub-$50/30-minute preference is no longer a discovery ceiling. The current program corrects earlier generic ADP uncertainty, blocked gasket-bulletin retrieval and acoustic-material selection.
+
 # Healthy-OEM upgrade shortlist — preliminary
 
 **Date:** 2026-10-25. Vehicle 2004 Corolla LE, June 2003, 1ZZ-FE/A245E. This list applies the owner's new value criterion: incremental gain over a *healthy* OEM setup, never a worn or defective baseline.

@@ -1,3 +1,5 @@
+> **Current modernization program:** See [MODERNIZATION_PROGRAM.md](MODERNIZATION_PROGRAM.md) for the healthy-OEM ranked shortlist, complete-job planning allowances, all-system audit, six packages, OEM revisions and installation gates. This earlier report is retained as research history; its sub-$50/30-minute preference is no longer a discovery ceiling. The current program corrects earlier generic ADP uncertainty, blocked gasket-bulletin retrieval and acoustic-material selection.
+
 # Road-trip / daily-driver comfort — practical DIY pass (2026-10-25)
 
 **Subject:** 2004 US Corolla LE, June-2003 Canadian build, 1ZZ-FE/A245E, aftermarket 18-inch wheel/tire assembly. **Purpose:** make long trips quieter, less fatiguing, and thermally comfortable, while preserving fuel economy and healthy-OEM comparison. Current shopping target $5–$50, roughly <=30min; longer tasks should be explicitly labeled moderate and budget split into stages.

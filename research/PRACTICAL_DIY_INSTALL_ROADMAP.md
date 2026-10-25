@@ -1,3 +1,5 @@
+> **Current modernization program:** See [MODERNIZATION_PROGRAM.md](MODERNIZATION_PROGRAM.md) for the healthy-OEM ranked shortlist, complete-job planning allowances, all-system audit, six packages, OEM revisions and installation gates. This earlier report is retained as research history; its sub-$50/30-minute preference is no longer a discovery ceiling. The current program corrects earlier generic ADP uncertainty, blocked gasket-bulletin retrieval and acoustic-material selection.
+
 # Felicity — Practical DIY install roadmap
 
 **Updated:** 2026-10-25. **Vehicle:** US 2004 Corolla LE, Canadian June 2003, 1ZZ-FE, A245E automatic, current aftermarket intake and 18-inch wheels. **Use:** everyday driving and road trips. **Purpose:** one practical action plan separate from the 193-row research catalog. Healthy factory equipment is the baseline. A listing/fitment lead is **not** installation proof.

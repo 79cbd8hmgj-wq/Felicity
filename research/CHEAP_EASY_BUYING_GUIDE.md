@@ -1,3 +1,5 @@
+> **Current modernization program:** See [MODERNIZATION_PROGRAM.md](MODERNIZATION_PROGRAM.md) for the healthy-OEM ranked shortlist, complete-job planning allowances, all-system audit, six packages, OEM revisions and installation gates. This earlier report is retained as research history; its sub-$50/30-minute preference is no longer a discovery ceiling. The current program corrects earlier generic ADP uncertainty, blocked gasket-bulletin retrieval and acoustic-material selection.
+
 # Cheap/easy DIY buying guide
 
 Reviewed **2026-10-25** for the US Canadian-built June 2003 Corolla LE, ZZE130L-DEPNKA, 1ZZ-FE/A245E. Compare against healthy factory equipment. Current intake and 18-inch wheels are separate baselines; their presence does not establish deficiencies in other equipment.
