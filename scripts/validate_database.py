@@ -67,6 +67,20 @@ def validate(root: Path):
             target_ids = tables[target][2]
             for number, row in rows:
                 value = row[field].strip()
+                if not value and (name, field) in {
+                    ("specifications", "source_id"),
+                    ("specifications", "component_id"),
+                    ("service_tasks", "component_id"),
+                    ("claims", "vehicle_id"),
+                    ("claims", "source_id"),
+                    ("observations", "vehicle_id"),
+                    ("observations", "source_id"),
+                    ("parts", "component_id"),
+                    ("parts", "source_id"),
+                    ("repairs", "vehicle_id"),
+                    ("repairs", "component_id"),
+                }:
+                    errors.append(f"{name}:{number}: blank required reference {field}")
                 if value and value not in target_ids:
                     errors.append(f"{name}:{number}: missing {target} reference {field}={value!r}")
         if name in STATUS:
