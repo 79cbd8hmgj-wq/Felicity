@@ -7,10 +7,10 @@ from scripts.validate_database import validate, FILES
 
 HEADERS = {
     "vehicle": "vehicle_id,source_id",
-    "components": "component_id,verification_status",
+    "components": "component_id,verification_status,parent_id",
     "sources": "source_id",
     "specifications": "spec_id,source_id,status",
-    "service_tasks": "task_id,status",
+    "service_tasks": "task_id,status,component_id",
     "observations": "observation_id,vehicle_id,source_id",
     "parts": "part_record_id,component_id,source_id,verification_status",
     "repairs": "repair_id,vehicle_id,component_id",
@@ -45,8 +45,16 @@ class DatabaseValidationTests(unittest.TestCase):
         self.assertTrue(any("missing sources reference" in e for e in validate(self.root)))
 
     def test_invalid_status_is_rejected(self):
-        self.append("components", "engine,totally_done")
+        self.append("components", "engine,totally_done,")
         self.assertTrue(any("invalid verification_status" in e for e in validate(self.root)))
+
+    def test_unknown_parent_is_rejected(self):
+        self.append("components", "engine,reference,no_such_parent")
+        self.assertTrue(any("missing components reference" in e for e in validate(self.root)))
+
+    def test_unknown_task_component_is_rejected(self):
+        self.append("service_tasks", "t1,pending,no_such_component")
+        self.assertTrue(any("missing components reference" in e for e in validate(self.root)))
 
     def test_malformed_row_is_rejected(self):
         self.append("sources", "s1,unexpected_extra_column")
