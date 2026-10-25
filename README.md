@@ -31,6 +31,12 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 - **2026-10-25:** Confirmed owner-reported 2004 automatic, 100,283 mi. Expanded maintenance and system research.
 - **2026-10-25:** Initialized repo and preliminary 2004 factory reference.
 
+## Upgrade purchasing decisions (October 2026)
+
+The current practical view is the [**Master Upgrade Decisions**](research/MASTER_UPGRADE_DECISIONS.md) report, supported by the [**150-row healthy-OEM value matrix**](database/upgrade_value_matrix.csv). It covers all 148 existing research concepts plus Rain-X and a Corolla windshield shade. **Four inexpensive/easy options are conditional**, not proven fuel-economy modifications. 
+
+For the current purchasing round, compare against healthy original equipment, favor products under $50 and installations of 30 minutes or less, and include fuel consumption, electrical/mechanical/thermal efficiency, handling, durability, and actual installation burden. LED retrofits are intentionally deferred at the owner's request. Do not mistake catalog fitment, a manufacturer's claim, or restoring worn components for verified improvements.
+
 ## Structured database
 
 The [machine-readable CSV database](database/README.md) contains identity, 28 component groups, 26 reference specifications, condition observations, 10 service tasks, evidence sources, plus empty parts and completed-repairs ledgers. No part fitment or repair is invented. CSV records are a research foundation, not proof that a subsystem has been physically inspected.
