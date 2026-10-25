@@ -28,8 +28,12 @@ Confidence is about the **claim** and does not prove current health. Use `factor
 3. Log service only upon completion; attach non-sensitive receipts/photos separately.
 4. Keep up-to-date system summaries and links in the main README.
 
-Source manual OM12859U is labeled **2004 Corolla from October 2003 production**. This car's label says **June 2003**; owner's manual specifications may broadly align, but **production-range conflicts must be checked** against a period-correct manual/EPC before assigning a part.
+**Primary 2004 owner-manual reference:** Toyota OM12859U, the published 2004 Corolla owner's manual. Its printed scope states October 2003-onward production while this car was built June 2003. Use it for general 2004 operational/specification research; verify build-sensitive part numbers, wiring and procedures against relevant Toyota EPC/service information. Do not block all model-level research because of this caveat.
 
 ## Phase 1 audit status
 
 See [Phase 1 audit](../docs/PHASE1_AUDIT.md). The current CSV files lack enforced foreign keys and field-level provenance. The scope calls for relational integrity and test coverage before claiming engineering-grade completeness. Model-specific figures from OM12859U are provisional where early-build applicability is material.
+
+## Validation commands
+
+Run from repository root: `python -m unittest discover -s tests -v` and `python scripts/validate_database.py`. The GitHub Actions workflow runs on changed database and validation files. It checks existing stable IDs, source references, status values, CSV row shape and forbidden sensitive identifier columns. **Current CSV schema remains flat** and not yet fully normalized; the validator does not claim all engineering data are verified or that service-task system labels are foreign keys.
