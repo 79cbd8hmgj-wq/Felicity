@@ -14,6 +14,7 @@ HEADERS = {
     "observations": "observation_id,vehicle_id,source_id",
     "parts": "part_record_id,component_id,source_id,verification_status",
     "repairs": "repair_id,vehicle_id,component_id",
+    "claims": "claim_id,vehicle_id,source_id",
 }
 
 class DatabaseValidationTests(unittest.TestCase):
@@ -55,6 +56,15 @@ class DatabaseValidationTests(unittest.TestCase):
     def test_unknown_task_component_is_rejected(self):
         self.append("service_tasks", "t1,pending,no_such_component")
         self.assertTrue(any("missing components reference" in e for e in validate(self.root)))
+
+    def test_claim_requires_valid_source(self):
+        self.append("claims", "c1,missing-vehicle,missing-source")
+        self.assertTrue(any("missing vehicle reference" in e for e in validate(self.root)))
+
+    def test_component_parent_cycle_is_rejected(self):
+        self.append("components", "a,reference,b")
+        self.append("components", "b,reference,a")
+        self.assertTrue(any("cyclic parent chain" in e for e in validate(self.root)))
 
     def test_malformed_row_is_rejected(self):
         self.append("sources", "s1,unexpected_extra_column")
