@@ -1,6 +1,6 @@
 # Felicity — Engineering & Restoration Research Scope
 
-**Version:** 0.1 (proposal)  
+**Version:** 0.2 (proposal)  
 **Status:** DRAFT — awaiting owner approval  
 **Date:** 2026-10-25  
 **Chosen direction:** Option B — Full engineering and restoration database  
@@ -12,7 +12,7 @@ Create a rigorous, maintainable, source-traceable technical knowledge base for a
 - Component-level understanding of original systems and their operation.
 - Evidence-based diagnosis and repair planning.
 - Exact-fit sourcing and validated cross-vehicle/manufacturer substitutes.
-- High practical reliability and sensible longevity improvements.
+- High practical reliability, sensible longevity improvements, and evidence-based performance and drivability modifications.
 - Safe, economical owner-performed maintenance and repair where appropriate.
 - Permanent recording of physical condition, work performed, expenditure and outcomes.
 
@@ -66,13 +66,26 @@ For each actionable job: decision gates, necessary safety support/equipment, too
 ### 3.6 Reliability improvements / modernization
 Investigate repair-versus-upgrade options for documented weaknesses, corrosion protection, electrical efficiency, lighting, material improvements, ergonomic and comfort modernization. Evaluate verified fitment, durability evidence, tradeoffs, load/heat/electrical compatibility, legality and reversibility. Prioritize safe OEM-equivalent solutions; do not claim theoretical upgrades produce measured reliability gains.
 
-### 3.7 Ownership-specific longitudinal data
+### 3.7 Performance, handling and drivability engineering
+Performance modifications are explicitly **in scope**, including modifications that also improve reliability, efficiency, durability, handling, braking, throttle response or everyday drivability. Research candidate improvements for intake/exhaust, ECU calibration, cooling, ignition, engine internals, transmission behavior/cooling, suspension, wheels/tires, braking and weight reduction when applicable.
+
+For each proposal, document:
+- Baseline condition and objective; expected outcome versus actual measured results.
+- Evidence of horsepower, torque, acceleration, braking distance, handling, temperature or fuel-use changes where credible testing exists; no fabricated gains.
+- Compatibility with the June 2003 1ZZ-FE/A245E build and existing 18-inch wheel installation.
+- Side effects on engine/transaxle longevity, drivability, emissions legality, noise, insurance and maintenance cost.
+- Required supporting modifications, tuning, installation, test procedure and reversibility.
+- Total cost and gains per dollar compared with simply restoring factory condition.
+
+**Priority:** practical reliability-preserving upgrades first; substantial performance builds may be researched, but are not assumed to be worthwhile or road-legal. Never recommend emissions defeat, safety-system removal, or unverified tuning as a harmless upgrade.
+
+### 3.8 Ownership-specific longitudinal data
 Capture dated mileage, inspections, photos (redacted), DTC/freeze frame readings, fluid consumption, MPG, parts/service invoices, repairs, costs, outcomes and future checks. Distinguish **planned** from **performed** and **reported** from **measured**.
 
 ## 4. Boundaries / excluded by default
 
 - Whole-model comparisons, ranking other vehicles and expanding the database to an unrelated vehicle fleet.
-- Motorsport tuning, forced induction, emissions-delete, unsafe lighting or restraint-system bypass.
+- Emissions-delete, unsafe lighting or restraint-system bypass. Motorsport and forced-induction concepts may be researched as separately risk-rated proposals, not default recommended street modifications.
 - Speculative universal interchange or guessing actual installed options from catalog examples.
 - Treating a successful DIY guide as certification of roadworthiness.
 - Producing/rehosting complete copyrighted OEM manuals and paid database documents.
@@ -129,7 +142,7 @@ Every concrete technical claim needs a pointer. Log conflicts rather than silent
 
 **Phase 4 — Parts and repair economics.** Confirmed supersessions, cross-vehicle alternatives, dated prices, DIY procedures and validation steps.
 
-**Phase 5 — Modernization evaluation.** Evidence-rated prevention and upgrade decisions, modeled cost/reliability tradeoffs, not fictional life-expectancy figures.
+**Phase 5 — Modernization and performance evaluation.** Evidence-rated reliability, handling, braking, drivability and power upgrades; measured gains and cost/reliability/legal tradeoffs; no fictional life-expectancy or horsepower figures.
 
 **Phase 6 — Vehicle evidence integration.** Incorporate mileage-based inspections, service records, receipts and testing whenever available. This phase may proceed incrementally throughout the project.
 
@@ -153,7 +166,7 @@ Completion reporting should show **coverage by system and level**, missing evide
 ## 10. Decisions for owner review
 
 - [ ] Approve L3 research coverage goal for practical serviceable components.
-- [ ] Approve prioritizing safety, mechanical reliability and repairability over cosmetic/performance modifications.
+- [ ] Approve performance and drivability modifications as an explicit research domain, including reliability-supporting upgrades, with evidence-based tradeoffs and risk grading.
 - [ ] Approve related-vehicle research exclusively for verified mechanical comparability / parts interchange.
 - [ ] Approve candidate/probable/verified interchange distinction.
 - [ ] Approve dated costs and DIY requirements as core database fields.
