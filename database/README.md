@@ -4,7 +4,7 @@ Machine-readable CSV tables with stable identifiers, provenance, applicability a
 
 Tables:
 - `vehicle.csv`: one vehicle/build record, confirmed vs reference attributes.
-- `components.csv`: hierarchical component inventory and research queue; item presence may be standard/reference, not inspection verified.
+- `components.csv`: currently a **flat** component inventory and research queue. Hierarchical relationships have not yet been implemented or validated.
 - `specifications.csv`: measurable original-factory specification records and source references.
 - `service_tasks.csv`: tasks and checkpoints; due state is **unknown** without repair history.
 - `observations.csv`: what was seen/reported on this car, separate from reference facts.
@@ -29,3 +29,7 @@ Confidence is about the **claim** and does not prove current health. Use `factor
 4. Keep up-to-date system summaries and links in the main README.
 
 Source manual OM12859U is labeled **2004 Corolla from October 2003 production**. This car's label says **June 2003**; owner's manual specifications may broadly align, but **production-range conflicts must be checked** against a period-correct manual/EPC before assigning a part.
+
+## Phase 1 audit status
+
+See [Phase 1 audit](../docs/PHASE1_AUDIT.md). The current CSV files lack enforced foreign keys and field-level provenance. The scope calls for relational integrity and test coverage before claiming engineering-grade completeness. Model-specific figures from OM12859U are provisional where early-build applicability is material.
