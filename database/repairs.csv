@@ -1,0 +1,1 @@
+repair_id,vehicle_id,date,odometer,component_id,symptom,diagnosis,action,part_numbers,fluid_quantity,cost_usd,performed_by,evidence,result,next_due_miles,next_due_date
