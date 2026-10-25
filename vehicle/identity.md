@@ -9,8 +9,8 @@
 | Engine | 1ZZ-FE 1.8L inline-four | 2004 U.S. factory manual; actual installation not inspected |
 | Drivetrain | Front-wheel drive | U.S. Corolla model specification; not physically inspected |
 | VIN | Unknown | Await private VIN confirmation |
-| Trim | Unknown (CE/S/LE possibilities) | Inspect vehicle; no trim inferred |
-| Assembly date | Unknown | Door-jamb certification label |
+| Trim | LE | Inspect vehicle; no trim inferred |
+| Assembly date | June 2003 | Door-jamb certification label |
 | Tire size | Unknown | Sidewall/door label to identify installed size |
 | Service history | Unknown | No invoices/records supplied |
 
