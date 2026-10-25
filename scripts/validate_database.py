@@ -15,13 +15,17 @@ FILES = {
     "parts": ("part_record_id", ["component_id", "source_id"]),
     "repairs": ("repair_id", ["vehicle_id", "component_id"]),
     "claims": ("claim_id", ["vehicle_id", "source_id"]),
+    "upgrade_candidates": ("upgrade_id", []),
+    "upgrade_research": ("research_id", ["upgrade_id"]),
 }
-TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components"}
+TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components", "upgrade_id": "upgrade_candidates"}
 STATUS = {
     "components": ("verification_status", {"reference", "research_pending", "label_verified", "equipment_unknown", "partially_observed", "not_inspected"}),
     "specifications": ("status", {"factory_reference", "observed", "owner_confirmed", "pending"}),
     "service_tasks": ("status", {"pending", "history_unknown", "not_inspected", "done"}),
     "parts": ("verification_status", {"candidate", "probable", "verified"}),
+    "upgrade_candidates": ("fitment_status", {"candidate_unverified", "candidate", "probable", "confirmed", "vehicle-validated"}),
+    "upgrade_research": ("fitment_status", {"candidate", "probable", "confirmed", "vehicle-validated"}),
 }
 PRIVACY_HEADERS = {"vin", "full_vin", "license_plate", "license_number", "insurance_number"}
 
@@ -68,6 +72,7 @@ def validate(root: Path):
             for number, row in rows:
                 value = row[field].strip()
                 if not value and (name, field) in {
+                    ("upgrade_research", "upgrade_id"),
                     ("specifications", "source_id"),
                     ("specifications", "component_id"),
                     ("service_tasks", "component_id"),
@@ -113,6 +118,45 @@ def validate(root: Path):
             for number, row in rows:
                 if row["build_applicability"] not in allowed:
                     errors.append(f"specifications:{number}: invalid build_applicability")
+    if "upgrade_research" in tables:
+        headers, rows, _ = tables["upgrade_research"]
+        required = {"source_ids", "reviewed_on", "verified_facts", "production_applicability",
+                    "fitment_rationale", "benefit_basis", "measured_vehicle_benefit",
+                    "engineering_hypothesis", "disadvantages", "diy_level", "diy_requirements",
+                    "cost_usd", "cost_basis", "next_validation", "review_state"}
+        missing = required - set(headers)
+        if missing:
+            errors.append(f"upgrade_research: missing required columns {sorted(missing)}")
+        else:
+            source_ids = tables.get("sources", ([], [], set()))[2]
+            for number, row in rows:
+                for field in required - {"cost_usd"}:
+                    if not row[field].strip():
+                        errors.append(f"upgrade_research:{number}: blank required {field}")
+                for source in row["source_ids"].split("|"):
+                    if source not in source_ids:
+                        errors.append(f"upgrade_research:{number}: missing sources reference {source!r}")
+                from datetime import date
+                try:
+                    date.fromisoformat(row["reviewed_on"])
+                except ValueError:
+                    errors.append(f"upgrade_research:{number}: invalid reviewed_on")
+                if row["diy_level"] not in {"basic", "intermediate", "advanced", "professional"}:
+                    errors.append(f"upgrade_research:{number}: invalid diy_level")
+                if row["benefit_basis"] not in {"hypothesis", "manufacturer_claim", "factory_reference", "oem_corrective_action", "independent_test", "vehicle_measurement"}:
+                    errors.append(f"upgrade_research:{number}: invalid benefit_basis")
+                if row["review_state"] not in {"open", "documented", "independently_reviewed"}:
+                    errors.append(f"upgrade_research:{number}: invalid review_state")
+                if row["cost_usd"] and not re.fullmatch(r"\d+(\.\d{1,2})?", row["cost_usd"]):
+                    errors.append(f"upgrade_research:{number}: invalid cost_usd")
+                if row["fitment_status"] in {"confirmed", "vehicle-validated"}:
+                    if not row.get("confirmation_evidence", "").strip():
+                        errors.append(f"upgrade_research:{number}: promoted fitment requires confirmation_evidence")
+    if "upgrade_candidates" in tables and "upgrade_research" in tables:
+        researched = {r["upgrade_id"] for _, r in tables["upgrade_research"][1]}
+        for number, row in tables["upgrade_candidates"][1]:
+            if row.get("research_status") == "literature_reviewed" and row["upgrade_id"] not in researched:
+                errors.append(f"upgrade_candidates:{number}: literature_reviewed without research evidence")
     return errors
 
 def main():

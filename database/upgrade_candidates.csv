@@ -1,32 +1,32 @@
 upgrade_id,system,concept,benefit_class,research_status,fitment_status,primary_lead,next_validation
-UPG-001,Engine reliability,Revised intake manifold gasket,quality_reliability,documented_lead,candidate_unverified,Toyota EG045-07,production_fitment_and_quantified_benefit
-UPG-002,Engine reliability,OEM-equivalent PCV valve,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-003,Engine reliability,Higher-quality PCV hose,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-004,Engine reliability,Valve cover gasket upgrade,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-005,Engine reliability,Timing chain tensioner seal,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-006,Engine reliability,Timing chain tensioner replacement design,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-007,Engine reliability,Camshaft oil seal and gasket materials,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-008,Engine reliability,Crankshaft seal quality alternatives,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-009,Engine reliability,Oil filter premium media,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-010,Engine reliability,Oil filter anti-drainback valve specifications,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-011,Engine reliability,High-quality synthetic engine oil selection,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-012,Engine reliability,Oil-pressure instrumentation,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-013,Engine reliability,Oil-temperature instrumentation,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-014,Engine reliability,Baffled oil pan concept,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-015,Engine reliability,Oil cooler with thermostat,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-016,Engine reliability,Improved oil catch can with closed crankcase ventilation,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-017,Engine reliability,Accessory drive belt material,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-018,Engine reliability,Accessory belt tensioner bearing quality,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-019,Cooling,All-aluminum radiator concept,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-020,Cooling,High-efficiency stock-fit radiator,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-021,Cooling,OEM-quality thermostat,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-022,Cooling,Silicone radiator hose kit,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-023,Cooling,Constant-tension hose clamps,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-024,Cooling,Water pump impeller and seal designs,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-025,Cooling,Electric fan efficiency improvements,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-026,Cooling,Fan shroud efficiency,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-027,Cooling,Expansion tank and radiator cap quality,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-028,Cooling,Coolant temperature monitoring,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
+UPG-001,Engine reliability,Revised intake manifold gasket,quality_reliability,literature_reviewed,candidate,Toyota EG045-07,Obtain full EG045-07 and production-correct EPC; reconcile MWR still listing 0D020
+UPG-002,Engine reliability,OEM-equivalent PCV valve,performance_engineering,literature_reviewed,probable,none_identified,Check Toyota EPC and flow specification; do not substitute Celica valve
+UPG-003,Engine reliability,Higher-quality PCV hose,quality_reliability,literature_reviewed,probable,none_identified,Confirm hose position and June EPC; material specification
+UPG-004,Engine reliability,Valve cover gasket upgrade,quality_reliability,literature_reviewed,probable,none_identified,Confirm EPC and washer seals; obtain procedure
+UPG-005,Engine reliability,Timing chain tensioner seal,quality_reliability,literature_reviewed,probable,none_identified,Verify seal dimensions/material and safe tensioner procedure
+UPG-006,Engine reliability,Timing chain tensioner replacement design,performance_engineering,literature_reviewed,candidate,none_identified,Obtain EPC supersession chain and revision rationale
+UPG-007,Engine reliability,Camshaft oil seal and gasket materials,quality_reliability,literature_reviewed,candidate,none_identified,Map proposed cam seal to actual 1ZZ location; do not import 2ZZ seals
+UPG-008,Engine reliability,Crankshaft seal quality alternatives,quality_reliability,literature_reviewed,probable,none_identified,Confirm supersessions; lip material and journal sizes
+UPG-009,Engine reliability,Oil filter premium media,quality_reliability,literature_reviewed,probable,none_identified,Cross-check OEM bypass and gasket seat; record package revision
+UPG-010,Engine reliability,Oil filter anti-drainback valve specifications,quality_reliability,literature_reviewed,probable,none_identified,Verify package-specific valve material and compare pressure response
+UPG-011,Engine reliability,High-quality synthetic engine oil selection,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve current oil PDS and date-correct Toyota lubricant specification
+UPG-012,Engine reliability,Oil-pressure instrumentation,quality_reliability,literature_reviewed,candidate,none_identified,Identify Toyota port thread; preserve warning switch; compare calibrated gauge
+UPG-013,Engine reliability,Oil-temperature instrumentation,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve actual temperature-gauge datasheet and sump/sandwich installation specification
+UPG-014,Engine reliability,Baffled oil pan concept,quality_reliability,literature_reviewed,candidate,none_identified,"Confirm Moroso current SKU, capacity, pickup depth and A245E chassis clearance"
+UPG-015,Engine reliability,Oil cooler with thermostat,quality_reliability,literature_reviewed,candidate,none_identified,Select filter adapter and pressure-rated hose; bench-test bypass and clearance
+UPG-016,Engine reliability,Improved oil catch can with closed crankcase ventilation,quality_reliability,literature_reviewed,candidate,none_identified,Find separator efficiency/pressure-drop data and lawful routing
+UPG-017,Engine reliability,Accessory drive belt material,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve exact Gates application SKU with AC and stock pulleys
+UPG-018,Engine reliability,Accessory belt tensioner bearing quality,quality_reliability,literature_reviewed,candidate,none_identified,Confirm 38286 catalog lead in Gates primary lookup; review Toyota belt-noise bulletins
+UPG-019,Cooling,All-aluminum radiator concept,quality_reliability,literature_reviewed,candidate,none_identified,Find actual ZZE130 automatic radiator drawing; preserve ATF exchanger
+UPG-020,Cooling,High-efficiency stock-fit radiator,quality_reliability,literature_reviewed,candidate,none_identified,Obtain DENSO exact application; compare core/tanks/ATF fittings
+UPG-021,Cooling,OEM-quality thermostat,performance_engineering,literature_reviewed,candidate,none_identified,Obtain exact thermostat SKU and June opening/lift specification
+UPG-022,Cooling,Silicone radiator hose kit,quality_reliability,literature_reviewed,candidate,none_identified,Obtain shaped kit and oil/coolant material ratings; verify early-build bends
+UPG-023,Cooling,Constant-tension hose clamps,quality_reliability,literature_reviewed,candidate,none_identified,Match clamp working range to hose OD and outlet material
+UPG-024,Cooling,Water pump impeller and seal designs,quality_reliability,literature_reviewed,candidate,none_identified,Get AISIN application and impeller/seal specification; compare OEM number
+UPG-025,Cooling,Electric fan efficiency improvements,performance_engineering,literature_reviewed,candidate,none_identified,Obtain airflow vs static pressure and motor current curves
+UPG-026,Cooling,Fan shroud efficiency,performance_engineering,literature_reviewed,candidate,none_identified,Compare full shroud geometry and fan tip clearance; no universal fit assumed
+UPG-027,Cooling,Expansion tank and radiator cap quality,quality_reliability,literature_reviewed,candidate,none_identified,"Identify cap pressure, neck depth and recovery valve specification"
+UPG-028,Cooling,Coolant temperature monitoring,quality_reliability,literature_reviewed,candidate,none_identified,Confirm protocol and coolant PID support on June ECU
 UPG-029,Intake and fueling,OEM airbox restoration / engineering benchmark,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-030,Intake and fueling,Sealed cold-air intake system,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-031,Intake and fueling,High-flow dry-filter media,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit

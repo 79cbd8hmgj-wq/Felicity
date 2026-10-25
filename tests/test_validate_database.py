@@ -15,6 +15,8 @@ HEADERS = {
     "parts": "part_record_id,component_id,source_id,verification_status",
     "repairs": "repair_id,vehicle_id,component_id",
     "claims": "claim_id,vehicle_id,source_id",
+    "upgrade_candidates": "upgrade_id,fitment_status,research_status",
+    "upgrade_research": "research_id,upgrade_id,fitment_status,source_ids,reviewed_on,verified_facts,production_applicability,fitment_rationale,benefit_basis,measured_vehicle_benefit,engineering_hypothesis,disadvantages,diy_level,diy_requirements,cost_usd,cost_basis,next_validation,review_state",
 }
 
 class DatabaseValidationTests(unittest.TestCase):
@@ -98,6 +100,43 @@ class DatabaseValidationTests(unittest.TestCase):
     def test_private_identifier_column_is_rejected(self):
         (self.root / "database/vehicle.csv").write_text("vehicle_id,source_id,full_vin\n")
         self.assertTrue(any("private identifier" in e for e in validate(self.root)))
+
+    def test_reviewed_candidate_needs_evidence(self):
+        self.append("upgrade_candidates", "UPG-001,candidate,literature_reviewed")
+        self.assertTrue(any("without research evidence" in e for e in validate(self.root)))
+
+    def research(self, **changes):
+        row = dict.fromkeys(HEADERS["upgrade_research"].split(","), "documented")
+        row.update(research_id="UR-001", upgrade_id="UPG-001", fitment_status="candidate",
+                   source_ids="src", reviewed_on="2026-10-25", benefit_basis="hypothesis",
+                   diy_level="basic", cost_usd="", review_state="open")
+        row.update(changes)
+        self.append("sources", "src")
+        self.append("upgrade_candidates", "UPG-001,candidate,literature_reviewed")
+        with (self.root / "database/upgrade_research.csv").open("a", newline="") as f:
+            csv.DictWriter(f, fieldnames=row.keys()).writerow(row)
+
+    def test_research_record_valid(self):
+        self.research()
+        self.assertEqual([], validate(self.root))
+
+    def test_unknown_research_source_rejected(self):
+        self.research(source_ids="src|missing")
+        self.assertTrue(any("missing sources reference" in e for e in validate(self.root)))
+
+    def test_unsubstantiated_confirmed_fitment_rejected(self):
+        self.research(fitment_status="confirmed")
+        self.assertTrue(any("requires confirmation_evidence" in e for e in validate(self.root)))
+
+    def test_research_cost_and_date_rejected(self):
+        self.research(cost_usd="cheap", reviewed_on="yesterday")
+        errors = validate(self.root)
+        self.assertTrue(any("invalid cost_usd" in e for e in errors))
+        self.assertTrue(any("invalid reviewed_on" in e for e in errors))
+
+    def test_blank_upgrade_reference_rejected(self):
+        self.research(upgrade_id="")
+        self.assertTrue(any("blank required reference upgrade_id" in e for e in validate(self.root)))
 
 if __name__ == "__main__":
     unittest.main()
