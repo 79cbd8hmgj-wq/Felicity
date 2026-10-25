@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the current Felicity CSV repository without editing vehicle data."""
 import csv
+from datetime import date
 import re
 import sys
 from pathlib import Path
@@ -29,7 +30,7 @@ STATUS = {
 }
 PRIVACY_HEADERS = {"vin", "full_vin", "license_plate", "license_number", "insurance_number"}
 
-def validate(root: Path):
+def validate(root: Path, require_upgrade_coverage=False):
     """Return a list of actionable errors. Empty data tables are valid."""
     errors, tables = [], {}
     for name, (key, _references) in FILES.items():
@@ -136,7 +137,6 @@ def validate(root: Path):
                 for source in row["source_ids"].split("|"):
                     if source not in source_ids:
                         errors.append(f"upgrade_research:{number}: missing sources reference {source!r}")
-                from datetime import date
                 try:
                     date.fromisoformat(row["reviewed_on"])
                 except ValueError:
@@ -154,14 +154,27 @@ def validate(root: Path):
                         errors.append(f"upgrade_research:{number}: promoted fitment requires confirmation_evidence")
     if "upgrade_candidates" in tables and "upgrade_research" in tables:
         researched = {r["upgrade_id"] for _, r in tables["upgrade_research"][1]}
+        candidates = tables["upgrade_candidates"][2]
         for number, row in tables["upgrade_candidates"][1]:
             if row.get("research_status") == "literature_reviewed" and row["upgrade_id"] not in researched:
                 errors.append(f"upgrade_candidates:{number}: literature_reviewed without research evidence")
+        if require_upgrade_coverage:
+            for identifier in sorted(candidates - researched):
+                errors.append(f"upgrade_candidates: no research record for {identifier}")
+            expected = {f"UPG-{n:03}" for n in range(1, 149)}
+            if not expected.issubset(candidates):
+                errors.append("upgrade_candidates: original 148 stable IDs must be preserved")
+        catalog_rows = {r["upgrade_id"]: r for _, r in tables["upgrade_candidates"][1]}
+        for number, row in tables["upgrade_research"][1]:
+            catalog = catalog_rows.get(row["upgrade_id"])
+            if catalog and catalog.get("research_status") == "literature_reviewed":
+                if catalog["fitment_status"] != row["fitment_status"]:
+                    errors.append(f"upgrade_research:{number}: fitment differs from catalog")
     return errors
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    errors = validate(root)
+    errors = validate(root, require_upgrade_coverage="--require-upgrade-coverage" in sys.argv)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

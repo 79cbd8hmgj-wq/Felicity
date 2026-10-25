@@ -1,12 +1,13 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **148 distinct engineering research concepts**, not 148 proven improvements or directly fitting products. No condition triage.
+**Status:** **148 distinct engineering research concepts**, all screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md), not 148 proven improvements or directly fitting products. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
 - **research_hypothesis**: an engineering concept worth investigating; no product or measured benefit yet confirmed.
-- **candidate_unverified**: all entries must receive fitment and quantified-benefit review before purchase recommendations.
+- **literature_reviewed**: initial findings or explicit evidence gaps recorded; full verification remains open.
+- **candidate / probable**: current fitment classes; none confirmed or vehicle-validated. Original `candidate_unverified` describes the discovery state only.
 
 ## Priority for evidence acquisition (not ranking owner's goals)
 

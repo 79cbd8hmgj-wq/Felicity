@@ -4,6 +4,10 @@ An evidence-based research and ownership log for an **owner-confirmed 2004 Toyot
 
 The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explicitly for vehicles produced from October 2003 onward). **Engine configuration, trim, VIN, exact transmission, equipment and actual mechanical condition remain to be independently verified.**
 
+## Upgrade research
+
+[All 148 initial reviews and remaining gaps](research/UPGRADE_RESEARCH_RESULTS.md) · [Evidence-linked database](database/upgrade_research.csv) · [Schema and validation](docs/UPGRADE_RESEARCH_SCHEMA.md). Screening coverage is complete; exact fitment and upgrade benefits remain open.
+
 ## Navigate
 - [Vehicle identity](vehicle/identity.md)
 - [Current condition / findings](vehicle/condition.md)

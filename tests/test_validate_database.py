@@ -138,5 +138,17 @@ class DatabaseValidationTests(unittest.TestCase):
         self.research(upgrade_id="")
         self.assertTrue(any("blank required reference upgrade_id" in e for e in validate(self.root)))
 
+    def test_full_coverage_requires_every_original_candidate(self):
+        self.research()
+        self.assertTrue(any("148 stable IDs" in e for e in validate(self.root, True)))
+
+    def test_full_coverage_rejects_missing_review(self):
+        self.append("upgrade_candidates", "UPG-002,candidate,research_hypothesis")
+        self.assertTrue(any("no research record for UPG-002" in e for e in validate(self.root, True)))
+
+    def test_catalog_fitment_disagreement_rejected(self):
+        self.research(fitment_status="probable")
+        self.assertTrue(any("fitment differs from catalog" in e for e in validate(self.root)))
+
 if __name__ == "__main__":
     unittest.main()
