@@ -1,11 +1,11 @@
-task_id,system,task,priority,status,trigger
-T01,engine,Check dipstick and investigate prior low-oil report,P0,pending,baseline
-T02,brakes,Inspect hydraulic lines and hoses,P0,pending,baseline
-T03,body,Inspect structural corrosion and mounts,P0,pending,baseline
-T04,wheels,Verify four tire sizes age tread clearance and pressure,P0,pending,baseline
-T05,engine,Determine last oil and filter change,P1,history_unknown,records
-T06,cooling,Verify cooling system and previous coolant replacement,P1,history_unknown,records
-T07,transmission,Inspect A245E shifting leaks and ATF condition,P1,pending,baseline
-T08,electrical,Test battery and charging system,P1,pending,baseline
-T09,ignition,Check spark plug service history,P2,history_unknown,120000_miles
-T10,safety,Check VIN-specific recalls privately,P0,pending,baseline
+task_id,system,task,priority,status,trigger,component_id
+T01,engine,Check dipstick and investigate prior low-oil report,P0,pending,baseline,engine
+T02,brakes,Inspect hydraulic lines and hoses,P0,pending,baseline,brakes
+T03,body,Inspect structural corrosion and mounts,P0,pending,baseline,structure
+T04,wheels,Verify four tire sizes age tread clearance and pressure,P0,pending,baseline,wheels
+T05,engine,Determine last oil and filter change,P1,history_unknown,records,engine
+T06,cooling,Verify cooling system and previous coolant replacement,P1,history_unknown,records,cooling
+T07,transmission,Inspect A245E shifting leaks and ATF condition,P1,pending,baseline,transmission
+T08,electrical,Test battery and charging system,P1,pending,baseline,charging
+T09,ignition,Check spark plug service history,P2,history_unknown,120000_miles,ignition
+T10,safety,Check VIN-specific recalls privately,P0,pending,baseline,srs
