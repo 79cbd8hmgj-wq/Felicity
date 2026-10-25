@@ -1,5 +1,7 @@
 # Upgrade research schema
 
+**Living schema notice (2026-10-25):** the initial 148 IDs are historical seed identifiers, **not a size limit**. New UPG-149–162 entries have been added with linked UR-149–162 screening records; the [canonical matrix](../database/upgrade_value_matrix.csv) now contains 162 unique UPG IDs, not 150 plus separate ADD aliases. Preserve all historical IDs and add more as credible topics emerge. See [OPEN_ENDED_UPGRADE_RESEARCH.md](OPEN_ENDED_UPGRADE_RESEARCH.md).
+
 `upgrade_candidates.csv` retains all 148 original IDs, concepts, systems, benefit labels and lead text. Updated research/fitment status and next-validation fields link to `upgrade_research.csv`. Original lead text remains discovery provenance, not an endorsement.
 
 `upgrade_research.csv` is a one-record-per-concept screening ledger. All rows remain `review_state=open`. This pass has not produced L3 repair-ready records. `literature_reviewed` means an initial literature review or an explicit unsuccessful product search, **not complete verification**. Some rows have only general engineering/factory baseline evidence; they expressly state no exact product was authenticated. A general reference supports its stated principle, not the existence, fitment or benefit of a hypothetical product.
