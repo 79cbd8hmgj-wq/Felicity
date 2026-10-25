@@ -14,8 +14,11 @@ No current mechanical inspection results were provided. The following are **not 
 | Brake system | No inspection | Lines, hoses, pads, rotors/drums, pedal response |
 | Structural rust | No inspection | Underbody, corrosion at mounts, brake lines and jacking points |
 | Suspension / steering | No inspection | Tires, bushings, ball joints, tie rods |
-| Tires | Unknown | Sizes, wear, pressure, DOT date |
+| Tires | One photographed tire: 215/45R18 89V; visibly non-factory-size 18-inch setup; condition not assessed | Check remaining tires, DOT ages, tread depth, sidewall damage, pressure, rubbing, wheel offset |
 | Safety systems | Unknown | Dash lights and VIN recalls |
 
 ## Field inspection template
 Date | Odometer | System | Observation | Photo/reading | Priority | Status | Next action
+
+## Tire photo observation — October 25, 2026
+A photo of one wheel shows **215/45R18 89V**. Rim lip has visible cosmetic marks; tire sidewall has dirt/scuff-like marks but no clear confirmation of structural damage or a bulge from this angle. Treat tire condition as uninspected until close-up inspection, including inner sidewall. Check tire load capacity relative to certification requirements, tire/rim fit, clearance, tread, DOT manufacturing date and cold inflation. Avoid treating 15-inch OEM specifications as direct approval for this 18-inch conversion.
