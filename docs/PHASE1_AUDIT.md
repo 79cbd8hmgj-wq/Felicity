@@ -26,3 +26,15 @@ Phase 1 is not complete until the source applicability and structural validation
 ## Phase 1 progress update
 
 Added `scripts/validate_database.py`, six regression tests, and `.github/workflows/database-validation.yml` to validate existing CSV records automatically. This is non-destructive structural checking, not a full relational schema migration. GitHub Actions execution status must be checked before recording a passing CI result. OM12859U is accepted as the primary 2004 owner's manual, not as unqualified proof for every June 2003 build-specific part.
+
+## 2026-10-25 integrity hardening
+
+- All 26 existing specifications linked to component IDs and given explicit production-scope labels.
+- Added validation against blank required source and component links in specifications, tasks, observations, claims, parts and repair records.
+- Regression coverage expanded to 15 test methods, including missing required references.
+- Existing CSV records remain unchanged in this pass; no manufactured repairs, parts or fitment assertions.
+- **Validation limitation:** GitHub connector permits file updates but does not expose a general workflow-runs listing/dispatch endpoint; local runtime could not clone GitHub. Full Python test execution and GitHub Actions conclusions have therefore not been independently observed. Do not label CI green until execution is confirmed.
+
+### Remaining gate
+
+Run `python -m unittest discover -s tests -v` and `python scripts/validate_database.py` in a checked-out repository and confirm GitHub Actions status. Follow with published schema documentation and source-page checks; claims of June-2003 fitment remain conditional on build-sensitive OEM evidence.
