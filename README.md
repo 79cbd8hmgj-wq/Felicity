@@ -1,27 +1,28 @@
-# Felicity — Vehicle Knowledge Base
+# Felicity — 2004 Toyota Corolla Knowledge Base
 
-An evidence-based, continuously maintained record of one real vehicle and the model-specific knowledge needed to maintain it.
+An evidence-based research and ownership log for an **owner-confirmed 2004 Toyota Corolla, automatic transmission, 100,283 miles as reported October 25, 2026**.
 
-> **Vehicle identity not yet verified.** Earlier discussion mentioned a **2002 Toyota Corolla**; the supplied Toyota owner's manual **OM12859U** covers the **2004 U.S. Corolla from October 2003 production**. Do **not** apply the 2004 specifications to the physical vehicle without verifying its model year and VIN.
+The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explicitly for vehicles produced from October 2003 onward). **Engine configuration, trim, VIN, exact transmission, equipment and actual mechanical condition remain to be independently verified.**
 
-## Quick navigation
-- [Vehicle identity and baseline](vehicle/identity.md)
-- [2004 Corolla factory reference](research/2004-corolla-factory-specs.md)
-- [Current conditions and inspections](vehicle/condition.md)
-- [Maintenance and repair log](logs/maintenance.md)
-- [Open research questions](research/backlog.md)
-- [Evidence and methodology](sources/README.md)
+## Navigate
+- [Vehicle identity](vehicle/identity.md)
+- [Current condition / findings](vehicle/condition.md)
+- [Factory specifications](research/2004-corolla-factory-specs.md)
+- [100,283-mile maintenance baseline](research/maintenance-baseline.md)
+- [Systems research](research/systems.md)
+- [Maintenance history](logs/maintenance.md)
+- [Research backlog](research/backlog.md)
+- [Sources and confidence](sources/README.md)
 
-## Principles
-1. **Vehicle-specific facts** require VIN, label, observation, invoice, diagnostic scan, or comparable direct evidence.
-2. **Model-specific reference facts** must cite market, model year, manual/brochure section, and applicability.
-3. **Unverified claims** stay explicitly provisional.
-4. **Do not invent** mileage, VIN, trim, completed repairs, faults, ownership details, or costs.
-5. Track each repair's date, odometer, symptom, diagnostic evidence, parts and brand, cost, outcome, and follow-up.
-6. Safety-critical work requires a suitable factory service procedure and proper equipment; an owner's manual is not a repair manual.
+## Rules
+Separate **owner reports**, **factory model reference**, **diagnostic observations**, and **hypotheses**. Never log contemplated work as completed, invent vehicle-specific details, or publish private identifiers. Cite factory manual page numbers, applicability and check dates. Owner manuals do not substitute for factory repair manuals.
 
-## First milestone
-Verify the model year and VIN; take odometer, engine-bay, door-jamb tire-label, dashboard warning-light, underbody/rust and fluid-level photos; then establish the maintenance baseline.
+## Research milestones
+1. Baseline identification: year and automatic confirmed, 100,283 miles recorded.
+2. At-mileage and age-sensitive maintenance/inspection.
+3. OEM system catalog, part-number and interchange verification.
+4. Diagnosis, repair plans, parts costs and permanent service log.
 
-## Updates
-2026-10-25: Initialized evidence structure using supplied 2004 Toyota Corolla Owner's Manual OM12859U. Actual vehicle year unresolved.
+## Changelog
+- **2026-10-25:** Confirmed owner-reported 2004 automatic, 100,283 mi. Expanded maintenance and system research.
+- **2026-10-25:** Initialized repo and preliminary 2004 factory reference.
