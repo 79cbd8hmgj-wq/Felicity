@@ -1,0 +1,11 @@
+claim_id,vehicle_id,field,value,source_id,evidence_type,confidence,notes
+claim-001,felicity-001,model_year,2004,src-owner,owner_report,confirmed_by_owner,Manufacturer label also supports model year
+claim-002,felicity-001,model,Corolla,src-label,manufacturer_label,observed,Identifying label
+claim-003,felicity-001,production_month,2003-06,src-label,manufacturer_label,observed,June 2003
+claim-004,felicity-001,model_code,ZZE130L-DEPNKA,src-label,manufacturer_label,observed,Source photo kept private
+claim-005,felicity-001,transmission_code,A245E,src-label,manufacturer_label,observed,Actual unit condition uninspected
+claim-006,felicity-001,axle_code,02A,src-label,manufacturer_label,observed,Factory label
+claim-007,felicity-001,paint_code,1C8,src-label,manufacturer_label,observed,Factory label
+claim-008,felicity-001,interior_code,FA11,src-label,manufacturer_label,observed,Factory label
+claim-009,felicity-001,reported_mileage,100283,src-owner,owner_report,confirmed_by_owner,Odometer photo pending
+claim-010,felicity-001,observed_tire_marking,215/45R18 89V,src-tire,photo_observation,observed,Only one photographed tire
