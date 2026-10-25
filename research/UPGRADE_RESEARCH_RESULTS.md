@@ -49,7 +49,7 @@ See each CSV row and its linked source record for exact URLs, locators, facts, h
 | Electrical/comfort | 20 | Exact electrical SKUs/EWD, battery envelope, HVAC filter data, receiver/camera pairing |
 | Body/aerodynamics | 10 | Actual product drawings and whole-car aero/thermal measurements; no invented Cd/MPG |
 
-The supplied OM12859U was text-inspected locally; its October 2003 onward scope remains visible. Printed references: bulb table p.247, engine/oil/plug p.253, ATF/brake fluid p.254 (verify PDF page separately before reusing). It is not treated as a June 2003 workshop manual.
+The supplied OM12859U was text-inspected locally; its October 2003 onward scope remains visible. Verified printed/PDF page pairs: bulb table 244/252; engine/oil/plug 253/261; ATF/brake fluid 254/262. It is not treated as a June 2003 workshop manual.
 
 No condition diagnosis, rust prioritization, purchasing or physical work was performed. All measured vehicle benefits remain unknown. No authenticated quantified reliability improvement or independent exact-configuration performance test was established by this pass. Some entries only document the evidence gap and a testable hypothesis; they require targeted product research rather than merely inspection.
 
