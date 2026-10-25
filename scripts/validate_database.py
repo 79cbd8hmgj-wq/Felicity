@@ -78,6 +78,19 @@ def validate(root: Path):
                         errors.append(f"{name}:{number}: invalid {column}={row[column]!r}")
     # Existing service_tasks system column is legacy free text, not a foreign key.
     # Enforce structured component references once a migration is approved.
+    if "components" in tables:
+        headers, rows, _ = tables["components"]
+        if "parent_id" in headers:
+            parents = {row["component_id"]: row["parent_id"] for _, row in rows}
+            for start in parents:
+                seen = set()
+                current = start
+                while current:
+                    if current in seen:
+                        errors.append(f"components: cyclic parent chain for {start}")
+                        break
+                    seen.add(current)
+                    current = parents.get(current, "")
     return errors
 
 def main():
