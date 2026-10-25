@@ -104,46 +104,46 @@ UPG-102,Handling and suspension,Ultra-high-performance summer tires,handling_bra
 UPG-103,Handling and suspension,Lightweight 15/16/17-inch wheel alternatives,handling_braking,literature_reviewed,candidate,none_identified,Confirm table mass units/load rating and test-fit; find 5x100 15-inch alternative
 UPG-104,Handling and suspension,Current 18-inch unsprung mass comparison,performance_engineering,literature_reviewed,candidate,none_identified,Weigh full assemblies and candidate assemblies; compare inertia and tire choice
 UPG-105,Handling and suspension,High-quality hub bearings,quality_reliability,literature_reviewed,candidate,none_identified,Obtain Timken/NSK primary dimensions and early Toyota OEM numbers
-UPG-106,Braking,Performance street brake pads,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-107,Braking,Low-dust ceramic pad formulations,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-108,Braking,Higher-temperature street pad alternatives,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-109,Braking,Plain quality rotor metallurgy,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-110,Braking,Coated rotor corrosion resistance,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-111,Braking,Blank vs slotted rotor test,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-112,Braking,Steel-braided brake hoses,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-113,Braking,Brake hose quality alternatives,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-114,Braking,Compliant high-temperature brake fluid,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-115,Braking,Front caliper rebuild/seal kits,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-116,Braking,Rear drum-to-disc conversion feasibility,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-117,Braking,Master cylinder and pedal feel engineering,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-118,Braking,Brake cooling duct feasibility,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-119,Electrical and comfort,Higher-efficiency alternator study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-120,Electrical and comfort,Premium AGM battery fitment,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-121,Electrical and comfort,High-quality battery mounting solutions,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-122,Electrical and comfort,Charging-voltage monitoring,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-123,Electrical and comfort,Headlight bulb electrical load reduction,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-124,Electrical and comfort,LED beam-pattern compliant replacements study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-125,Electrical and comfort,DRL circuit compatibility,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-126,Electrical and comfort,High-output ground and cable refurbishment concept,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-127,Electrical and comfort,Starter motor quality alternatives,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-128,Electrical and comfort,Better cabin air filtration,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-129,Electrical and comfort,Cabin noise reduction materials,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-130,Electrical and comfort,Acoustic window sealing,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-131,Electrical and comfort,Enhanced sound insulation,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-132,Electrical and comfort,Interior lighting efficiency,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-133,Electrical and comfort,Head-unit/CarPlay integration,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-134,Electrical and comfort,Speaker efficiency upgrades,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-135,Electrical and comfort,Reverse camera integration,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-136,Electrical and comfort,Dash gauge and OBD data logger,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-137,Electrical and comfort,Cruise control retrofit feasibility,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-138,Electrical and comfort,Seat support and upholstery improvement,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-139,Body and aerodynamics,Front lip drag impact study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-140,Body and aerodynamics,Rear spoiler aerodynamic effectiveness,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-141,Body and aerodynamics,Underbody aerodynamic panel study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-142,Body and aerodynamics,Grille shutter concept,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-143,Body and aerodynamics,Lightweight hood materials,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-144,Body and aerodynamics,Heat extraction vent engineering,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-145,Body and aerodynamics,Factory-like weather sealing,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-146,Body and aerodynamics,UV-resistant trim materials,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-147,Body and aerodynamics,Better exterior paint protection,quality_comfort,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-148,Body and aerodynamics,Low-drag mirror alternatives,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
+UPG-106,Braking,Performance street brake pads,handling_braking,literature_reviewed,probable,none_identified,Get current ACT923A catalog and friction curves; validate caliper shape
+UPG-107,Braking,Low-dust ceramic pad formulations,performance_engineering,literature_reviewed,probable,none_identified,Obtain compound-specific dust/friction test and current exact suffix
+UPG-108,Braking,Higher-temperature street pad alternatives,performance_engineering,literature_reviewed,candidate,none_identified,Get exact Hawk/PFC/Ferodo application from manufacturer and cold/hot friction curve
+UPG-109,Braking,Plain quality rotor metallurgy,performance_engineering,literature_reviewed,candidate,none_identified,Find exact rotor SKU; diameter/thickness/hat offset and chemistry
+UPG-110,Braking,Coated rotor corrosion resistance,performance_engineering,literature_reviewed,candidate,none_identified,Select exact ZZE130L rotor and compare coating test and dimensions
+UPG-111,Braking,Blank vs slotted rotor test,performance_engineering,literature_reviewed,candidate,none_identified,Find same-geometry blank/slotted comparison with temperature and pad data
+UPG-112,Braking,Steel-braided brake hoses,quality_reliability,literature_reviewed,candidate,none_identified,"Retrieve exact kit SKU, FMVSS106 evidence and routing/length/fittings"
+UPG-113,Braking,Brake hose quality alternatives,quality_reliability,literature_reviewed,candidate,none_identified,Find Toyota early EPC numbers and primary supplier burst/expansion test
+UPG-114,Braking,Compliant high-temperature brake fluid,quality_reliability,literature_reviewed,probable,none_identified,Obtain current US PDS/wet point and price; confirm June specification
+UPG-115,Braking,Front caliper rebuild/seal kits,quality_reliability,literature_reviewed,candidate,none_identified,Identify caliper casting/piston bore and genuine rebuild-kit number
+UPG-116,Braking,Rear drum-to-disc conversion feasibility,performance_engineering,literature_reviewed,candidate,none_identified,Find factory donor diagrams and all-interface comparison; no partial bolt-on conclusion
+UPG-117,Braking,Master cylinder and pedal feel engineering,performance_engineering,literature_reviewed,candidate,none_identified,Obtain OEM bore/booster/displacement data before selecting larger master
+UPG-118,Braking,Brake cooling duct feasibility,handling_braking,literature_reviewed,candidate,none_identified,Find backing-plate/duct product or design; map wheel movement and brake temps
+UPG-119,Electrical and comfort,Higher-efficiency alternator study,performance_engineering,literature_reviewed,candidate,none_identified,"Retrieve exact DENSO/OEM SKU, pulley and hot output/efficiency maps"
+UPG-120,Electrical and comfort,Premium AGM battery fitment,performance_engineering,literature_reviewed,candidate,none_identified,"Retrieve current dimensions, charging specification and US quote; verify actual tray"
+UPG-121,Electrical and comfort,High-quality battery mounting solutions,performance_engineering,literature_reviewed,candidate,none_identified,Get Toyota tray/hold-down part numbers and installed battery dimensions
+UPG-122,Electrical and comfort,Charging-voltage monitoring,quality_reliability,literature_reviewed,candidate,none_identified,Confirm supported voltage display and accuracy against battery-post meter
+UPG-123,Electrical and comfort,Headlight bulb electrical load reduction,performance_engineering,literature_reviewed,candidate,none_identified,Get early EWD and exact compliant low-watt product; retain useful beam pattern
+UPG-124,Electrical and comfort,LED beam-pattern compliant replacements study,performance_engineering,literature_reviewed,candidate,none_identified,Find exact certified lamp/source assembly; verify current US rules and mounting
+UPG-125,Electrical and comfort,DRL circuit compatibility,performance_engineering,literature_reviewed,candidate,none_identified,Establish DRL series/PWM/control scheme before selecting any lamp
+UPG-126,Electrical and comfort,High-output ground and cable refurbishment concept,performance_engineering,literature_reviewed,candidate,none_identified,Obtain Toyota EWD and OEM cable gauge; select documented cable/terminal material
+UPG-127,Electrical and comfort,Starter motor quality alternatives,performance_engineering,literature_reviewed,candidate,none_identified,Find DENSO current A245E starter SKU and Toyota supersession history
+UPG-128,Electrical and comfort,Better cabin air filtration,performance_engineering,literature_reviewed,candidate,none_identified,"Get exact FRAM/DENSO SKU, dimensions, ISO11155 filtration and pressure-drop data"
+UPG-129,Electrical and comfort,Cabin noise reduction materials,quality_comfort,literature_reviewed,candidate,none_identified,Obtain sheet mass/fire rating; fit sample and compare equal-speed sound spectra
+UPG-130,Electrical and comfort,Acoustic window sealing,quality_reliability,literature_reviewed,candidate,none_identified,Get Toyota weatherstrip numbers; manufacturer molded alternative and compression data
+UPG-131,Electrical and comfort,Enhanced sound insulation,performance_engineering,literature_reviewed,candidate,none_identified,Select damping/barrier/decoupler layers with fire/temperature and mass data
+UPG-132,Electrical and comfort,Interior lighting efficiency,quality_comfort,literature_reviewed,candidate,none_identified,Identify installed bulb type; retrieve electrical/photometric datasheet
+UPG-133,Electrical and comfort,Head-unit/CarPlay integration,quality_comfort,literature_reviewed,probable,none_identified,Select exact CarPlay receiver and depth; verify factory amplifier before harness purchase
+UPG-134,Electrical and comfort,Speaker efficiency upgrades,quality_comfort,literature_reviewed,candidate,none_identified,"Select real speaker SKU with sensitivity reference, impedance and cutout drawing"
+UPG-135,Electrical and comfort,Reverse camera integration,quality_comfort,literature_reviewed,candidate,none_identified,Select receiver/camera SKU pair; verify voltage/format and visibility
+UPG-136,Electrical and comfort,Dash gauge and OBD data logger,performance_engineering,literature_reviewed,candidate,none_identified,Verify which values display/export; obtain logger sampling and file format specs
+UPG-137,Electrical and comfort,Cruise control retrofit feasibility,performance_engineering,literature_reviewed,candidate,none_identified,"Retrieve model-specific 2003-04 guide, switch and speed adapter list; verify OEM alternative"
+UPG-138,Electrical and comfort,Seat support and upholstery improvement,quality_comfort,literature_reviewed,candidate,none_identified,Identify seat trim/foam part numbers and restraint design; evaluate reversible support option
+UPG-139,Body and aerodynamics,Front lip drag impact study,performance_engineering,literature_reviewed,candidate,none_identified,Find dimensioned ZZE130L lip and controlled drag/lift test
+UPG-140,Body and aerodynamics,Rear spoiler aerodynamic effectiveness,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve exact US sedan OEM accessory document; do not use 2004 Verso roof spoiler
+UPG-141,Body and aerodynamics,Underbody aerodynamic panel study,performance_engineering,literature_reviewed,candidate,none_identified,Get factory undercovers and exhaust clearances; validate CFD/coastdown with cooling
+UPG-142,Body and aerodynamics,Grille shutter concept,performance_engineering,literature_reviewed,candidate,none_identified,Define fail-open architecture and temperature/pressure control before selecting parts
+UPG-143,Body and aerodynamics,Lightweight hood materials,performance_engineering,literature_reviewed,probable,none_identified,"Get actual construction/mass, retention instructions and street suitability; quote freight"
+UPG-144,Body and aerodynamics,Heat extraction vent engineering,performance_engineering,literature_reviewed,candidate,none_identified,Map underhood surface pressure and thermal targets; get actual vent data
+UPG-145,Body and aerodynamics,Factory-like weather sealing,quality_reliability,literature_reviewed,candidate,none_identified,Get early Toyota EPC numbers and manufacturer material/compression data
+UPG-146,Body and aerodynamics,UV-resistant trim materials,quality_comfort,literature_reviewed,candidate,none_identified,Retrieve full technical instructions and QUV/weathering data; find replacement polymer alternative
+UPG-147,Body and aerodynamics,Better exterior paint protection,quality_comfort,literature_reviewed,candidate,none_identified,Get local installed quote and exact pattern; review warranty/paint-substrate exclusions
+UPG-148,Body and aerodynamics,Low-drag mirror alternatives,performance_engineering,literature_reviewed,candidate,none_identified,Find exact mount/electrical drawing and compliant field-of-view data; measure whole-car effect
