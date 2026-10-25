@@ -1,27 +1,27 @@
-spec_id,system,attribute,value,unit,source_id,reference_page,applicability,status,notes
-spec-001,engine,engine_family,1ZZ-FE,,src-manual,252,2004 Corolla model reference,factory_reference,Installation corroborated by model code but not physically inspected
-spec-002,engine,displacement,1794,cc,src-manual,252,2004 Corolla model reference,factory_reference,
-spec-003,fuel,minimum_octane,87,AKI,src-manual,252,US Corolla,factory_reference,
-spec-004,fuel,tank_capacity,13.2,US gal,src-manual,252,2004 Corolla,factory_reference,
-spec-005,lubrication,oil_viscosity,5W-30,SAE,src-manual,253,2004 Corolla,factory_reference,Verify earlier build applicability
-spec-006,lubrication,oil_refill_with_filter,3.9,US qt,src-manual,253,1ZZ-FE,factory_reference,Check dipstick; nominal drain and refill
-spec-007,lubrication,oil_refill_without_filter,3.7,US qt,src-manual,253,1ZZ-FE,factory_reference,
-spec-008,ignition,spark_plug_denso,SK16R11,,src-manual,253,1ZZ-FE,factory_reference,
-spec-009,ignition,spark_plug_ngk,IFR5A11,,src-manual,253,1ZZ-FE,factory_reference,
-spec-010,ignition,spark_plug_gap,1.1,mm,src-manual,253,1ZZ-FE,factory_reference,
-spec-011,cooling,total_capacity,6.5,L,src-manual,253,1ZZ-FE,factory_reference,Total not drain/refill
-spec-012,automatic_transaxle,fluid_specification,Toyota ATF Type T-IV,,src-manual,254,2004 automatic Corolla,factory_reference,Confirm on transmission/dipstick where possible
-spec-013,automatic_transaxle,maximum_drain_refill,3.2,US qt,src-manual,254,2004 automatic Corolla,factory_reference,Not total dry capacity
-spec-014,brakes,fluid_standard,DOT 3,,src-manual,254,2004 Corolla,factory_reference,
-spec-015,steering,power_steering_fluid,DEXRON II or III ATF,,src-manual,254,2004 Corolla,factory_reference,
-spec-016,wheels,wheel_nut_torque,76,lb-ft,src-manual,255,2004 Corolla,factory_reference,Verify aftermarket wheel manufacturer recommendations and seat compatibility
-spec-017,tires,factory_listed_size_1,P185/65R15,,src-manual,255,2004 Corolla,factory_reference,Not the currently photographed tire
-spec-018,tires,factory_listed_size_2,P195/65R15,,src-manual,255,2004 Corolla,factory_reference,Not the currently photographed tire
-spec-019,tires,installed_marking,215/45R18 89V,,src-tire,,one photographed wheel,observed,Position and other three unknown
-spec-020,body,manufacturing_month,2003-06,,src-label,,individual vehicle,observed,
-spec-021,body,paint_code,1C8,,src-label,,individual vehicle,observed,
-spec-022,body,trim_code,FA11,,src-label,,individual vehicle,observed,
-spec-023,drivetrain,transaxle,A245E,,src-label,,individual vehicle,observed,
-spec-024,body,gross_vehicle_weight_rating,3585,lb,src-label,,individual vehicle,observed,
-spec-025,body,front_gross_axle_weight_rating,1885,lb,src-label,,individual vehicle,observed,
-spec-026,body,rear_gross_axle_weight_rating,1720,lb,src-label,,individual vehicle,observed,
+spec_id,system,attribute,value,unit,source_id,reference_page,applicability,status,notes,component_id,build_applicability
+spec-001,engine,engine_family,1ZZ-FE,,src-manual,252,2004 Corolla model reference,factory_reference,Installation corroborated by model code but not physically inspected,engine,manual_scope_oct_2003_onward
+spec-002,engine,displacement,1794,cc,src-manual,252,2004 Corolla model reference,factory_reference,,engine,manual_scope_oct_2003_onward
+spec-003,fuel,minimum_octane,87,AKI,src-manual,252,US Corolla,factory_reference,,fuel,manual_scope_oct_2003_onward
+spec-004,fuel,tank_capacity,13.2,US gal,src-manual,252,2004 Corolla,factory_reference,,fuel,manual_scope_oct_2003_onward
+spec-005,lubrication,oil_viscosity,5W-30,SAE,src-manual,253,2004 Corolla,factory_reference,Verify earlier build applicability,engine,manual_scope_oct_2003_onward
+spec-006,lubrication,oil_refill_with_filter,3.9,US qt,src-manual,253,1ZZ-FE,factory_reference,Check dipstick; nominal drain and refill,engine,manual_scope_oct_2003_onward
+spec-007,lubrication,oil_refill_without_filter,3.7,US qt,src-manual,253,1ZZ-FE,factory_reference,,engine,manual_scope_oct_2003_onward
+spec-008,ignition,spark_plug_denso,SK16R11,,src-manual,253,1ZZ-FE,factory_reference,,ignition,manual_scope_oct_2003_onward
+spec-009,ignition,spark_plug_ngk,IFR5A11,,src-manual,253,1ZZ-FE,factory_reference,,ignition,manual_scope_oct_2003_onward
+spec-010,ignition,spark_plug_gap,1.1,mm,src-manual,253,1ZZ-FE,factory_reference,,ignition,manual_scope_oct_2003_onward
+spec-011,cooling,total_capacity,6.5,L,src-manual,253,1ZZ-FE,factory_reference,Total not drain/refill,cooling,manual_scope_oct_2003_onward
+spec-012,automatic_transaxle,fluid_specification,Toyota ATF Type T-IV,,src-manual,254,2004 automatic Corolla,factory_reference,Confirm on transmission/dipstick where possible,transmission,manual_scope_oct_2003_onward
+spec-013,automatic_transaxle,maximum_drain_refill,3.2,US qt,src-manual,254,2004 automatic Corolla,factory_reference,Not total dry capacity,transmission,manual_scope_oct_2003_onward
+spec-014,brakes,fluid_standard,DOT 3,,src-manual,254,2004 Corolla,factory_reference,,brakes,manual_scope_oct_2003_onward
+spec-015,steering,power_steering_fluid,DEXRON II or III ATF,,src-manual,254,2004 Corolla,factory_reference,,steering,manual_scope_oct_2003_onward
+spec-016,wheels,wheel_nut_torque,76,lb-ft,src-manual,255,2004 Corolla,factory_reference,Verify aftermarket wheel manufacturer recommendations and seat compatibility,wheels,manual_scope_oct_2003_onward
+spec-017,tires,factory_listed_size_1,P185/65R15,,src-manual,255,2004 Corolla,factory_reference,Not the currently photographed tire,wheels,manual_scope_oct_2003_onward
+spec-018,tires,factory_listed_size_2,P195/65R15,,src-manual,255,2004 Corolla,factory_reference,Not the currently photographed tire,wheels,manual_scope_oct_2003_onward
+spec-019,tires,installed_marking,215/45R18 89V,,src-tire,,one photographed wheel,observed,Position and other three unknown,wheels,individual_vehicle_observed
+spec-020,body,manufacturing_month,2003-06,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-021,body,paint_code,1C8,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-022,body,trim_code,FA11,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-023,drivetrain,transaxle,A245E,,src-label,,individual vehicle,observed,,transmission,individual_vehicle_observed
+spec-024,body,gross_vehicle_weight_rating,3585,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-025,body,front_gross_axle_weight_rating,1885,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-026,body,rear_gross_axle_weight_rating,1720,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
