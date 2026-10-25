@@ -1,6 +1,6 @@
 # Upgrade research schema
 
-**Living schema notice (2026-10-25):** the initial 148 IDs are historical seed identifiers, **not a size limit**. New UPG-149–162 entries have been added with linked UR-149–162 screening records; the [canonical matrix](../database/upgrade_value_matrix.csv) now contains 162 unique UPG IDs, not 150 plus separate ADD aliases. Preserve all historical IDs and add more as credible topics emerge. See [OPEN_ENDED_UPGRADE_RESEARCH.md](OPEN_ENDED_UPGRADE_RESEARCH.md).
+**Living schema notice (2026-10-25):** the initial 148 IDs are historical seed identifiers, **not a size limit**. New UPG-149–182 entries have been added with linked UR-149–182 screening records; the [canonical matrix](../database/upgrade_value_matrix.csv) now contains 182 unique UPG IDs. The historical ADD-001/ADD-002 aliases became UPG-150/UPG-149. Preserve all historical IDs and add more as credible topics emerge. See [OPEN_ENDED_UPGRADE_RESEARCH.md](OPEN_ENDED_UPGRADE_RESEARCH.md).
 
 `upgrade_candidates.csv` retains all 148 original IDs, concepts, systems, benefit labels and lead text. Updated research/fitment status and next-validation fields link to `upgrade_research.csv`. Original lead text remains discovery provenance, not an endorsement.
 
