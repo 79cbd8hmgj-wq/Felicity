@@ -6,7 +6,7 @@ The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explici
 
 ## Upgrade research
 
-[All 148 initial reviews and remaining gaps](research/UPGRADE_RESEARCH_RESULTS.md) · [Evidence-linked database](database/upgrade_research.csv) · [Schema and validation](docs/UPGRADE_RESEARCH_SCHEMA.md). Screening coverage is complete; exact fitment and upgrade benefits remain open.
+[Initial 148 reviews (historical foundation)](research/UPGRADE_RESEARCH_RESULTS.md) · [Evidence-linked database](database/upgrade_research.csv) · [Schema and validation](docs/UPGRADE_RESEARCH_SCHEMA.md). Screening coverage is complete; exact fitment and upgrade benefits remain open.
 
 ## Navigate
 - [Vehicle identity](vehicle/identity.md)
