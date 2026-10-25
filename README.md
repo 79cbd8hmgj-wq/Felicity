@@ -33,7 +33,7 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 
 ## Open-ended upgrade discovery and decisions (October 2026)
 
-**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **162 candidates**, each with an initial linked review, and can grow further. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [162-row healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
+**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **182 candidates**, each with an initial linked review, and can grow further. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [182-row healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
 
 The [Master Upgrade Decisions](research/MASTER_UPGRADE_DECISIONS.md) provides a buying-oriented view, not the limit of research. Current inexpensive/easy preferences apply to purchases, **not** to the long-term discovery catalog. Continue comparing measurable differences against healthy OEM and the actual installed setup, with cost, installation complexity, reliability, thermal/electrical/fuel performance, safety and evidence quality.
 
