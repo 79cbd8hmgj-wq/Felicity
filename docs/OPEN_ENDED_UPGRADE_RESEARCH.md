@@ -1,6 +1,6 @@
 # Felicity open-ended upgrade discovery policy
 
-**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 25 2026, the catalog includes **162** distinct candidate concepts and 162 matching initial research records. Those counts are snapshots and must not be used as a stop condition.
+**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 25 2026, the catalog includes **182** distinct candidate concepts and 182 matching initial research records. Those counts are snapshots and must not be used as a stop condition.
 
 ## Continuous discovery scope
 
@@ -20,7 +20,7 @@ A potential upgrade can be cheap/easy, moderate DIY, or a complex longer-term en
 8. Run the repository tests, `python scripts/validate_database.py --require-upgrade-coverage`, and cross-check value-matrix unique IDs and source references. Do not silently mask errors or make up test execution.
 9. Reassess candidate value when better evidence arrives; do not remove research solely because power/mpg gain was unproven.
 
-## Expansion wave 1 — new IDs and outstanding validation
+## Expansion wave 1 — IDs 149–162 and outstanding validation
 
 | IDs | New themes | Primary limitations |
 |---|---|---|
@@ -45,3 +45,11 @@ The old supplemental `ADD-001` (rain repellent) and `ADD-002` (windshield shade)
 - TI automotive USB 12V to 5V design (95% peak measured reference circuit, no consumer product validation): https://www.ti.com/tool/PMP21771
 
 **Do not call the new 14 Corolla-approved upgrades.** They are research leads with defined next experiments and fitment checks. The number can and should increase with the evidence.
+
+## Expansion wave 2 — IDs 163–182
+
+20 new candidates were added with source-linked screening records and matched decision-matrix entries. Themes: convenience oil drain (163), ferrous magnetic drain plug (164), grid/solar battery maintenance (165–166), auxiliary undervoltage protection and real-current monitoring (167–168), engine/cold-oil preheat (169–170), hydraulic steering parasitic load alternatives (171–172), variable electric coolant flow (173), energy-aware A/C and fan redesign (174–175), TOP TIER and E0/E10 fuel-economics comparisons (176–177), silicone aero wipers (178), solar parked ventilation (179), steering-fluid thermal control (180), lab oil analysis (181), and safe battery isolation while stored (182).
+
+This wave includes **real documented hardware** (e.g. Fumoto F103SX, GoldPlug AP03, 1ZZ-FE block heater reference), **other-vehicle/system studies** (e.g. variable compressor and solar ventilation), and **open engineering hypotheses**. Their evidence levels intentionally differ. They are **not 20 confirmed fits, mpg upgrades, or buy recommendations**. For example independent cold-start research finds emissions benefits but no reliably net-positive gasoline savings after considering mains electricity.
+
+Linked investigation: [Expansion wave 2 evidence](../research/EXPANSION_WAVE_2.md).
