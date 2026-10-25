@@ -63,47 +63,47 @@ UPG-061,Exhaust and engine performance,ECU calibration / piggyback management,pe
 UPG-062,Exhaust and engine performance,Knock monitoring and tuning safety,performance_engineering,literature_reviewed,candidate,none_identified,Obtain sensor bandwidth and ECU knock strategy; select validated monitor
 UPG-063,Exhaust and engine performance,Higher-efficiency ignition coil study,quality_reliability,literature_reviewed,candidate,none_identified,Retrieve DENSO coil catalog and primary energy/dwell comparison
 UPG-064,Exhaust and engine performance,Performance spark plug thermal range,performance_engineering,literature_reviewed,probable,none_identified,Confirm June Toyota plug reference; tune-specific heat range requires evidence
-UPG-065,Automatic transmission,A245E transmission cooling strategy,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-066,Automatic transmission,Auxiliary thermostatic ATF cooler,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-067,Automatic transmission,ATF temperature gauge,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-068,Automatic transmission,Higher-capacity cooler plumbing,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-069,Automatic transmission,Transmission pan thermal strategy,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-070,Automatic transmission,OEM-spec ATF comparative analysis,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-071,Automatic transmission,Transmission filter/strainer media,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-072,Automatic transmission,Shift solenoid design and quality,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-073,Automatic transmission,Transaxle mount stiffness options,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-074,Automatic transmission,Transmission control recalibration research,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-075,Automatic transmission,Torque converter stall characteristic study,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-076,Automatic transmission,Torque converter lockup monitoring,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-077,Automatic transmission,Final-drive ratio research,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-078,Automatic transmission,Limited-slip differential feasibility,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-079,Automatic transmission,CV axle joint and boot improvements,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-080,Handling and suspension,Bilstein B6 stock-height dampers,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-081,Handling and suspension,Bilstein B12 spring and damper package,performance_engineering,documented_lead,candidate_unverified,Bilstein 46-182265 listing,production_fitment_and_quantified_benefit
-UPG-082,Handling and suspension,KYB Excel-G dampers,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-083,Handling and suspension,Koni adjustable dampers,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-084,Handling and suspension,Eibach Pro-Kit springs,handling_braking,documented_lead,candidate_unverified,2003-2008 suspension listings,production_fitment_and_quantified_benefit
-UPG-085,Handling and suspension,TRD lowering springs,handling_braking,documented_lead,candidate_unverified,Historical TRD accessory listing,production_fitment_and_quantified_benefit
-UPG-086,Handling and suspension,TEIN S.Tech springs,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-087,Handling and suspension,Quality adjustable coilovers,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-088,Handling and suspension,Progress rear sway bar,handling_braking,documented_lead,candidate_unverified,2003-2008 suspension listings,production_fitment_and_quantified_benefit
-UPG-089,Handling and suspension,Whiteline rear sway bar,handling_braking,documented_lead,candidate_unverified,2003-2008 suspension listings,production_fitment_and_quantified_benefit
-UPG-090,Handling and suspension,TRD rear sway bar,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-091,Handling and suspension,Front sway bar upgrade,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-092,Handling and suspension,Polyurethane sway bar bushings,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-093,Handling and suspension,Sway bar end link upgrades,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-094,Handling and suspension,Front strut tower brace,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-095,Handling and suspension,Rear chassis brace,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-096,Handling and suspension,Lower control arm bushing options,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-097,Handling and suspension,Camber adjustment hardware,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-098,Handling and suspension,Adjustable rear toe correction study,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-099,Handling and suspension,Strut mount bearing quality,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-100,Handling and suspension,Wheel alignment settings study,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-101,Handling and suspension,High-grip touring tires,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-102,Handling and suspension,Ultra-high-performance summer tires,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-103,Handling and suspension,Lightweight 15/16/17-inch wheel alternatives,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-104,Handling and suspension,Current 18-inch unsprung mass comparison,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
-UPG-105,Handling and suspension,High-quality hub bearings,quality_reliability,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
+UPG-065,Automatic transmission,A245E transmission cooling strategy,performance_engineering,literature_reviewed,candidate,none_identified,"Retrieve early A245E flow diagram, line IDs and allowed pressure drop"
+UPG-066,Automatic transmission,Auxiliary thermostatic ATF cooler,performance_engineering,literature_reviewed,candidate,none_identified,Establish circuit direction and acceptable flow; compare ATF temperature under repeatable load
+UPG-067,Automatic transmission,ATF temperature gauge,performance_engineering,literature_reviewed,candidate,none_identified,Prove valid PID against reference sensor or obtain sender/gauge kit
+UPG-068,Automatic transmission,Higher-capacity cooler plumbing,performance_engineering,literature_reviewed,candidate,none_identified,Measure Toyota steel tube and hose ID; specify ATF-rated hose and fittings
+UPG-069,Automatic transmission,Transmission pan thermal strategy,performance_engineering,literature_reviewed,candidate,none_identified,Obtain pan bolt pattern and pickup depth; find actual drawing and fluid-level procedure
+UPG-070,Automatic transmission,OEM-spec ATF comparative analysis,performance_engineering,literature_reviewed,probable,none_identified,Retrieve June fluid specification and current US price/availability
+UPG-071,Automatic transmission,Transmission filter/strainer media,quality_reliability,literature_reviewed,candidate,none_identified,Find Toyota EPC strainer and exact filtration/pressure-drop data
+UPG-072,Automatic transmission,Shift solenoid design and quality,performance_engineering,literature_reviewed,candidate,none_identified,Get exact solenoid OEM numbers and revisions; exclude 9132 kit unless documented casting matches
+UPG-073,Automatic transmission,Transaxle mount stiffness options,performance_engineering,literature_reviewed,candidate,none_identified,Find A245E-specific rubber/poly mount drawings and dynamic stiffness data
+UPG-074,Automatic transmission,Transmission control recalibration research,performance_engineering,literature_reviewed,probable,none_identified,Confirm EPC hardware and kit revision; obtain price; retain factory safe pressure strategy
+UPG-075,Automatic transmission,Torque converter stall characteristic study,performance_engineering,literature_reviewed,candidate,none_identified,"Find A245E converter code, factory stall test and specialist converter curve"
+UPG-076,Automatic transmission,Torque converter lockup monitoring,performance_engineering,literature_reviewed,candidate,none_identified,Retrieve June data-list PIDs and ECU logic; cross-check engine/turbine/road speed
+UPG-077,Automatic transmission,Final-drive ratio research,performance_engineering,literature_reviewed,candidate,none_identified,Get A245E 02A tooth counts and donor assembly drawings; no C-series gear assumption
+UPG-078,Automatic transmission,Limited-slip differential feasibility,performance_engineering,literature_reviewed,candidate,none_identified,"Get A245E differential envelope, bearing/spline/ring-gear interfaces; find manufacturer listing"
+UPG-079,Automatic transmission,CV axle joint and boot improvements,performance_engineering,literature_reviewed,candidate,none_identified,Find A245E boot-kit dimensions and compound; do not buy MT kit from model/year alone
+UPG-080,Handling and suspension,Bilstein B6 stock-height dampers,handling_braking,literature_reviewed,candidate,none_identified,Get all B6 application numbers and dimensions directly from Bilstein
+UPG-081,Handling and suspension,Bilstein B12 spring and damper package,performance_engineering,literature_reviewed,probable,Bilstein 46-182265 listing,Obtain kit component BOM and axle-load certificate for June ZZE130L; no generic lowering promise
+UPG-082,Handling and suspension,KYB Excel-G dampers,handling_braking,literature_reviewed,probable,none_identified,Get KYB current LE application for all corners and production notes
+UPG-083,Handling and suspension,Koni adjustable dampers,handling_braking,literature_reviewed,candidate,none_identified,Find exact KONI manufacturer application; record unavailable if not supplied
+UPG-084,Handling and suspension,Eibach Pro-Kit springs,handling_braking,literature_reviewed,probable,2003-2008 suspension listings,Obtain LE confirmation/rates and 18-inch clearance; verify cost at order
+UPG-085,Handling and suspension,TRD lowering springs,handling_braking,literature_reviewed,candidate,Historical TRD accessory listing,Retrieve dated Toyota accessory catalog and TRD installation sheet
+UPG-086,Handling and suspension,TEIN S.Tech springs,handling_braking,literature_reviewed,candidate,none_identified,Get US application/rates/drop drawing for SKL00 and early LE
+UPG-087,Handling and suspension,Quality adjustable coilovers,quality_reliability,literature_reviewed,candidate,none_identified,"Find actual ZZE130L kit, damper curves, travel, rebuild support and quote"
+UPG-088,Handling and suspension,Progress rear sway bar,handling_braking,literature_reviewed,probable,2003-2008 suspension listings,Resolve instruction header; compare mounting; repeatable handling tests after installation
+UPG-089,Handling and suspension,Whiteline rear sway bar,handling_braking,literature_reviewed,candidate,2003-2008 suspension listings,Get written ZZE130L LE fitment and mounting dimensions
+UPG-090,Handling and suspension,TRD rear sway bar,handling_braking,literature_reviewed,candidate,none_identified,"Get exact Toyota accessory number, kit completeness and early Corolla instructions"
+UPG-091,Handling and suspension,Front sway bar upgrade,handling_braking,literature_reviewed,candidate,none_identified,Find ZZE130L-specific bar drawing; measure diameter and interfaces
+UPG-092,Handling and suspension,Polyurethane sway bar bushings,handling_braking,literature_reviewed,candidate,none_identified,Measure stock/selected bar OD and bracket; get compound/hardness data
+UPG-093,Handling and suspension,Sway bar end link upgrades,handling_braking,literature_reviewed,candidate,none_identified,Retrieve front link length/thread/ball articulation and exact SKU
+UPG-094,Handling and suspension,Front strut tower brace,handling_braking,literature_reviewed,candidate,none_identified,Find exact brace drawing and stiffness comparison; check underhood envelope
+UPG-095,Handling and suspension,Rear chassis brace,performance_engineering,literature_reviewed,candidate,none_identified,Identify structural attachment drawing and instrumented torsion test
+UPG-096,Handling and suspension,Lower control arm bushing options,performance_engineering,literature_reviewed,candidate,none_identified,Get manufacturer instructions/durometer; compare arm IDs and bonded-rubber alternative
+UPG-097,Handling and suspension,Camber adjustment hardware,handling_braking,literature_reviewed,probable,none_identified,Confirm front installation location and adjustment range from actual kit instructions
+UPG-098,Handling and suspension,Adjustable rear toe correction study,handling_braking,literature_reviewed,probable,none_identified,"Get shim instructions, thickness limits and fastener lengths for actual brake setup"
+UPG-099,Handling and suspension,Strut mount bearing quality,quality_reliability,literature_reviewed,candidate,none_identified,Get exact mount SKU and Toyota date applicability; compare seal/bearing details
+UPG-100,Handling and suspension,Wheel alignment settings study,handling_braking,literature_reviewed,candidate,none_identified,Retrieve Toyota June limits; define street target and record before/after
+UPG-101,Handling and suspension,High-grip touring tires,handling_braking,literature_reviewed,candidate,none_identified,Choose legal size/load/speed and compare controlled tests in same size
+UPG-102,Handling and suspension,Ultra-high-performance summer tires,handling_braking,literature_reviewed,candidate,none_identified,Retrieve summer tire manufacturer size sheet and controlled same-size tests
+UPG-103,Handling and suspension,Lightweight 15/16/17-inch wheel alternatives,handling_braking,literature_reviewed,candidate,none_identified,Confirm table mass units/load rating and test-fit; find 5x100 15-inch alternative
+UPG-104,Handling and suspension,Current 18-inch unsprung mass comparison,performance_engineering,literature_reviewed,candidate,none_identified,Weigh full assemblies and candidate assemblies; compare inertia and tire choice
+UPG-105,Handling and suspension,High-quality hub bearings,quality_reliability,literature_reviewed,candidate,none_identified,Obtain Timken/NSK primary dimensions and early Toyota OEM numbers
 UPG-106,Braking,Performance street brake pads,handling_braking,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-107,Braking,Low-dust ceramic pad formulations,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
 UPG-108,Braking,Higher-temperature street pad alternatives,performance_engineering,research_hypothesis,candidate_unverified,none_identified,production_fitment_and_quantified_benefit
