@@ -166,7 +166,7 @@ Completion reporting should show **coverage by system and level**, missing evide
 ## 10. Approved scope decisions (2026-10-25)
 
 - [x] L3 research coverage goal for practical serviceable components.
-- [x] performance and drivability modifications as an explicit research domain, including reliability-supporting upgrades, with evidence-based tradeoffs and risk grading.
+- [x] Performance, cosmetic, efficiency and drivability modifications are in scope alongside reliability improvements. No blanket precedence applies between these research topics; safety and legality constraints remain.
 - [x] related-vehicle research exclusively for verified mechanical comparability / parts interchange.
 - [x] candidate/probable/verified interchange distinction.
 - [x] dated costs and DIY requirements as core database fields.
