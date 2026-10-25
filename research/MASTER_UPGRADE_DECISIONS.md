@@ -1,13 +1,13 @@
 # Felicity — Master upgrade decisions (living summary)
 
-**Updated October 25 2026.** The [canonical value matrix](../database/upgrade_value_matrix.csv) now contains **162 distinct upgrade candidates**, all linked to initial research. The prior 148 were never a cap; see the [open-ended discovery rules](../docs/OPEN_ENDED_UPGRADE_RESEARCH.md). The buying section below focuses on inexpensive/easy options but does not limit engineering discovery. Two earlier add-ons were assigned permanent IDs **UPG-149** (shade) and **UPG-150** (Rain-X). This decision report remains a snapshot; it does not represent independent performance verification of all 162.
+**Updated October 25 2026.** The [canonical value matrix](../database/upgrade_value_matrix.csv) now contains **182 distinct upgrade candidates**, all linked to initial research. The prior 148 were never a cap; see the [open-ended discovery rules](../docs/OPEN_ENDED_UPGRADE_RESEARCH.md). The buying section below focuses on inexpensive/easy options but does not limit engineering discovery. Two earlier add-ons were assigned permanent IDs **UPG-149** (shade) and **UPG-150** (Rain-X). This decision report remains a snapshot; it does not represent independent performance verification of all 182.
 
 
 ## What's changed
 
-We now have [a single, 150-row upgrade comparison database](../database/upgrade_value_matrix.csv): every original UPG-001 through UPG-148 joins its linked research record, plus two previously researched inexpensive add-ons (Rain-X and a custom shade). Each record includes the healthy-OEM comparison, plausible incremental function, documentation and fitment maturity, actual install scope from existing research, price where known, and a present buying verdict.
+We now have [a single, 182-row upgrade comparison database](../database/upgrade_value_matrix.csv): all 182 canonical upgrade IDs have linked screening records; the original 148 plus later expansion waves. Each record includes the healthy-OEM comparison, plausible incremental function, documentation and fitment maturity, actual install scope from existing research, price where known, and a present buying verdict.
 
-**Important:** This index is a *decision overlay on preliminary research*, **not 150 independently re-verified performance evaluations**. It is designed to make known/unknown evidence clear, not to invent quantitative gains. No row may be called a confirmed vehicle-specific improvement on manufacturer's claimed fitment alone.
+**Important:** This index is a *decision overlay on preliminary research*, **not 182 independently re-verified performance evaluations**. It is designed to make known/unknown evidence clear, not to invent quantitative gains. No row may be called a confirmed vehicle-specific improvement on manufacturer's claimed fitment alone.
 
 ## Inexpensive/easy purchasing candidates (conditional)
 
