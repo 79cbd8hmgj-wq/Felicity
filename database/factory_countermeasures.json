@@ -2272,13 +2272,17 @@
           "src-powertrain-transgo-price",
           "src-powertrain-rostra-slt",
           "src-powertrain-tc002",
-          "src-upg-transgo-inst"
+          "src-upg-transgo-inst",
+          "src-powertrain-p0741-owner"
         ],
-        "independent_outcome_ids": [],
-        "long_term_followup": "No verified independent 2004 TMMC A245E SK A246 installation and long-term follow-up",
+        "independent_outcome_ids": [
+          "OUT-009"
+        ],
+        "long_term_followup": "No independent long-term TransGo SK A246 installation evidence. OUT-009: 2005 Corolla P0741 owner reported outcome after fluid/filter service (different intervention), with imperfect follow-up and intermittent prior recurrence.",
         "contradictions": [
           "Sonnax later casting solutions have 2005+ restriction not applicable by transmission name alone.",
-          "Model-year solenoid connector change can be mistaken for production-month change; actual installed unit unknown."
+          "Model-year solenoid connector change can be mistaken for production-month change; actual installed unit unknown.",
+          "Firsthand P0741 owner experience reports improvement with fluid/filter replacement without any TransGo kit; symptom code cannot diagnose a worn valve-body bore alone."
         ]
       },
       "practical_assessment": {
