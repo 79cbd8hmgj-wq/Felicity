@@ -29,6 +29,7 @@ def validate(root=ROOT):
     details = table('phase2_product_details_' + SUFFIX, 'discovery_id')
     evidence = table('phase2_evidence_links_' + SUFFIX, 'link_id')
     stock = table('phase2_local_stock_' + SUFFIX, 'observation_id')
+    coverage = table('phase2_supplier_category_coverage_' + SUFFIX, 'coverage_id')
     sources = table('sources', 'source_id')
     suppliers = table('local_parts_supplier_candidates', 'supplier_id')
     if set(products) != set(details):
@@ -50,7 +51,18 @@ def validate(root=ROOT):
         linked.add(row['discovery_id'])
     if linked != set(products):
         errors.append('Phase 2 evidence coverage mismatch')
-    allowed = {'in_stock', 'out_of_stock', 'call_for_pricing_no_stock_result', 'site_bot_restriction_before_store_selection'}
+    for key, row in coverage.items():
+        for identifier in filter(None, row['discovery_ids'].split('|')):
+            if identifier not in products:
+                errors.append(f'{key}: missing coverage discovery')
+        for identifier in filter(None, row['source_ids'].split('|')):
+            if identifier not in sources:
+                errors.append(f'{key}: missing coverage source')
+        if not row['evidence_level'] or not row['remaining_work']:
+            errors.append(f'{key}: missing coverage limitation')
+        if row['branch_stock_claim'] != 'none_from_this_coverage_row':
+            errors.append(f'{key}: category coverage cannot establish branch stock')
+    allowed = {'in_stock', 'out_of_stock', 'call_for_pricing_no_stock_result', 'site_bot_restriction_before_store_selection', 'store_selection_not_persisted_no_target_stock'}
     for key, row in stock.items():
         if row['discovery_id'] not in products:
             errors.append(f'{key}: missing discovery')
@@ -62,12 +74,12 @@ def validate(root=ROOT):
         if not row['limitations'] or not row['source_url'] or not row['branch_address']:
             errors.append(f'{key}: missing scope/provenance')
         if row['result'] in {'in_stock', 'out_of_stock'}:
-            if row['method'] != 'live_browser_Check_Other_Stores_with_individual_branch_rows':
+            if row['method'] not in {'live_browser_Check_Other_Stores_with_individual_branch_rows', 'live_browser_selected_product_fulfillment'}:
                 errors.append(f'{key}: shelf result lacks individual live branch evidence')
         if row['selected_store_price_usd']:
             if not re.fullmatch(r'\d+\.\d{2}', row['selected_store_price_usd']):
                 errors.append(f'{key}: invalid item price')
-            if row['price_scope'] != '1390_Central_selected_item_display_only_not_each_branch_checkout':
+            if row['price_scope'] not in {'1390_Central_selected_item_display_only_not_each_branch_checkout', '517_Delaware_selected_item_display_not_checkout'}:
                 errors.append(f'{key}: selected item price promoted to other branch quote')
         elif row['price_scope'] != 'no_quote':
             errors.append(f'{key}: empty price has quote scope')

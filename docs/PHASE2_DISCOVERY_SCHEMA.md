@@ -6,6 +6,7 @@ Continues `87968af` on `research/upgrade-evidence`. The original 40-location aud
 - `phase2_evidence_links_2026-10-29.csv` joins products to `sources.csv`, with evidence roles and scopes. A corporate brand/category listing is a sourcing lead, not exact branch inventory.
 - `phase2_local_stock_2026-10-29.csv` records individual branch results separately from selected-store item prices. A blank supplier ID permits an observed nearby branch outside the original 40 audited records without changing that audit. Such rows identify the branch by its observed public address and make no new distance/access audit claim.
 - The existing external offers table includes both page-observed and explicitly indexed-only prices. Compare package units and evidence stage before considering totals. An indexed price is not a verified checkout quote.
+- `phase2_supplier_category_coverage_2026-10-29.csv` records channel/subcategory discovery references, evidence level and remaining work. Coverage rows cannot claim branch stock; exact product and corporate brand-level evidence remain distinct.
 
 Run the original three validators and `python scripts/validate_phase2_discovery.py`, plus `python -m unittest discover -s tests -v`. The new checks protect joins, item-price scope and branch-stock provenance. Tests exercise failures where an indexed listing becomes shelf stock or a selected-store price becomes another branch's quote. These are data integrity checks; none proves engineering benefit, individual-car fit, current stock after observation, or safe installation.
 

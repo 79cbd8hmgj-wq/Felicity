@@ -1,5 +1,11 @@
 # Felicity — October 29, 2026 recovered handoff and next engineering research
 
+## Later continuation: Phase 2 retail discovery
+
+The historical snapshot below is superseded for current counts by [Phase 2](PHASE2_DEEP_RETAIL_DISCOVERY_2026-10-29.md), continued directly from `87968af` without repeating the 40-location audit. Current continuation totals: **262 concepts/reviews, 108 external evaluations, 635 source records**. Phase 2 adds **63 products across 35 labeled subcategories**, five candidate functions (UPG-258–262), evidence extensions for 14 existing concepts, 29 offer observations and 17 stock/access observations (13 actual individual-branch shelf results). No newly confirmed fit, purchase-ready part or installed result is asserted.
+
+Read the [budget catalog](PHASE2_BUDGET_DIY_CATALOG_2026-10-29.md), [engineering comparisons](PHASE2_ENGINEERING_COMPARISONS_2026-10-29.md) and [supplier coverage / specific untouched families](PHASE2_SUPPLIER_CATEGORY_COVERAGE_2026-10-29.md). Those are the next-work map; do not restart addresses or count the original 45 again. Some new products remain indexed-only leads; keep their confidence separate from the primary technical documents and live branch stock. Check the Phase 2 validation log and current Actions run separately from historical CI claims below.
+
 **Purpose:** preserve a durable starting point after a ChatGPT conversation reached its length limit. This file records the `research/upgrade-evidence` branch **as inspected October 29, 2026**; it is **not** a new experiment, an independent factory fitment verification, a part order, or an installation record.
 
 ## 1. Non-negotiable vehicle and mission

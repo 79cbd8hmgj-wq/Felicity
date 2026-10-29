@@ -1,5 +1,7 @@
 # Felicity structured database v1
 
+**Phase 2 retail extension (2026-10-29):** DSC-P2-001–063 append to the original DSC-40 external catalog (108 total evaluations). New [product detail](phase2_product_details_2026-10-29.csv), [evidence relationship](phase2_evidence_links_2026-10-29.csv), [stock/access](phase2_local_stock_2026-10-29.csv) and [supplier-category coverage](phase2_supplier_category_coverage_2026-10-29.csv) tables preserve price units, indexed-only uncertainty and separate branch evidence. See [schema](../docs/PHASE2_DISCOVERY_SCHEMA.md) and [report](../research/PHASE2_DEEP_RETAIL_DISCOVERY_2026-10-29.md). Run `python scripts/validate_phase2_discovery.py` alongside the existing checks.
+
 Machine-readable CSV tables with stable identifiers, provenance, applicability and verification states. Readable in spreadsheet software, Python, SQLite, DuckDB, or a web app. **No unredacted VIN or ownership documents.**
 
 See [engineering source and interchange evidence standard](../docs/EVIDENCE_STANDARD.md) for applicability, citations, confidence levels and performance-modification research.
