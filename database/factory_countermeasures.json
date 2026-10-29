@@ -1948,6 +1948,95 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-023",
+      "upgrade_id": "UPG-213",
+      "title": "Toyota rear door opening seal C-pillar retaining clips",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / rear door weatherstrip",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "TMMC year/plant scope documented but VIN and exact clips not read",
+      "problem_or_limitation": "Rear door opening seal loosens near C-pillar",
+      "application": {
+        "model_years": "2003-2005",
+        "market": "USA and Canada",
+        "plant": "TMMC",
+        "engine": "not specified",
+        "transmission": "not specified",
+        "production": "Before bulletin VIN breakpoint; actual June2003 VIN table not read"
+      },
+      "factory_engineering": {
+        "original_design": "Original body-opening weatherstrip insufficiently retained at rear C-pillar",
+        "part_relationships": {
+          "original": "Original rubber opening seal",
+          "revised": "Two specified added Toyota retaining clips, number pending bulletin image"
+        },
+        "documentation": "BO020-04 Toyota USA and 2149R Toyota Canada: fit two clips to quarter-panel flange and reseat weatherstrip",
+        "production_adoption": "VIN production break image not yet read"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No valid generic clips identified; window-glass run clips differ",
+        "required_companion_components": [
+          "Exact Toyota body-opening clips and illustration"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass2-bo02004",
+          "src-pass2-canada2149r"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No same-repair independent long-term owner outcome retrieved",
+        "contradictions": [
+          "Toyota bulletin VIN and parts tables embedded as images, not yet authenticated"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Improve rear door opening weatherstrip retention",
+        "healthy_original_benefit": "Only a documented fix if the seal is loose; no evidence a healthy seal needs it",
+        "trigger": "Loose rear door opening rubber at C-pillar",
+        "possible_negative_consequences": "Incorrect clip may damage flange/paint/rubber",
+        "fitment_confidence": "Unverified early build and part",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Correct Toyota bulletin illustrations",
+          "Trim tools"
+        ],
+        "installation_risks": "Do not disturb side airbag trim or drainage",
+        "upgrade_interactions": "Not rear window-glass run TSB or sill paint-protection tape",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "plant_year_documented",
+        "june_2003_application": "vin_table_unread",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota TSB instructs fitting two clips near rear C-pillar on early TMMC Corolla"
+        ],
+        "engineering_inferences": [
+          "Additional mechanical retention may prevent local seal looseness"
+        ],
+        "unverified_claims": [
+          "No clip SKU or price",
+          "No vehicle-level NVH measurement"
+        ],
+        "missing_research": [
+          "Read bulletin parts/VIN images",
+          "Check actual seal condition",
+          "Find independent exact-remedy follow-up"
+        ],
+        "next_action": "Read BO020-04 parts table; check VIN privately and seal condition before selecting clips",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
