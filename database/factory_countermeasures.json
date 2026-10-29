@@ -2135,6 +2135,98 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-025",
+      "upgrade_id": "UPG-130",
+      "title": "Improved Corolla door-glass window run for wind noise",
+      "reviewed_on": "2026-10-29",
+      "novelty": "existing_candidate_evidence_enrichment",
+      "subsystem": "Body / door-glass run NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota NV006-05 specifically covers 2003-05 Corolla (NAP); production VIN/part tables still require verification",
+      "problem_or_limitation": "Air leakage and wind hiss at front/rear sliding door glass perimeter",
+      "application": {
+        "model_years": "2003-2005 Corolla",
+        "market": "USA Toyota bulletin",
+        "plant": "North American production, verify TMMC by parts table",
+        "engine": "Any",
+        "transmission": "Any",
+        "production": "June2003 source family supported; early VIN-specific rubber numbers not yet extracted"
+      },
+      "factory_engineering": {
+        "original_design": "Original window run permitted road-speed wind noise",
+        "part_relationships": {
+          "original": "Early door glass window-run PN pending parts table",
+          "revised": "Improved run PN differs by production VIN; exact numbers not yet authenticated"
+        },
+        "documentation": "Toyota NV006-05 revised 2006: improved front/rear door glass window runs and separate fit procedures",
+        "production_adoption": "Early/late VIN splits documented but image not read"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No generic adhesive backed channel interchange established",
+        "required_companion_components": [
+          "VIN-correct left/right front or rear run only if symptom diagnosed"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass4-windowrun-nv006",
+          "src-pass4-edmunds-wind"
+        ],
+        "independent_outcome_ids": [
+          "OUT-008"
+        ],
+        "long_term_followup": "2004 Corolla owner reported successful driver's door run replacement but no multi-month outcome or exact Toyota PN",
+        "contradictions": [
+          "Owner calls new run adhesive-backed; Toyota bulletin text does not independently establish revised adhesive structure"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Remove wind noise from door-glass channel using Toyota improved run",
+        "healthy_original_benefit": "Symptom-dependent; no improvement demonstrated if original seals properly",
+        "trigger": "Localized wind leak at run near mirror/door window",
+        "possible_negative_consequences": "Wrong run can bind glass and affect water drainage",
+        "fitment_confidence": "Toyota 2004 model-year supported; actual part/VIN unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Correct VIN-indexed Toyota window run/installation bulletin",
+          "Door trim tools and glass alignment checks"
+        ],
+        "installation_risks": "Protect side airbags, drains, glass and water barrier",
+        "upgrade_interactions": "Not windshield reed-noise UPG-214 or rear C-pillar opening seal UPG-213",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "production_table_unread",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota NV006-05 documents improved 2003-05 Corolla window runs",
+          "2004 Corolla owner describes successful updated run"
+        ],
+        "engineering_inferences": [
+          "Better glass run fit reduces local wind leakage"
+        ],
+        "unverified_claims": [
+          "Exact new Toyota part number",
+          "No long-term same-SKU owner data"
+        ],
+        "missing_research": [
+          "Read TMMC early VIN parts table",
+          "Price current authentic window run",
+          "Obtain long-term exact repaired owner record"
+        ],
+        "next_action": "Inspect both front corner runs and confirm correct early-build improved run before a purchase",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
