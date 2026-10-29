@@ -74,6 +74,10 @@ At next **needed** pad service, verify front caliper and select Akebono ACT923A 
 ### Stage 4 — powertrain 'upgrades' constrained by risk
 Repair the cold-weather lean intake issue with Toyota 17171-22060 **if diagnosis establishes it** or intake assembly is disassembled. Review cone intake for under-hood air ingestion, MAF scaling and filter protection before retaining/replacing. Avoid generic ECU chips, exhaust catalyst changes, engine mount stiffening, unverified shift/line-pressure tuning and turbo/supercharger conversions as part of this *balanced* package. Correct service fluid is more important than claimed performance additives.
 
+## 4A. Engineered accessory-drive refinement: Gates 39068K2 decoupler solution
+
+This substantive *beyond-OEM* NVH and belt-system redesign was omitted from the initial balanced package and is now separately researched in [Gates decoupler evidence](ACCESSORY_DRIVE_DECOUPLER_GATES_2026-10-29.md). Gates specifies 1ZZ-FE belt **6PK1880**, decoupler **37015P**, and **39068** spring-style tensioner as an engineered system for the 2004 Corolla with A/C (kit **39068K2**); original Toyota bulletin EG021-07 instead specifies an improved conventional hydraulic tensioner, not an ADP. Retail kit data are currently inconsistent (NAPA lists 38286 hydraulic tensioner inside nominal 39068K2 kit), so **Gates contents/alternator shaft fit must be confirmed before purchase**. This is an appropriate optional refinement at belt-service time, not a diagnosis of pothole banging or a demonstrated MPG gain. 2026-10-29 sampled kit-only price: ~$228–$290.
+
 ## 5. Practical spending choices (USD; NOT full installed quotes)
 
 | Bundle | Example parts-only reference | Missing/variable costs |
