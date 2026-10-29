@@ -17,7 +17,11 @@ The [balanced performance and quality package](BALANCED_PERFORMANCE_QUALITY_PACK
 
 The [Toyota factory countermeasure and owner evidence catalog](TOYOTA_FACTORY_COUNTERMEASURES_AND_OWNER_EVIDENCE_2026-10-29.md) establishes a new evidence hierarchy and documents **eight Toyota bulletin-led candidate fixes**, measured source distinctions, confirmed conditional part revisions, owner follow-ups, and misleading model-year extrapolations to reject. This includes explicit distinction between Toyota EG021-07 OEM tensioner and *Gates-engineered* alternator-decoupler kit, not Toyota-approved. For reference see [Gates kit analysis](ACCESSORY_DRIVE_DECOUPLER_GATES_2026-10-29.md).
 
-## Priority for evidence acquisition (not ranking owner's goals)
+## Continued Toyota factory-discovery pass (2026-10-29)
+
+[Pass 2: factory oil level and brake NVH](FACTORY_DISCOVERY_PASS_2_OIL_LEVEL_BRAKE_NVH_2026-10-29.md) adds **UPG-212 / FCM-022** for genuine Toyota bulletin T-SB-0134-08 (**15301-22030 → 15301-22050** oil gauge and corresponding **3.9 → 4.4 US qt** with-filter refill). Updated specifications and their original manual values are separate database records; early-build/installed-gauge verification is still required. Toyota BR003-05 reversing brake-squeal procedure is linked to existing UPG-107 (not a duplicate ID). Current 212 catalog items are candidate studies, not 212 proven improvements.
+
+ (not ranking owner's goals)
 
 1. **Factory-proven revisions:** Toyota EG045-07 intake gasket and further TSB/supersession investigation.
 2. **Documented handling products:** 2003–2008 Corolla suspension listings for Bilstein B12 46-182265, Eibach Pro-Kit, Progress and Whiteline bars. Exact trim, build, wheel clearance, load rating and setup require product-specific review.
