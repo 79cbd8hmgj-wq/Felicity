@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-29",
+  "baseline_commit": "296f45410715ce62d540815935d5f0165c6586dc",
+  "scope": "US2004 CorollaLE Canadian June2003; 1ZZ-FE; automatic code provisional",
+  "grade_policy": "A/B refer to documented application, separate from actual installation. B additionally requires matching credible successful owner outcome. C supplier engineered and direct application supported. D unresolved cross-platform/application. E hypothesis. Null only for exclusions.",
+  "records": [
+    {
+      "research_id": "FCM-001",
+      "upgrade_id": "UPG-194",
+      "title": "Matched front brake bracket and pad-support countermeasure",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Braking / front hardware",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Rattle localized to front brakes over depressions; owner pothole clunks are not a diagnosis.",
+      "application": {
+        "model_years": "2003-2008",
+        "market": "USA",
+        "plant": "NUMMI/TMMC",
+        "engine": "1ZZ",
+        "transmission": "No transmission exclusion stated",
+        "production": "Before 2008 production-change thresholds; June 2003 is earlier. Actual brake equipment still requires inspection."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "47721-02140; historical supports 47716-02100 / 47717-02050",
+          "revised": "47721-02141 x2; latest captured support kit 04947-02130 x1",
+          "historical_intermediate": "BR004-07 support kit 04947-02120; superseded guide, not final parts choice"
+        },
+        "documentation": "T-SB-0046-08 supersedes BR004-07; bump-induced brake rattle remedy uses 47721-02141 brackets with updated 04947-02130 support kit.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": [
+          "Correct pad-support kit and bracket pairing",
+          "Applicable shims/boots and specified caliper grease after inspection"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-br004",
+          "src-disc-br0046",
+          "src-disc-price-bracket",
+          "src-disc-price-support"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Matched front brake bracket and pad-support countermeasure",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Rattle localized to front brakes over depressions; owner pothole clunks are not a diagnosis.",
+        "possible_negative_consequences": "Wrong support/bracket combination or contaminated friction can impair braking. Reman caliper bracket revision is not established by year-only fitment.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 355.9,
+          "basis": "2 x170.26 +15.38 parts subtotal only; grease/shims/boots/other repairs/tax/freight excluded",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-disc-price-bracket",
+            "part": "47721-02141",
+            "unit_usd": 170.26,
+            "quantity": 2,
+            "availability": "listing_only"
+          },
+          {
+            "source_id": "src-disc-price-support",
+            "part": "04947-02130",
+            "unit_usd": 15.38,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Jack and stands",
+          "Torque wrench",
+          "Caliper support hook",
+          "Factory procedure"
+        ],
+        "installation_risks": "Wrong support/bracket combination or contaminated friction can impair braking. Reman caliper bracket revision is not established by year-only fitment.",
+        "upgrade_interactions": "Do not combine BR004-07 support kit selection or grease instructions blindly with T-SB-0046-08 or the later TCMC-pad procedure; resolve current Toyota instruction for installed system.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0046-08 supersedes BR004-07; bump-induced brake rattle remedy uses 47721-02141 brackets with updated 04947-02130 support kit."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    },
+    {
+      "research_id": "FCM-002",
+      "upgrade_id": "UPG-107",
+      "title": "Revised Toyota TCMC pad and matched shim system",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_evidence_existing_candidate",
+      "subsystem": "Braking / friction and shims",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Groan/squeak from installed older TCMC service pads.",
+      "application": {
+        "model_years": "2003-2008",
+        "market": "USA",
+        "engine": "Not limited in bulletin",
+        "transmission": "Not limited",
+        "production": "No October 2003 boundary; installed TCMC pad identity is required"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "04465-AZ003-TM",
+          "revised": "04465-AZ022-TM"
+        },
+        "documentation": "T-SB-0150-13 documents 04465-AZ003-TM to 04465-AZ022-TM for noisy TCMC pads, not factory-original pads.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-tcmc",
+          "src-disc-price-tcmc"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised Toyota TCMC pad and matched shim system",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Groan/squeak from installed older TCMC service pads.",
+        "possible_negative_consequences": "Wrong shims/grease or pad contamination; no demonstrated stopping-distance or original-pad durability improvement.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [
+          {
+            "source_id": "src-disc-price-tcmc",
+            "part": "04465-AZ022-TM",
+            "unit_usd": 39.27,
+            "quantity": 1,
+            "availability": "explicitly_unavailable"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Jack and stands",
+          "Torque wrench",
+          "Micrometer",
+          "Dial indicator if checking runout"
+        ],
+        "installation_risks": "Wrong shims/grease or pad contamination; no demonstrated stopping-distance or original-pad durability improvement.",
+        "upgrade_interactions": "Toyota requires earlier brake bulletins applied. Supplied TCMC shims/grease only; p4 says no grease on reinstalled pad supports. Follow current resolved procedure rather than mixing legacy instructions.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0150-13 documents 04465-AZ003-TM to 04465-AZ022-TM for noisy TCMC pads, not factory-original pads."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    },
+    {
+      "research_id": "FCM-003",
+      "upgrade_id": "UPG-195",
+      "title": "P0133-only Toyota ECM diagnostic-logic correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine controls / emissions",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "P0133 alone after proper diagnostics and older listed calibration.",
+      "application": {
+        "model_years": "2004",
+        "market": "USA",
+        "engine": "Corolla covered; document uses Denso/Delphi ECM branches",
+        "transmission": "ATM rows verified separately from MTM and Matrix AWD",
+        "production": "All 2004 in stated model scope; installed ECU supplier/calibration unresolved"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Denso 89661-0Z09#; Delphi 89666-0233# (ECM identifiers, NOT required purchases)",
+          "revised": "Denso 89661-0Z093 / calibration30217300; Delphi89666-02333 / main30214200 + sub50203300"
+        },
+        "documentation": "EG017-07 corrects P0133-only logic by reflash; explicitly does not replace ECM.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-eg017"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "P0133-only Toyota ECM diagnostic-logic correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "P0133 alone after proper diagnostics and older listed calibration.",
+        "possible_negative_consequences": "Wrong supplier/calibration or unstable flash supply can disable ECU; cannot hide real sensor, intake or exhaust faults.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "specialist_reflash",
+        "required_tools": [
+          "Toyota-compatible calibration-capable scan tool",
+          "Current Toyota TIS",
+          "Stabilized programming power supply"
+        ],
+        "installation_risks": "Wrong supplier/calibration or unstable flash supply can disable ECU; cannot hide real sensor, intake or exhaust faults.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EG017-07 corrects P0133-only logic by reflash; explicitly does not replace ECM."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    },
+    {
+      "research_id": "FCM-004",
+      "upgrade_id": "UPG-196",
+      "title": "Factory windshield locating-stopper NVH correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / glazing NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Localized top-windshield tick/creak/rattle, confirmed before trim work.",
+      "application": {
+        "model_years": "2003-2013 family; Corolla table inspected",
+        "market": "USA",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "No October boundary; Corolla bottom windshield retainers N/A; REAR glass procedure is 2009 Corolla ONLY"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Two top windshield locating stoppers",
+          "revised": "Procedure change, no replacement glass part specified"
+        },
+        "documentation": "T-SB-0141-10 Rev1 identifies locating-stop contact as tick/creak source; 2004 Corolla uses top windshield procedure.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-glass141"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Factory windshield locating-stopper NVH correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Localized top-windshield tick/creak/rattle, confirmed before trim work.",
+        "possible_negative_consequences": "Headliner creasing, glass/paint damage, and SRS/trim hazards; no removal of structural urethane.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic trim tools",
+          "Specified cutting tool",
+          "Tape-protected hand tools",
+          "Build-correct trim/SRS procedure"
+        ],
+        "installation_risks": "Headliner creasing, glass/paint damage, and SRS/trim hazards; no removal of structural urethane.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0141-10 Rev1 identifies locating-stop contact as tick/creak source; 2004 Corolla uses top windshield procedure."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    },
+    {
+      "research_id": "FCM-005",
+      "upgrade_id": "UPG-197",
+      "title": "Front door glass bolt retention campaign",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / power windows",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Private campaign status check and actual regulator/bolt inspection by Toyota.",
+      "application": {
+        "model_years": "Certain 2003-2004",
+        "market": "USA campaign",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "Corolla procedure separates March2002-August2003 from August2003-February2004 regulators; June2003 lies in early group. Actual campaign eligibility/completion unknown."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Original front door glass bolts; exact original PN not established",
+          "revised": "90080-10457, four bolts in captured historical instructions"
+        },
+        "documentation": "SSC80A /08V162 replaces four front door glass bolts; early regulator procedure differs from later coating inspection.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-80a"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Front door glass bolt retention campaign",
+        "healthy_original_benefit": "Safety-defect countermeasure may be relevant without symptoms if eligible and incomplete; verify privately. Not an elective comfort upgrade.",
+        "trigger": "Private campaign status check and actual regulator/bolt inspection by Toyota.",
+        "possible_negative_consequences": "Wrong regulator branch or applying later torque to early bolts can damage glass/regulator; glass breakage risk.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "dealer_campaign_preferred",
+        "required_tools": [
+          "Toyota dealer campaign lookup",
+          "Specified trim tools",
+          "Calibrated small-range torque wrench"
+        ],
+        "installation_risks": "Wrong regulator branch or applying later torque to early bolts can damage glass/regulator; glass breakage risk.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "conditional_campaign_scope",
+        "june_2003_application": "early_regulator_branch_identified_campaign_eligibility_pending",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "SSC80A /08V162 replaces four front door glass bolts; early regulator procedure differs from later coating inspection."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    },
+    {
+      "research_id": "FCM-006",
+      "upgrade_id": "UPG-198",
+      "title": "Factory front seat locating-pin squeak correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / seat NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Squeak conclusively localized to seat locator/floor contact.",
+      "application": {
+        "model_years": "2004-2010 family including Corolla",
+        "market": "USA",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "No date exclusion stated; inspect actual seat and applicable restraint equipment"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Assembly locating pins contact floor holes",
+          "revised": "Factory locator-pin correction; no new seat required"
+        },
+        "documentation": "T-SB-0288-08 Rev1 targets locating-pin/floor contact; Corolla table identifies two front locator pins per seat.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-seat288"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Factory front seat locating-pin squeak correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Squeak conclusively localized to seat locator/floor contact.",
+        "possible_negative_consequences": "Irreversible cutting; structural fasteners/rails must remain intact. SRS and applicable occupant-classification initialization required; bare metal must be protected.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced_safety_sensitive",
+        "required_tools": [
+          "Trim tools",
+          "Torque wrench",
+          "Factory-specified cutting tool",
+          "Build-correct SRS/seat instructions"
+        ],
+        "installation_risks": "Irreversible cutting; structural fasteners/rails must remain intact. SRS and applicable occupant-classification initialization required; bare metal must be protected.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0288-08 Rev1 targets locating-pin/floor contact; Corolla table identifies two front locator pins per seat."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work."
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "exclusion_id": "FCX-001",
+      "title": "EG022-07 cold idle hunting",
+      "source_ids": [
+        "src-disc-eg022-exclusion"
+      ],
+      "reason": "Manual transmission only; not applicable to Felicity automatic. Search snippets omit this qualifier.",
+      "disposition": "excluded_no_candidate_count"
+    }
+  ]
+}
