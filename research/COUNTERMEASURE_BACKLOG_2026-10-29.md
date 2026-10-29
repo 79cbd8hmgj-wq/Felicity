@@ -1,5 +1,7 @@
 # Unresolved countermeasure/application backlog — 2026-10-29
 
+Latest checkpoint: [pump, mount and electrical follow-up](PUMP_MOUNT_ELECTRICAL_REVISION_FOLLOWUP_2026-10-29.md). Adds UPG-216 / FCM-028 A/C clutch relay; deepens already-recorded mount donor without new ID. Toyota0D022 →0D023 catalog replacement is not proven equivalent to EG027-06's0D120 countermeasure. Early-build pump original selection and physical improvement remain unresolved.
+
 These are research leads, not purchase or installation instructions. See `factory_countermeasures.json` for individual source IDs, tooling, risks and statuses. Canadian manufacture does not establish Canadian-market bulletin eligibility. Shared engines do not establish European block, later bumper, trim or electronics interchange.
 
 | Priority | Candidate / grade | Evidence obtained | Specific unresolved gate |

@@ -2440,6 +2440,114 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-028",
+      "upgrade_id": "UPG-216",
+      "title": "Revised magnetic clutch relay countermeasure",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Electrical / HVAC",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota model/year and exact relay document scope; internal redesign and actual vehicle not established.",
+      "problem_or_limitation": "Affected old magnetic-clutch relay can disengage, interrupting A/C.",
+      "application": {
+        "model_years": "2002-2004",
+        "market": "USA",
+        "plant": "No exclusion stated",
+        "engine": "No engine exclusion stated",
+        "transmission": "No exclusion stated",
+        "production": "Affected relay marking90987-02022 is the inspection gate; no date breakpoint stated."
+      },
+      "factory_engineering": {
+        "original_design": "DENSO156700-2470 /Toyota90987-02022; contact and coil details undisclosed.",
+        "part_relationships": {
+          "original": "90987-02022 /DENSO156700-2470",
+          "revised": "90987-02028 /DENSO156700-3290",
+          "current_service_replacement": "02028 remains listed; purported04002-83 relation requires Toyota application confirmation"
+        },
+        "documentation": "EL011-05 names2002-04Corolla and countermeasure90987-02022 to90987-02028. DENSO maps corresponding156700-2470 to156700-3290; internal design change undisclosed.",
+        "production_adoption": "Not stated in retrieved bulletin."
+      },
+      "alternative_solutions": {
+        "supplier": "DENSO",
+        "manufacturer_part_number": "156700-3290 is maker identifier, not a verified retail SKU",
+        "cross_manufacturer_interchange": "Not established; do not substitute generic same-size relay",
+        "required_companion_components": [
+          "Inspect socket; damaged terminals require separate diagnosis"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-revision-ac-tsb",
+          "src-revision-ac-denso",
+          "src-revision-ac-dealer",
+          "src-revision-ac-current",
+          "src-revision-ac-owner"
+        ],
+        "independent_outcome_ids": [
+          "OUT-011"
+        ],
+        "long_term_followup": "No qualifying exact-intervention Corolla result found",
+        "contradictions": [
+          "Seller later04002-83 consolidation versus bulletin specified02028; Toyota04002-83 page only links04002, not02028."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Reduce recurrence of documented relay interruption",
+        "healthy_original_benefit": "Avoid the documented old-relay disengagement mechanism if the affected part is still fitted; prevention magnitude and life advantage on a healthy relay are unquantified.",
+        "trigger": "Affected old relay identified; symptom-specific factory repair or optional preventive consideration after inspection",
+        "possible_negative_consequences": "Wrong relay pinout, suppression or rating can alter clutch operation; flashing A/C is not necessarily a relay fault; no compressor bypass or generic relay substitution.",
+        "fitment_confidence": "probable document scope; individual relay uninspected",
+        "estimated_us_parts_cost": {
+          "amount_usd": 76.28,
+          "basis": "Smithtown Toyota displayed parts-only listing accessed2026-10-29; stock/tax/freight/tools/labor not established.",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-revision-ac-dealer",
+            "part": "90987-02028",
+            "unit_usd": 76.28,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "basic",
+        "required_tools": [
+          "Correct fusebox diagram",
+          "Current Toyota instructions"
+        ],
+        "installation_risks": "Wrong relay pinout, suppression or rating can alter clutch operation; flashing A/C is not necessarily a relay fault; no compressor bypass or generic relay substitution.",
+        "upgrade_interactions": "Keep factory clutch lockup protection and compressor diagnosis intact.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_model_year; affected relay still requires inspection",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EL011-05 names2002-04Corolla and countermeasure90987-02022 to90987-02028. DENSO maps corresponding156700-2470 to156700-3290; internal design change undisclosed."
+        ],
+        "engineering_inferences": [
+          "Avoid the documented old-relay disengagement mechanism if the affected part is still fitted; prevention magnitude and life advantage on a healthy relay are unquantified."
+        ],
+        "unverified_claims": [
+          "No quantified failure probability or lifespan improvement",
+          "Internal contact/coil redesign unknown"
+        ],
+        "missing_research": [
+          "Actual relay/socket inspection",
+          "Current EPC supersession for exact MG CLT position",
+          "Installed Corolla outcomes",
+          "Internal maker redesign explanation"
+        ],
+        "next_action": "Inspect actual MG CLT relay marking and socket condition; confirm current genuine part for that position; resolve seller04002-83 claim; seek exact installed Corolla follow-up.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
