@@ -1,6 +1,6 @@
 # Felicity — 2004 Toyota Corolla Knowledge Base
 
-An evidence-based research and ownership log for the owner’s **US 2004 Toyota Corolla LE, Canada-built June 2003, 1ZZ-FE / four-speed automatic**. Model code **ZZE130L-DEPNKA** and transmission code **A245E** remain pending final verification. An aftermarket cone intake and one photographed215/45R18 tire are documented; remaining wheel specifications and the cause of reported front clunks require inspection.
+An evidence-based research and ownership log for the owner’s **US 2004 Toyota Corolla LE, Canada-built June 2003, 1ZZ-FE / four-speed automatic**. The manufacturer label directly confirms model code **ZZE130L-DEPNKA**, factory transaxle **A245E**, June 2003 production and Canadian manufacture; current installed components remain subject to inspection. An aftermarket cone intake and one photographed215/45R18 tire are documented; remaining wheel specifications and the cause of reported front clunks require inspection.
 
 The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explicitly for vehicles produced from October 2003 onward). Owner-provided identification establishes the research target; individual part fitment and production-specific specifications still require verification. Private identifiers are excluded.
 

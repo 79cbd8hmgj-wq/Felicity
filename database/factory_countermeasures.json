@@ -2,7 +2,7 @@
   "schema_version": 1,
   "reviewed_on": "2026-10-29",
   "baseline_commit": "296f45410715ce62d540815935d5f0165c6586dc",
-  "scope": "US2004 CorollaLE Canadian June2003; 1ZZ-FE; automatic code provisional",
+  "scope": "US2004 CorollaLE; manufacturer label confirms Canada June2003,ZZE130L-DEPNKA and factory A245E; current installed hardware uninspected",
   "grade_policy": "A/B refer to documented application, separate from actual installation. B additionally requires matching credible successful owner outcome. C supplier engineered and direct application supported. D unresolved cross-platform/application. E hypothesis. Null only for exclusions.",
   "records": [
     {
