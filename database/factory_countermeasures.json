@@ -2345,14 +2345,14 @@
     },
     {
       "research_id": "FCM-027",
-      "upgrade_id": "UPG-048",
+      "upgrade_id": "UPG-215",
       "title": "Toyota EG028-04 early TMMC 1ZZ coordinated ECM calibration and genuine catalyst remedy",
       "reviewed_on": "2026-10-29",
-      "novelty": "existing_candidate_evidence_enrichment",
+      "novelty": "new_candidate",
       "subsystem": "Engine controls / emission diagnostics",
       "classification": "factory_countermeasure",
       "evidence_level": "A",
-      "evidence_level_scope": "Toyota EG028-04 explicitly 2003-04 1ZZ Corolla; aftermarket bulletin reproduces TMMC cutoff but original Toyota break image not directly validated. DOES NOT prove UPG-048 high-flow aftermarket power gains.",
+      "evidence_level_scope": "Toyota EG028-04 explicitly 2003-04 1ZZ Corolla; aftermarket bulletin reproduces TMMC cutoff but original Toyota break image not directly validated. DOES NOT prove UPG-048 high-flow aftermarket power gains. Catalog UPG-215 is genuine factory paired remedy, not aftermarket UPG-048.",
       "problem_or_limitation": "Early Corolla 1ZZ catalyst efficiency P0420 MIL and sulfur odor when original ECM calibration/catalyst combination implicated.",
       "application": {
         "model_years": "2003-2004 Corolla",
@@ -2374,7 +2374,7 @@
       "alternative_solutions": {
         "supplier": null,
         "manufacturer_part_number": null,
-        "cross_manufacturer_interchange": "MagnaFlow 454200 is existing unproven UPG-048 aftermarket candidate; not a factory-approved drop-in for matched calibration, no high-flow performance proof.",
+        "cross_manufacturer_interchange": "No generic aftermarket converter or ECU tuning package assumed equivalent; UPG-048 aftermarket high-flow remains separate, without claimed OEM adoption.",
         "required_companion_components": [
           "Toyota-authorized calibration selected for actual ECU part number and emissions type",
           "Toyota-approved catalyst repair part for exact vehicle and exhaust family",
@@ -2439,7 +2439,7 @@
         "next_action": "If P0420 presents, verify factory original revision, code diagnosis and past service before considering specialized OEM remedy; keep high-flow replacement research separate.",
         "purchase_approved": false
       },
-      "intervention_category": "diagnostic_reference"
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
