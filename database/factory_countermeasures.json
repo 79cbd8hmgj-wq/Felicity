@@ -518,6 +518,184 @@
         ],
         "next_action": "Check exact installed parts and current Toyota service information before any order or work."
       }
+    },
+    {
+      "research_id": "FCM-007",
+      "upgrade_id": "UPG-199",
+      "title": "Revised fuel filler pipe for cap-seat corrosion",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Fuel system / EVAP sealing",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented remedy application; actual installed equipment and fault not verified.",
+      "problem_or_limitation": "Listed EVAP codes plus confirmed corrosion at the filler-pipe cap sealing surface",
+      "application": {
+        "model_years": "2003-2004",
+        "market": "USA",
+        "plant": "No plant exclusion stated",
+        "engine": "Not separately restricted in retrieved text",
+        "transmission": "No transmission restriction stated",
+        "production": "2003-04 Corolla 2WD; no transmission or production-date exclusion stated in retrieved bulletin. June2003 is within documentary scope; installed hardware unverified."
+      },
+      "factory_engineering": {
+        "original_design": "Detailed material or mechanical design changes not disclosed in retrieved evidence",
+        "part_relationships": {
+          "original": "77201-02080",
+          "revised": "77201-12750"
+        },
+        "documentation": "EG051-06 documents an improved filler pipe for 2003-04 Corolla 2WD; replacement is conditional on listed EVAP codes and cap-seat corrosion.",
+        "production_adoption": "Not established"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established",
+        "required_companion_components": [
+          "Inspect cap O-ring; replace cap only if damaged per bulletin; verify hoses/clamps for repair scope"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-eg051",
+          "src-disc-filler-modern",
+          "src-disc-filler-capo"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised fuel filler pipe for cap-seat corrosion",
+        "healthy_original_benefit": "Corrects the identified sealing defect; no demonstrated advantage while the original seals correctly and no quantified corrosion-life extension.",
+        "trigger": "Listed EVAP codes plus confirmed corrosion at the filler-pipe cap sealing surface",
+        "possible_negative_consequences": "Fuel/vapor ignition, damaged hoses or vent connections, and incomplete leak diagnosis; do not abrasively treat an open fuel system as a substitute for the documented remedy.",
+        "fitment_confidence": "Documented remedy application; actual installed equipment and fault not verified.",
+        "estimated_us_parts_cost": null,
+        "price_observations": [
+          {
+            "source_id": "src-disc-filler-modern",
+            "part": "77201-12750",
+            "unit_usd": 248.51,
+            "quantity": 1,
+            "availability": "listing_only"
+          },
+          {
+            "source_id": "src-disc-filler-capo",
+            "part": "77201-12750",
+            "unit_usd": 271.94,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Build-correct fuel-system repair procedure; metric tools; safe access/support if required; appropriate diagnostic scan equipment and EVAP monitor verification"
+        ],
+        "installation_risks": "Fuel/vapor ignition, damaged hoses or vent connections, and incomplete leak diagnosis; do not abrasively treat an open fuel system as a substitute for the documented remedy.",
+        "upgrade_interactions": "Resolve current Toyota procedure; do not infer a substitute from a shared model year",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EG051-06 documents an improved filler pipe for 2003-04 Corolla 2WD; replacement is conditional on listed EVAP codes and cap-seat corrosion."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured performance, lifespan or NVH gain on Felicity"
+        ],
+        "missing_research": [
+          "Installed pipe identity and corrosion/EVAP diagnosis",
+          "Current VIN-specific Toyota EPC order confirmation",
+          "Complete installed cost and independent long-term revised-part outcomes"
+        ],
+        "next_action": "Inspect cap seat and cap seal if relevant codes occur; confirm current Toyota EPC part and installed pipe; price hoses/clamps and verify EVAP monitor completion."
+      }
+    },
+    {
+      "research_id": "FCM-008",
+      "upgrade_id": "UPG-200",
+      "title": "Revised front seat assembly/frame for cushion movement",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / seat structure NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Narrative-only bulletin evidence; production and revised-part tables remain unread. No exact fitment established.",
+      "problem_or_limitation": "Lower cushion shifting or noise diagnosed as the condition in NV012-06",
+      "application": {
+        "model_years": "2004-2006, subject to unread VIN limits",
+        "market": "USA",
+        "plant": "Plant-specific VIN limits unread",
+        "engine": "Not separately restricted in retrieved text",
+        "transmission": "No transmission restriction stated",
+        "production": "US2004-06 Corolla before bulletin VIN limits; exact TMMC June2003 applicability unresolved because production and option-specific parts images are unread."
+      },
+      "factory_engineering": {
+        "original_design": "Detailed material or mechanical design changes not disclosed in retrieved evidence",
+        "part_relationships": {
+          "original": "Original seat assembly/frame; exact number unresolved",
+          "revised": "Exact service part unresolved"
+        },
+        "documentation": "NV012-06 describes a revised assembly/frame for lower-cushion movement or noise on pre-change 2004-06 Corolla; embedded production/parts tables were not retrieved.",
+        "production_adoption": "Not established"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established",
+        "required_companion_components": [
+          "Correct seat and restraint equipment; complete factory procedure unresolved"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-nv012"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised front seat assembly/frame for cushion movement",
+        "healthy_original_benefit": "Potential symptom-specific refinement from a revised assembly/frame; no extra comfort or durability over a healthy original is demonstrated.",
+        "trigger": "Lower cushion shifting or noise diagnosed as the condition in NV012-06",
+        "possible_negative_consequences": "Wrong frame, seat configuration, restraint equipment or electrical interfaces; structural seat/rail work requires the correct factory procedure.",
+        "fitment_confidence": "Narrative-only bulletin evidence; production and revised-part tables remain unread. No exact fitment established.",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced",
+        "required_tools": [
+          "Retrieve complete NV012-06 tables and correct2004 front-seat overhaul procedure; verify restraints and seat options before any disassembly"
+        ],
+        "installation_risks": "Wrong frame, seat configuration, restraint equipment or electrical interfaces; structural seat/rail work requires the correct factory procedure.",
+        "upgrade_interactions": "Resolve current Toyota procedure; do not infer a substitute from a shared model year",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "conditional_narrative_scope_only",
+        "june_2003_application": "unresolved_production_tables_not_read",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "NV012-06 describes a revised assembly/frame for lower-cushion movement or noise on pre-change 2004-06 Corolla; embedded production/parts tables were not retrieved."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured performance, lifespan or NVH gain on Felicity"
+        ],
+        "missing_research": [
+          "Unread production VIN and option-specific parts tables",
+          "Exact eligible TMMC build and revised service part identity",
+          "Current build-correct seat/restraint procedure",
+          "Measured repair outcome and complete cost"
+        ],
+        "next_action": "Read original bulletin production and parts images; resolve Canadian-built US-market configuration and current service part before promoting fitment."
+      }
     }
   ],
   "exclusions": [
@@ -528,6 +706,15 @@
         "src-disc-eg022-exclusion"
       ],
       "reason": "Manual transmission only; not applicable to Felicity automatic. Search snippets omit this qualifier.",
+      "disposition": "excluded_no_candidate_count"
+    },
+    {
+      "exclusion_id": "FCX-002",
+      "title": "T-SB-0037-11 headliner water leak",
+      "source_ids": [
+        "src-disc-headliner-exclusion"
+      ],
+      "reason": "Retrieved application lists Avalon, Camry/Camry HV and Solara, not Corolla. Broad title cannot establish fitment.",
       "disposition": "excluded_no_candidate_count"
     }
   ]
