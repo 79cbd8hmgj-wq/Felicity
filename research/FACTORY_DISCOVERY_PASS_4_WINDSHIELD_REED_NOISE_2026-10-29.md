@@ -36,6 +36,14 @@
 - **OUT-008 / existing UPG-130:** user 'rolla04', **2004 Corolla S**, May 2007: reported **door window gasket** at front upper corner near mirror was replaced with a version having adhesive backing, resolving door-glass wind noise. Author noticed passenger side beginning similar misfit. This is **door-glass-run** evidence, **not UPG-214 windshield edge**; no Toyota replacement PN or confirmatory long-term follow-up. Existing **UPG-130** can retain this outcome without promoting a grade or inventing a new candidate.
 - Alternative diagnostic: at least one 2005 Corolla S owner found whistling from **moonroof**, not windshield. Do not use a one-size-fits-all sealer treatment based on cabin location.
 
+## Existing concept enriched — UPG-130 / FCM-025 (Toyota NV006-05 door glass runs)
+
+Toyota USA **NV006-05** explicitly states that the front/rear door-glass window run was **improved** for 2003–05 North American Corolla to reduce wind noise, with early-/late-production part numbers varying by VIN. Archive: https://charm.li/Toyota/2004/Corolla%20L4-1.8L%20%281ZZ-FE%29/Repair%20and%20Diagnosis/Technical%20Service%20Bulletins/Customer%20Interest/Body%20-%20Front%2FRear%20Door%20Glass%20Wind%20Noises/
+
+The 2004 Corolla S firsthand Edmunds owner **OUT-008** says an adhesive-backed replacement front upper door-glass gasket near the mirror fixed the driver-side wind noise; the commenter also saw similar deterioration on the passenger side. The actual Toyota old/new SKU, VIN split and multi-year performance remain unverified; do not assume the adhesive backing is explicitly documented as Toyota's engineering change unless the parts/procedure confirm it.
+
+This is an additional structured manufacturer countermeasure study **FCM-025** linked to **existing UPG-130**, not a 215th catalog concept. Note the distinction: the generic acoustic window foam hypothesis in UPG-130 is *not made Toyota-approved by the existence of an OEM improved door-glass run*. No foam or replacement is purchase-ready.
+
 ## Quality boundaries
 
 - A bulletin-backed **service countermeasure** can deserve a catalog entry even when no new hardware SKU is introduced; it is distinctly different from the *glass locating-stopper* correction already researched.
@@ -54,4 +62,4 @@
 
 ## Summary
 
-One additional distinct factory service correction **UPG-214 / FCM-024**; three firsthand consumer outcome records (**two relevant to new entry, one linked to existing window-seal study**); no new vehicle installations; no quantified performance gain; exact service material availability unresolved. Current expected counts after updating ledgers: **214 candidate IDs, 24 factory studies, 8 independent reports**.
+One additional distinct factory service correction **UPG-214 / FCM-024**; three firsthand consumer outcome records (**two relevant to new entry, one linked to existing window-seal study**); no new vehicle installations; no quantified performance gain; exact service material availability unresolved. Current expected counts after updating ledgers: **214 candidate IDs, 25 factory studies, 8 independent reports**.
