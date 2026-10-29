@@ -6,7 +6,7 @@ The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explici
 
 ## Upgrade research
 
-**Latest discovery:** [October29 factory/supplier research pass](research/FACTORY_DISCOVERY_PASS_2026-10-29.md) expands193 to209 catalog concepts:16 new candidates and stronger evidence for3 existing concepts. It includes19 structured studies,5 independent outcome records, original/revised relationships, conditional costs and a [separate compatibility backlog](research/COUNTERMEASURE_BACKLOG_2026-10-29.md). Eight studies have Level A documentary scope, one has Level C supplier evidence and ten remain Level D leads; none is installed or validated on this car.
+**Latest discovery:** [Body protection and restraint follow-up](research/BODY_RESTRAINT_COUNTERMEASURES_2026-10-29.md) preserves the earlier research and extends the catalog to211 concepts with21 structured studies and5 independent outcome records. Newly recovered parts/production tables strengthen existing body and seat studies; two separate restraint recall remedies add documentary coverage. Ten studies have Level A documentary scope, one has Level C supplier evidence and ten remain Level D leads; none is installed or validated on this car. See the [compatibility backlog](research/COUNTERMEASURE_BACKLOG_2026-10-29.md).
 
 **Prior program:** [Engineering modernization plan](research/MODERNIZATION_PROGRAM.md): six conditional priorities, whole-catalog triage, complete-job cost/time allowances and integrated packages. Its193-concept counts describe the October25 milestone. No measured vehicle gains or physical fitment confirmations are claimed.
 
@@ -38,7 +38,7 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 
 ## Open-ended upgrade discovery and decisions (October 2026)
 
-**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **209 catalog IDs**, each with a linked review, and can grow further. Concepts include verified documentary remedies and unresolved hypotheses; the number is not a count of proven improvements. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
+**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **211 catalog IDs**, each with a linked review, and can grow further. Concepts include verified documentary remedies and unresolved hypotheses; the number is not a count of proven improvements. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
 
 The [current cheap/easy buying guide](research/CHEAP_EASY_BUYING_GUIDE.md) provides the reviewed buying-oriented view, not the limit of research. Current inexpensive/easy preferences apply to purchases, **not** to the long-term discovery catalog. Continue comparing measurable differences against healthy OEM and the actual installed setup, with cost, installation complexity, reliability, thermal/electrical/fuel performance, safety and evidence quality.
 

@@ -1,3 +1,5 @@
+> Later same-day update: the NV012-06 tables were recovered. Their May2004-onward parts applications do not establish June2003 fitment. See [continuation findings](BODY_RESTRAINT_COUNTERMEASURES_2026-10-29.md); this earlier report records the retrieval state at its checkpoint.
+
 # Felicity: resumed fuel-filler and seat investigation
 
 Reviewed October 29, 2026; baseline commit `1b7c4352e9ab0f0158218b0b0aa46f045ebb7b2f`.
