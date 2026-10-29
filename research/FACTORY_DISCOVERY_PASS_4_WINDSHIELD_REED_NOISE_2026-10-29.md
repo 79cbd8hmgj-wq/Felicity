@@ -63,3 +63,7 @@ This is an additional structured manufacturer countermeasure study **FCM-025** l
 ## Summary
 
 One additional distinct factory service correction **UPG-214 / FCM-024**; three firsthand consumer outcome records (**two relevant to new entry, one linked to existing window-seal study**); no new vehicle installations; no quantified performance gain; exact service material availability unresolved. Current expected counts after updating ledgers: **214 candidate IDs, 25 factory studies, 8 independent reports**.
+
+## Saved database follow-up and validation (October 29, 2026)
+
+The discovery records are now integrated into all three canonical upgrade ledgers, the source registry, countermeasure study database and independent outcome ledger. **FCM-025** documents Toyota NV006-05 as a distinct existing-candidate (**UPG-130**) evidence study with its linked **OUT-008**. Its presence increases factory study total beyond the initial draft's 24 while avoiding a duplicate catalog concept. Verified latest totals: **214 candidates**, **25 factory studies** (13 A, 0 B, 1 C, 11 D), and **8 outcome reports**; documentary grades do not indicate completed installations. A read-only relational audit parsed all CSV rows and checked unique IDs, study-to-source references, consumer attribution and original/revised oil-spec application gates with no reported errors. Full repository Python test suite and Actions status were **not claimed passed**; hosted workflow was still in progress at last check and local Git checkout was unavailable. No repair or installation was carried out.
