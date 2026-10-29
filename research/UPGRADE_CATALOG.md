@@ -13,6 +13,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 
 The [balanced performance and quality package](BALANCED_PERFORMANCE_QUALITY_PACKAGE_2026-10-29.md) narrows the broad candidate inventory into an evidence-ranked, staged plan for this vehicle, with actual manufacturer application references, tire-geometry checks, conditional DIY work, costs and specific vehicle-validation gates. The package does **not** classify any candidate as VIN-verified or installed.
 
+## Toyota TSB / factory revision / owner evidence research (2026-10-29)
+
+The [Toyota factory countermeasure and owner evidence catalog](TOYOTA_FACTORY_COUNTERMEASURES_AND_OWNER_EVIDENCE_2026-10-29.md) establishes a new evidence hierarchy and documents **eight Toyota bulletin-led candidate fixes**, measured source distinctions, confirmed conditional part revisions, owner follow-ups, and misleading model-year extrapolations to reject. This includes explicit distinction between Toyota EG021-07 OEM tensioner and *Gates-engineered* alternator-decoupler kit, not Toyota-approved. For reference see [Gates kit analysis](ACCESSORY_DRIVE_DECOUPLER_GATES_2026-10-29.md).
+
 ## Priority for evidence acquisition (not ranking owner's goals)
 
 1. **Factory-proven revisions:** Toyota EG045-07 intake gasket and further TSB/supersession investigation.
