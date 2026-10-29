@@ -2037,6 +2037,104 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-024",
+      "upgrade_id": "UPG-214",
+      "title": "Toyota windshield outer molding aerodynamic reed noise resealing",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / windshield wind NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota USA bulletin indexed specifically for 2004 Corolla; actual condition unverified",
+      "problem_or_limitation": "High-speed aerodynamic lift causes windshield rubber outer molding buzz",
+      "application": {
+        "model_years": "2004 US Corolla",
+        "market": "USA",
+        "plant": "No exclusion documented",
+        "engine": "Any Corolla engine",
+        "transmission": "Any",
+        "production": "June2003 installed molding uninspected"
+      },
+      "factory_engineering": {
+        "original_design": "Windshield exterior molding may flutter at speed",
+        "part_relationships": {
+          "original": "Existing molding",
+          "revised": "Sealing process; historical 3M 08551"
+        },
+        "documentation": "Toyota T-SB-0257-08 supersedes NV004-07: tape molding-to-body test, then exterior molding sealer",
+        "production_adoption": "New rubber or hardware not documented"
+      },
+      "alternative_solutions": {
+        "supplier": "3M historical",
+        "manufacturer_part_number": "08551 obsolete",
+        "cross_manufacturer_interchange": "Unknown",
+        "required_companion_components": [
+          "Manufacturer-approved current paint/rubber-safe sealer"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass4-windscreen-tsb",
+          "src-pass4-windscreen-procedure",
+          "src-pass4-canada2729",
+          "src-pass4-3m-tds",
+          "src-pass4-obsolete",
+          "src-pass4-edmunds-wind"
+        ],
+        "independent_outcome_ids": [
+          "OUT-006",
+          "OUT-007"
+        ],
+        "long_term_followup": "Two 2006 Corolla initial dealer-reseal successes; exact material and long-term outcome unknown",
+        "contradictions": [
+          "3M 08551 obsolete",
+          "Not all wind whistle originates at windshield"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Correct confirmed highway windshield buzz",
+        "healthy_original_benefit": "No improvement shown if quiet healthy molding",
+        "trigger": "Buzz disappears with Toyota tape test",
+        "possible_negative_consequences": "Incompatible sealer may damage paint/rubber; do not interfere with bonded-glass adhesive",
+        "fitment_confidence": "2004 USA bulletin; owner car uninspected",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Tape",
+          "Plastic trim tool",
+          "Approved sealer and cleaner"
+        ],
+        "installation_risks": "Incorrect chemical and disturbance of glass structure",
+        "upgrade_interactions": "Separate from UPG-196 stopper tick and UPG-130 window run",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "subject_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota T-SB-0257-08 applies to 2004 Corolla",
+          "Sealer 3M08551 now listed obsolete"
+        ],
+        "engineering_inferences": [
+          "Bonded outer molding lip limits wind flutter"
+        ],
+        "unverified_claims": [
+          "Actual car symptom and replacement chemical unknown"
+        ],
+        "missing_research": [
+          "Vehicle molding condition",
+          "Current approved sealant",
+          "Exact procedure long-term outcome"
+        ],
+        "next_action": "Check noise then obtain safe material; do not buy preemptively",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
