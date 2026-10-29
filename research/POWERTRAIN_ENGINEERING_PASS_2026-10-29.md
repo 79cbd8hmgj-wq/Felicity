@@ -2,7 +2,7 @@
 
 **Research date:** October 29, 2026. **Target:** U.S.-market **2004 Toyota Corolla LE**, Canadian TMMC June 2003, factory model **ZZE130L-DEPNKA**, 1ZZ-FE / **A245E** (as-built factory label). Actual installed electronics, ECM calibration, valve-body castings and maintenance/repair history **not inspected**. No owner report of erratic shifting, torque-converter slip codes, charging complaints or a P0420 emissions code. Existing front pothole clunks are a separate chassis diagnostic issue.
 
-**Baseline:** 214 canonical upgrade IDs, 25 countermeasure studies, eight independent outcome records. This pass favors upgrading existing evidence for catalogued engine/transmission opportunities rather than creating redundant candidate IDs to inflate the total. Two main technical investigations: **TransGo SK A246** for existing **UPG-074**, and **Toyota EG028-04** ECM/catalyst coordinated remedy related to **UPG-048**. Additional safety/application gates involve **UPG-072** SLT solenoid identification, **UPG-184** diagnostics and **TC002-03** ECM adaptive-values reset.
+**Baseline:** 214 canonical upgrade IDs, 25 countermeasure studies, eight independent outcome records. This pass favors upgrading existing evidence for catalogued engine/transmission opportunities rather than creating redundant candidate IDs to inflate the total. Two main technical investigations: **TransGo SK A246** for existing **UPG-074**, and **Toyota EG028-04** ECM/catalyst coordinated remedy, now split into unique **UPG-215**, distinct from aftermarket **UPG-048**. Additional safety/application gates involve **UPG-072** SLT solenoid identification, **UPG-184** diagnostics and **TC002-03** ECM adaptive-values reset.
 
 ## 1. Manufacturer-engineered A245E/A246E hydraulic wear correction — existing UPG-074
 
@@ -58,7 +58,7 @@ Owner result proof: no documented long-term 2004 Corolla exact **ECM calibration
 
 - **FCM-026 / existing UPG-074 = Level C**, supplier-supported **SK A246** physical valve and bushing redesign on listed A245E **EPC-equipped** model family. No measured healthy-OEM gain, no owner Level B outcome. **Purchase ready: false**.
 - **Existing UPG-072** solenoid research gets **Rostra connector variant** caveat. No newly documented improved OEM solenoid grade or catalog ID.
-- **Existing UPG-048** gains **TMMC Corolla production cutoff** cross-reference for Toyota EG028-04; this changes **Toyota OEM remedy documentary confidence only**, not aftermarket converter power claims. No new ID.
+- **New UPG-215 / FCM-027 = Level A factory scope**: Toyota EG028-04 matched ECM reflash and genuine catalyst correction has its own canonical entry separate from **UPG-048**, an aftermarket high-flow converter concept. UPG-048 retains the research cross-reference but earns no factory-approval or horsepower claim.
 - **Existing UPG-184 / FCM-018** gains TC002-03 adaptive reset procedure context and exact-match gating for post-automatic-repair operation. No new ID, no automatic flash authorization.
 - **Independent owner outcomes newly authenticated for exact kit:** zero. This is explicit — a manufacturer claim or unspecified shop report is not Level B.
 - **Technical importance:** medium to high if the automatic develops verified hydraulic wear or P0420. **Purchase urgency:** low when engine and A245E are currently working normally. No arbitrary engine power/MPG/shift-lifespan numbers.
@@ -73,3 +73,15 @@ Owner result proof: no documented long-term 2004 Corolla exact **ECM calibration
 6. Systematic future searches for *new* 2004 TMMC-compatible starter/charging alternator rectifier/regulator revisions and factory 1ZZ ring/PCV changes: **nothing sufficiently verified in this pass** to add an entry. Avoid inventing a retrofit.
 
 All relevant source findings should be linked in the canonical source and existing candidate ledgers. No actual replacement work performed, no repairs marked done.
+
+### Independent Corolla owner report, not a kit endorsement
+
+**OUT-009** documents a firsthand 2005 Corolla owner with P0741 who reported that replacing automatic transmission fluid and filter eventually resolved the code at a later follow-up, after earlier intermittent reports. Source: https://www.reddit.com/r/COROLLA/comments/qczq6u/p0741_on_05_corolla_update/ . This is **NOT evidence that TransGo SK A246 was installed or works**. It demonstrates why P0741 must be diagnosed and lower-invasive causes checked before valve-body surgery. Original 2021 thread and 2025 reply are not a guaranteed five-year continuous successful outcome. The 2005 Corolla is not a 2004 early TMMC match.
+
+### Structured database milestone
+
+- **215 catalog candidates** including **one newly distinguished Toyota OEM corrective package UPG-215**, which is not an additional claim of a performance upgrade.
+- **27 structured countermeasure studies**, adding FCM-026 (TransGo existing UPG-074 manufacturer evidence, grade C) and FCM-027 (Toyota EG028-04 new UPG-215 factory evidence, grade A).
+- **Nine independent owner reports**, with OUT-009 explicitly graded **not** an exact-kit success.
+- No actual vehicle parts inspected, replacements installed or candidate declared purchase-ready.
+
