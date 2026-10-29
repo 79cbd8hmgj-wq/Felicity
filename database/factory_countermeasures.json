@@ -1,0 +1,2618 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-29",
+  "baseline_commit": "296f45410715ce62d540815935d5f0165c6586dc",
+  "scope": "US2004 CorollaLE; manufacturer label confirms Canada June2003,ZZE130L-DEPNKA and factory A245E; current installed hardware uninspected",
+  "grade_policy": "A/B refer to documented application, separate from actual installation. B additionally requires matching credible successful owner outcome. C supplier engineered and direct application supported. D unresolved cross-platform/application. E hypothesis. Null only for exclusions.",
+  "records": [
+    {
+      "research_id": "FCM-001",
+      "upgrade_id": "UPG-194",
+      "title": "Matched front brake bracket and pad-support countermeasure",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Braking / front hardware",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Rattle localized to front brakes over depressions; owner pothole clunks are not a diagnosis.",
+      "application": {
+        "model_years": "2003-2008",
+        "market": "USA",
+        "plant": "NUMMI/TMMC",
+        "engine": "1ZZ",
+        "transmission": "No transmission exclusion stated",
+        "production": "Before 2008 production-change thresholds; June 2003 is earlier. Actual brake equipment still requires inspection."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "47721-02140; historical supports 47716-02100 / 47717-02050",
+          "revised": "47721-02141 x2; latest captured support kit 04947-02130 x1",
+          "historical_intermediate": "BR004-07 support kit 04947-02120; superseded guide, not final parts choice"
+        },
+        "documentation": "T-SB-0046-08 supersedes BR004-07; bump-induced brake rattle remedy uses 47721-02141 brackets with updated 04947-02130 support kit.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": [
+          "Correct pad-support kit and bracket pairing",
+          "Applicable shims/boots and specified caliper grease after inspection"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-br004",
+          "src-disc-br0046",
+          "src-disc-price-bracket",
+          "src-disc-price-support"
+        ],
+        "independent_outcome_ids": [
+          "OUT-001"
+        ],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Matched front brake bracket and pad-support countermeasure",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Rattle localized to front brakes over depressions; owner pothole clunks are not a diagnosis.",
+        "possible_negative_consequences": "Wrong support/bracket combination or contaminated friction can impair braking. Reman caliper bracket revision is not established by year-only fitment.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 355.9,
+          "basis": "2 x170.26 +15.38 parts subtotal only; grease/shims/boots/other repairs/tax/freight excluded",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-disc-price-bracket",
+            "part": "47721-02141",
+            "unit_usd": 170.26,
+            "quantity": 2,
+            "availability": "listing_only"
+          },
+          {
+            "source_id": "src-disc-price-support",
+            "part": "04947-02130",
+            "unit_usd": 15.38,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Jack and stands",
+          "Torque wrench",
+          "Caliper support hook",
+          "Factory procedure"
+        ],
+        "installation_risks": "Wrong support/bracket combination or contaminated friction can impair braking. Reman caliper bracket revision is not established by year-only fitment.",
+        "upgrade_interactions": "Do not combine BR004-07 support kit selection or grease instructions blindly with T-SB-0046-08 or the later TCMC-pad procedure; resolve current Toyota instruction for installed system.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0046-08 supersedes BR004-07; bump-induced brake rattle remedy uses 47721-02141 brackets with updated 04947-02130 support kit."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-002",
+      "upgrade_id": "UPG-107",
+      "title": "Revised Toyota TCMC pad and matched shim system",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_evidence_existing_candidate",
+      "subsystem": "Braking / friction and shims",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Groan/squeak from installed older TCMC service pads.",
+      "application": {
+        "model_years": "2003-2008",
+        "market": "USA",
+        "engine": "Not limited in bulletin",
+        "transmission": "Not limited",
+        "production": "No October 2003 boundary; installed TCMC pad identity is required"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "04465-AZ003-TM",
+          "revised": "04465-AZ022-TM"
+        },
+        "documentation": "T-SB-0150-13 documents 04465-AZ003-TM to 04465-AZ022-TM for noisy TCMC pads, not factory-original pads.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-tcmc",
+          "src-disc-price-tcmc"
+        ],
+        "independent_outcome_ids": [
+          "OUT-003"
+        ],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised Toyota TCMC pad and matched shim system",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Groan/squeak from installed older TCMC service pads.",
+        "possible_negative_consequences": "Wrong shims/grease or pad contamination; no demonstrated stopping-distance or original-pad durability improvement.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [
+          {
+            "source_id": "src-disc-price-tcmc",
+            "part": "04465-AZ022-TM",
+            "unit_usd": 39.27,
+            "quantity": 1,
+            "availability": "explicitly_unavailable"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Jack and stands",
+          "Torque wrench",
+          "Micrometer",
+          "Dial indicator if checking runout"
+        ],
+        "installation_risks": "Wrong shims/grease or pad contamination; no demonstrated stopping-distance or original-pad durability improvement.",
+        "upgrade_interactions": "Toyota requires earlier brake bulletins applied. Supplied TCMC shims/grease only; p4 says no grease on reinstalled pad supports. Follow current resolved procedure rather than mixing legacy instructions.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0150-13 documents 04465-AZ003-TM to 04465-AZ022-TM for noisy TCMC pads, not factory-original pads."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-003",
+      "upgrade_id": "UPG-195",
+      "title": "P0133-only Toyota ECM diagnostic-logic correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine controls / emissions",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "P0133 alone after proper diagnostics and older listed calibration.",
+      "application": {
+        "model_years": "2004",
+        "market": "USA",
+        "engine": "Corolla covered; document uses Denso/Delphi ECM branches",
+        "transmission": "ATM rows verified separately from MTM and Matrix AWD",
+        "production": "All 2004 in stated model scope; installed ECU supplier/calibration unresolved"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Denso 89661-0Z09#; Delphi 89666-0233# (ECM identifiers, NOT required purchases)",
+          "revised": "Denso 89661-0Z093 / calibration30217300; Delphi89666-02333 / main30214200 + sub50203300"
+        },
+        "documentation": "EG017-07 corrects P0133-only logic by reflash; explicitly does not replace ECM.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-eg017"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "P0133-only Toyota ECM diagnostic-logic correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "P0133 alone after proper diagnostics and older listed calibration.",
+        "possible_negative_consequences": "Wrong supplier/calibration or unstable flash supply can disable ECU; cannot hide real sensor, intake or exhaust faults.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "specialist_reflash",
+        "required_tools": [
+          "Toyota-compatible calibration-capable scan tool",
+          "Current Toyota TIS",
+          "Stabilized programming power supply"
+        ],
+        "installation_risks": "Wrong supplier/calibration or unstable flash supply can disable ECU; cannot hide real sensor, intake or exhaust faults.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EG017-07 corrects P0133-only logic by reflash; explicitly does not replace ECM."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-004",
+      "upgrade_id": "UPG-196",
+      "title": "Factory windshield locating-stopper NVH correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / glazing NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Localized top-windshield tick/creak/rattle, confirmed before trim work.",
+      "application": {
+        "model_years": "2003-2013 family; Corolla table inspected",
+        "market": "USA",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "No October boundary; Corolla bottom windshield retainers N/A; REAR glass procedure is 2009 Corolla ONLY"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Two top windshield locating stoppers",
+          "revised": "Procedure change, no replacement glass part specified"
+        },
+        "documentation": "T-SB-0141-10 Rev1 identifies locating-stop contact as tick/creak source; 2004 Corolla uses top windshield procedure.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-glass141"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Factory windshield locating-stopper NVH correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Localized top-windshield tick/creak/rattle, confirmed before trim work.",
+        "possible_negative_consequences": "Headliner creasing, glass/paint damage, and SRS/trim hazards; no removal of structural urethane.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic trim tools",
+          "Specified cutting tool",
+          "Tape-protected hand tools",
+          "Build-correct trim/SRS procedure"
+        ],
+        "installation_risks": "Headliner creasing, glass/paint damage, and SRS/trim hazards; no removal of structural urethane.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0141-10 Rev1 identifies locating-stop contact as tick/creak source; 2004 Corolla uses top windshield procedure."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-005",
+      "upgrade_id": "UPG-197",
+      "title": "Front door glass bolt retention campaign",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / power windows",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Private campaign status check and actual regulator/bolt inspection by Toyota.",
+      "application": {
+        "model_years": "Certain 2003-2004",
+        "market": "USA campaign",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "Corolla procedure separates March2002-August2003 from August2003-February2004 regulators; June2003 lies in early group. Actual campaign eligibility/completion unknown."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Original front door glass bolts; exact original PN not established",
+          "revised": "90080-10457, four bolts in captured historical instructions"
+        },
+        "documentation": "SSC80A /08V162 replaces four front door glass bolts; early regulator procedure differs from later coating inspection.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-80a"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Front door glass bolt retention campaign",
+        "healthy_original_benefit": "Safety-defect countermeasure may be relevant without symptoms if eligible and incomplete; verify privately. Not an elective comfort upgrade.",
+        "trigger": "Private campaign status check and actual regulator/bolt inspection by Toyota.",
+        "possible_negative_consequences": "Wrong regulator branch or applying later torque to early bolts can damage glass/regulator; glass breakage risk.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "dealer_campaign_preferred",
+        "required_tools": [
+          "Toyota dealer campaign lookup",
+          "Specified trim tools",
+          "Calibrated small-range torque wrench"
+        ],
+        "installation_risks": "Wrong regulator branch or applying later torque to early bolts can damage glass/regulator; glass breakage risk.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "conditional_campaign_scope",
+        "june_2003_application": "early_regulator_branch_identified_campaign_eligibility_pending",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "SSC80A /08V162 replaces four front door glass bolts; early regulator procedure differs from later coating inspection."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-006",
+      "upgrade_id": "UPG-198",
+      "title": "Factory front seat locating-pin squeak correction",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / seat NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Squeak conclusively localized to seat locator/floor contact.",
+      "application": {
+        "model_years": "2004-2010 family including Corolla",
+        "market": "USA",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not powertrain dependent",
+        "production": "No date exclusion stated; inspect actual seat and applicable restraint equipment"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Assembly locating pins contact floor holes",
+          "revised": "Factory locator-pin correction; no new seat required"
+        },
+        "documentation": "T-SB-0288-08 Rev1 targets locating-pin/floor contact; Corolla table identifies two front locator pins per seat.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-seat288"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Factory front seat locating-pin squeak correction",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Squeak conclusively localized to seat locator/floor contact.",
+        "possible_negative_consequences": "Irreversible cutting; structural fasteners/rails must remain intact. SRS and applicable occupant-classification initialization required; bare metal must be protected.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced_safety_sensitive",
+        "required_tools": [
+          "Trim tools",
+          "Torque wrench",
+          "Factory-specified cutting tool",
+          "Build-correct SRS/seat instructions"
+        ],
+        "installation_risks": "Irreversible cutting; structural fasteners/rails must remain intact. SRS and applicable occupant-classification initialization required; bare metal must be protected.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0288-08 Rev1 targets locating-pin/floor contact; Corolla table identifies two front locator pins per seat."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-007",
+      "upgrade_id": "UPG-199",
+      "title": "Revised corrosion-related EVAP fuel filler tube",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Fuel / emissions sealing",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Relevant EVAP DTC plus corrosion at fuel-cap sealing surface.",
+      "application": {
+        "model_years": "2003-2004 Corolla 2WD",
+        "market": "USA",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "No October2003 exclusion; April2003 repair manual explicitly referenced. Actual installed tube unknown."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "77201-02080",
+          "revised": "77201-12750"
+        },
+        "documentation": "EG051-06 identifies improved filler tube 77201-02080 to77201-12750; cap is unchanged unless its seal is damaged.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": "Dorman",
+        "manufacturer_part_number": "577-252",
+        "cross_manufacturer_interchange": "Manufacturer cross-lists both Toyota filler numbers; direct replacement, not proven better than Toyota revision.",
+        "required_companion_components": [
+          "Inspect cap O-ring; replace cap only if damaged per bulletin; verify hoses/clamps for repair scope"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-eg051",
+          "src-disc-filler-price",
+          "src-disc-dorman-filler",
+          "src-disc-filler-modern",
+          "src-disc-filler-capo"
+        ],
+        "independent_outcome_ids": [
+          "OUT-002",
+          "OUT-005"
+        ],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised corrosion-related EVAP fuel filler tube",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Relevant EVAP DTC plus corrosion at fuel-cap sealing surface.",
+        "possible_negative_consequences": "Fuel vapor/fire hazard, damaged aged hose connections; replacing tube cannot correct unrelated EVAP leaks.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 237.39,
+          "basis": "Filler pipe listing only; cap if damaged, hoses/clamps, tools, tax/freight excluded; availability unconfirmed",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-disc-filler-price",
+            "part": "77201-12750",
+            "unit_usd": 237.39,
+            "quantity": 1,
+            "availability": "catalog_not_inventory"
+          },
+          {
+            "source_id": "src-disc-filler-modern",
+            "part": "77201-12750",
+            "unit_usd": 248.51,
+            "quantity": 1,
+            "availability": "listing_only"
+          },
+          {
+            "source_id": "src-disc-filler-capo",
+            "part": "77201-12750",
+            "unit_usd": 271.94,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Scan tool and proper EVAP leak diagnostic equipment",
+          "Metric hand tools",
+          "Build-correct fuel system procedure"
+        ],
+        "installation_risks": "Fuel vapor/fire hazard, damaged aged hose connections; replacing tube cannot correct unrelated EVAP leaks.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EG051-06 identifies improved filler tube 77201-02080 to77201-12750; cap is unchanged unless its seal is damaged."
+        ],
+        "engineering_inferences": [
+          "Improved sealing durability is the corrective intent; exact changed coating/material is undisclosed."
+        ],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-008",
+      "upgrade_id": "UPG-200",
+      "title": "Revised front seat assembly/frame for cushion movement",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / seat structure NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "All archived tables read; later parts/date scope does not establish June2003 compatibility.",
+      "problem_or_limitation": "Lower cushion shifting or noise diagnosed as the condition in NV012-06",
+      "application": {
+        "model_years": "2004-2006 narrative; listed service parts start May2004",
+        "market": "USA",
+        "plant": "NUMMI/TMMC production thresholds read; early-build part coverage unresolved",
+        "engine": "Not separately restricted in retrieved text",
+        "transmission": "No transmission restriction stated",
+        "production": "US2004-06 pre-change bulletin; TMMC threshold2T1**3*E86C638648 as printed. Parts table startsMay2004, later than June2003. Early-build coverage unresolved."
+      },
+      "factory_engineering": {
+        "original_design": "Detailed material or mechanical design changes not disclosed in retrieved evidence",
+        "part_relationships": {
+          "original": "Exact early seat/frame unresolved",
+          "revised": "May2004+ only:71120-02010 LH/71110-02011 RH without side airbags; not established for June2003",
+          "table_examples_not_order_numbers": "Non-side-airbag LH71120-02010 and RH71110-02011 rows start May2004; side-airbag assemblies are distinct. Not authenticated for June2003.",
+          "number_change": "Current column saysSame; no new part-number supersession"
+        },
+        "documentation": "NV012-06 tables now read: listed service applications start May2004 and current part numbers are Same; no June2003 eligible service part established.",
+        "production_adoption": "Not established"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established",
+        "required_companion_components": [
+          "Correct seat and restraint equipment; complete factory procedure unresolved"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-nv012",
+          "src-disc-seatnv012"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised front seat assembly/frame for cushion movement",
+        "healthy_original_benefit": "Potential symptom-specific refinement from a revised assembly/frame; no extra comfort or durability over a healthy original is demonstrated.",
+        "trigger": "Lower cushion shifting or noise diagnosed as the condition in NV012-06",
+        "possible_negative_consequences": "Wrong frame, seat configuration, restraint equipment or electrical interfaces; structural seat/rail work requires the correct factory procedure.",
+        "fitment_confidence": "Date/table conflict blocks June2003 assignment",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced",
+        "required_tools": [
+          "Current Toyota early-build seat/restraint procedure and exact service-part confirmation before work"
+        ],
+        "installation_risks": "Wrong frame, seat configuration, restraint equipment or electrical interfaces; structural seat/rail work requires the correct factory procedure.",
+        "upgrade_interactions": "Resolve current Toyota procedure; do not infer a substitute from a shared model year",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "full_archive_scope_with_parts_date_conflict",
+        "june_2003_application": "unresolved_parts_table_starts_may_2004",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "NV012-06 tables now read: listed service applications start May2004 and current part numbers are Same; no June2003 eligible service part established."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured performance, lifespan or NVH gain on Felicity"
+        ],
+        "missing_research": [
+          "Current Toyota resolution of broad model-year narrative versus later production parts table",
+          "Exact early seat/restraint service part and configuration",
+          "Current procedure, cost and independent outcome"
+        ],
+        "next_action": "Resolve conflict between broad2004 model-year narrative and May2004-onward parts applications in current Toyota EPC/TIS; do not order later seats or frames for June2003 based on this bulletin.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-009",
+      "upgrade_id": "UPG-201",
+      "title": "Factory rear handle corrosion field-fix kit investigation",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / door hardware",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Source application documented; subject-car fitment/campaign status not established.",
+      "problem_or_limitation": "Factory field fix targets rust staining beneath rear outer handles in salted-road use; exact kit mechanism and preventive outcome remain unresolved.",
+      "application": {
+        "model_years": "2003-2005 Corolla",
+        "market": "Canada bulletin; US applicability unresolved",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not separately restricted",
+        "production": "Production/VIN image not read; no individual eligibility established",
+        "plant": "See source production restrictions"
+      },
+      "factory_engineering": {
+        "original_design": "Existing rear handle assembly/hardware; details pending",
+        "part_relationships": {
+          "original": "Existing rear handle assembly/hardware; details pending",
+          "revised": "04006-22102 x2 (Corolla kit)"
+        },
+        "documentation": "Toyota Canada bulletin2543 specifies Corolla kit04006-22102 quantity2; the color-coded04006-22202 kits apply to Camry/Matrix.",
+        "production_adoption": "See source; current individual hardware unverified"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; especially do not substitute Matrix/Camry kits or modules",
+        "required_companion_components": [
+          "See current Toyota procedure and source-specific equipment requirements"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-handle2543"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent subject-configuration outcome verified in this pass",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Rear outer handle rust field-fix kit",
+        "healthy_original_benefit": "Factory field fix targets rust staining beneath rear outer handles in salted-road use; exact kit mechanism and preventive outcome remain unresolved.",
+        "trigger": "Source-specific condition/application and installed-part checks",
+        "possible_negative_consequences": "Wrong-model kit, door finish damage, disturbed lock linkage or water barrier; kit is not proof a new complete handle is required.",
+        "fitment_confidence": "candidate; market/build mismatch unresolved",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Correct rear door overhaul procedure; trim tools; read kit-component and VIN illustrations first; preserve door water barrier and latch function"
+        ],
+        "installation_risks": "Wrong-model kit, door finish damage, disturbed lock linkage or water barrier; kit is not proof a new complete handle is required.",
+        "upgrade_interactions": "Preserve cooling airflow, water management, trim or restraint function as applicable; no blind donor substitution",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "different_market_or_later_build_scope",
+        "june_2003_application": "exact_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota Canada bulletin2543 specifies Corolla kit04006-22102 quantity2; the color-coded04006-22202 kits apply to Camry/Matrix."
+        ],
+        "engineering_inferences": [
+          "Factory field fix targets rust staining beneath rear outer handles in salted-road use; exact kit mechanism and preventive outcome remain unresolved."
+        ],
+        "unverified_claims": [
+          "No subject-car measured gain or independent long-term installed outcome"
+        ],
+        "missing_research": [
+          "Unread VIN and component images",
+          "US-market applicability and current kit contents",
+          "Current stock and complete cost",
+          "Independent outcome"
+        ],
+        "next_action": "Read VIN/component images and verify current US-compatible Corolla kit contents; inspect handle contact/rust origin and price both rear-door kits.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-010",
+      "upgrade_id": "UPG-202",
+      "title": "A-pillar garnish condensation drainage procedure",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / water management",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Cold-weather condensate confirmed; distinguish rain/glass leakage first.",
+      "application": {
+        "model_years": "2003-2008",
+        "market": "Canada; USA application unverified",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "No exact US trim/SRS configuration verified."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Plastic garnish ribs retain condensate",
+          "revised": "Procedure on plastic garnish; no metal-body drilling"
+        },
+        "documentation": "CanadaTSB3251 addresses freezing-weather condensate at headliner/pillar trim with plastic-garnish drainage correction.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-cond3251"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "A-pillar garnish condensation drainage procedure",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Cold-weather condensate confirmed; distinguish rain/glass leakage first.",
+        "possible_negative_consequences": "Wrong trim cutting or SRS disturbance; irreversible modification can stain or weaken garnish.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced_safety_sensitive",
+        "required_tools": [
+          "Correct Toyota trim/SRS procedure",
+          "Specified drill and trim tools"
+        ],
+        "installation_risks": "Wrong trim cutting or SRS disturbance; irreversible modification can stain or weaken garnish.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "CanadaTSB3251 addresses freezing-weather condensate at headliner/pillar trim with plastic-garnish drainage correction."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Retrieve complete parts/cutoff tables and establish US June-2003 application before ordering or designing an installation.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-011",
+      "upgrade_id": "UPG-203",
+      "title": "Roof molding warpage service countermeasure investigation",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / exterior trim",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Visible roof molding deformation/lifting.",
+      "application": {
+        "model_years": "2003-2004",
+        "market": "USA",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "Before TMMC2T1BR3#E*4C797659 or NUMMI1NXBR3#E*4Z234512 as printed; actual current EPC/hardware unresolved"
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "75555-02030 RH;75556-02030 LH",
+          "revised": "Same in BO022-03; no changed-number revision demonstrated"
+        },
+        "documentation": "BO022-03 prescribes new service molding for warped/lifting molding; engineering material change is not established.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-roofbo022",
+          "src-cont-roof-jpp"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Roof molding warpage service countermeasure investigation",
+        "healthy_original_benefit": "None established for straight, securely retained original molding.",
+        "trigger": "Visible roof molding deformation/lifting.",
+        "possible_negative_consequences": "Paint/gutter damage or broken retainers; not a demonstrated water-seal or aerodynamic improvement.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic pry tools",
+          "Paint protection",
+          "Factory molding installation procedure"
+        ],
+        "installation_risks": "Paint/gutter damage or broken retainers; not a demonstrated water-seal or aerodynamic improvement.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "BO022-03 prescribes new service molding for warped/lifting molding; engineering material change is not established.",
+          "Parts and production tables visually read; no new material/design change established."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Actual installed molding/clip condition",
+          "Current build-specific EPC and supply",
+          "No demonstrated improvement over healthy original molding"
+        ],
+        "next_action": "Treat as conditional restoration; verify current NAP part and actual warpage. Do not use Japan-only75555-12120 as a TMMC supersession.",
+        "purchase_approved": false
+      },
+      "intervention_category": "restoration"
+    },
+    {
+      "research_id": "FCM-012",
+      "upgrade_id": "UPG-204",
+      "title": "Factory improved ZZ piston lubrication / short-block research",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine / oil consumption",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Measured abnormal oil use after leakage/PCV diagnosis; healthy engine has no rebuild justification.",
+      "application": {
+        "model_years": "European ZZE11#/12# and other specified ZZ models",
+        "market": "Europe; NOT US ZZE130 approval",
+        "engine": "ZZ family; European Corolla 1ZZ/other variants separated in table",
+        "transmission": "US automatic installation not verified",
+        "production": "Plant-specific2005 production changes; no Canadian-built US counterpart established."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "EU11400-0D031(2) or11400-22080 examples",
+          "revised": "EU11400-0D032-84 or11400-22080-84 examples; NOT Felicity order numbers"
+        },
+        "documentation": "EuropeEG-6020 documents improved piston cooling/lubrication and increased oil quantity; OPTIFIT repair covers specified European models/plants.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-euoil6020"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Factory improved ZZ piston lubrication / short-block research",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "Measured abnormal oil use after leakage/PCV diagnosis; healthy engine has no rebuild justification.",
+        "possible_negative_consequences": "Major rebuild cost, bore/ring/head compatibility and emissions identification; European dry-fill/dipstick data cannot be used as US refill instruction.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "professional_rebuild",
+        "required_tools": [
+          "Engine removal/rebuild equipment",
+          "Precision measurement tools",
+          "Qualified engine builder"
+        ],
+        "installation_risks": "Major rebuild cost, bore/ring/head compatibility and emissions identification; European dry-fill/dipstick data cannot be used as US refill instruction.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EuropeEG-6020 documents improved piston cooling/lubrication and increased oil quantity; OPTIFIT repair covers specified European models/plants."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Find North American piston/ring/block production revision and authentic dimensions",
+          "Confirm local short-block/piston numbers, emissions and rebuild economics",
+          "No improved hole count or US interchange authenticated"
+        ],
+        "next_action": "Retrieve complete parts/cutoff tables and establish US June-2003 application before ordering or designing an installation.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-013",
+      "upgrade_id": "UPG-205",
+      "title": "Carpet floor retainer repair without carpet replacement",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / floor-mat retention serviceability",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Loose or damaged front carpet retainer; no work on healthy anchors.",
+      "application": {
+        "model_years": "2002-2013 Corolla",
+        "market": "USA",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "No October2003 cutoff stated. Inspect exact carpet/clip arrangement."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Loose/damaged carpet retainer; original number not established",
+          "revised": "58297-50020;08210-00820 mat clip only if needed"
+        },
+        "documentation": "T-SB-0014-22 supersedes0397-09; replaces damaged/loose retainer using58297-50020 without whole carpet.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-retainer14",
+          "src-disc-retainer-price"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Carpet floor retainer repair without carpet replacement",
+        "healthy_original_benefit": "None for secure original anchor; documented serviceability improvement when damaged.",
+        "trigger": "Loose or damaged front carpet retainer; no work on healthy anchors.",
+        "possible_negative_consequences": "Wrong orientation or enlarged hole can leave mat insecure; harness/trim damage.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [
+          {
+            "source_id": "src-disc-retainer-price",
+            "part": "58297-50020",
+            "displayed_usd": 6.9,
+            "sales_unit": "unconfirmed_piece_or_package; bulletin package10",
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic pry tools",
+          "Controlled carpet cutting tool",
+          "Factory retainer procedure"
+        ],
+        "installation_risks": "Wrong orientation or enlarged hole can leave mat insecure; harness/trim damage.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_early_build",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "T-SB-0014-22 supersedes0397-09; replaces damaged/loose retainer using58297-50020 without whole carpet."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Check exact installed parts and current Toyota service information before any order or work.",
+        "purchase_approved": false
+      },
+      "intervention_category": "restoration_serviceability"
+    },
+    {
+      "research_id": "FCM-014",
+      "upgrade_id": "UPG-206",
+      "title": "Copper-nickel brake hard-line material alternative",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Braking / hydraulic corrosion resistance",
+      "classification": "supplier_material_retrofit_lead",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Corroded hard line requiring replacement; potential material upgrade at repair.",
+      "application": {
+        "model_years": "Universal material, no model-year kit authenticated",
+        "market": "USA supplier; Corolla assembly not verified",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "Actual tube dimensions, flare form, nuts, routing and supports require measurement."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Toyota steel hard-line material/coating and part numbers not authenticated",
+          "revised": "EziBend/EziBend2 tubing; distributor BQBRAKETUBE coil is NOT a complete kit"
+        },
+        "documentation": "BrakeQuip specifies automotive EziBend/EziBend2 UNS C70600 copper-nickel tubing; Corolla geometry, flare and fittings not verified.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": "BrakeQuip",
+        "manufacturer_part_number": "EziBend / EziBend2; exact tube SKU/diameter pending",
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": [
+          "Correct flare nuts and support clips",
+          "Verified tube dimensions and flare form"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-cunifer",
+          "src-disc-cunifer-price"
+        ],
+        "independent_outcome_ids": [
+          "OUT-004"
+        ],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Copper-nickel brake hard-line material alternative",
+        "healthy_original_benefit": "Potential external-corrosion resistance advantage at necessary line replacement; no reason to replace sound lines or expect shorter stopping.",
+        "trigger": "Corroded hard line requiring replacement; potential material upgrade at repair.",
+        "possible_negative_consequences": "Incorrect flare/diameter/nut engagement or routing causes pressure loss; abrasion/fatigue and bleeding risks.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": {
+          "amount_usd": 55.5,
+          "basis": "25-foot coil listing only, diameter variant unresolved; advertised freight25.99 extra; fittings/tools/other parts excluded",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [],
+        "diy_complexity": "advanced_hydraulic_fabrication",
+        "required_tools": [
+          "Correct automotive flaring dies and inspection tools",
+          "Tube bender and fitting wrenches",
+          "Safe lifting and pressure/leak/bleed equipment"
+        ],
+        "installation_risks": "Incorrect flare/diameter/nut engagement or routing causes pressure loss; abrasion/fatigue and bleeding risks.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "BrakeQuip specifies automotive EziBend/EziBend2 UNS C70600 copper-nickel tubing; Corolla geometry, flare and fittings not verified."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Retrieve complete parts/cutoff tables and establish US June-2003 application before ordering or designing an installation.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-015",
+      "upgrade_id": "UPG-093",
+      "title": "Mevotech TTX serviceable sintered-bearing front links",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_evidence_existing_candidate",
+      "subsystem": "Suspension / stabilizer links",
+      "classification": "supplier_engineered_alternative",
+      "evidence_level": "C",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Replace only failed/incompatible link after diagnosis; present links reportedly repaired.",
+      "application": {
+        "model_years": "2003-2018 Corolla front, quantity2",
+        "market": "Manufacturer North American catalog",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "No production cutoff listed; June2003 installed length/articulation and present aftermarket repairs unverified."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Original Toyota link design/number not authenticated in this study",
+          "revised": "TXK80230; no Toyota supersession implied"
+        },
+        "documentation": "No Toyota endorsement or factory revision established; this record concerns Mevotech engineering.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": "Mevotech",
+        "manufacturer_part_number": "TXK80230",
+        "cross_manufacturer_interchange": "Direct Corolla application comes from manufacturer buyers guide, not inference from Matrix/Vibe.",
+        "required_companion_components": [
+          "Correct supplied locking nuts and grease fitting; confirm box contents",
+          "Manufacturer-approved grease/service instructions"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-mevotech",
+          "src-disc-mevotech-price",
+          "src-disc-mevotech-hardware"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": [
+          "Manufacturer says hardware included YES; OReilly specification says NO. Current manufacturer URL redirects to temporarily unavailable catalog. Reconfirm supplied revision and contents."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Mevotech TTX serviceable sintered-bearing front links",
+        "healthy_original_benefit": "Serviceable bearing/seal alternative at required replacement; superiority to a healthy original sealed joint has not been independently demonstrated.",
+        "trigger": "Replace only failed/incompatible link after diagnosis; present links reportedly repaired.",
+        "possible_negative_consequences": "Added grease-service dependence, boot damage from wrong grease/overfill; geometry may bind; no proven ride or lifespan gain.",
+        "fitment_confidence": "Document scope supported; actual installed configuration unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 70.99,
+          "basis": "Each link displayed by FinditParts; two needed if both failed; stock/freight not confirmed",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Safe lifting",
+          "Torque wrench and counter-hold wrench",
+          "Specified grease equipment",
+          "Full-travel clearance checks"
+        ],
+        "installation_risks": "Added grease-service dependence, boot damage from wrong grease/overfill; geometry may bind; no proven ride or lifespan gain.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "manufacturer_catalog_application",
+        "june_2003_application": "no_catalog_cutoff_actual_geometry_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Manufacturer TXK80230 buyers guide includes2003-18 Corolla front; greasable sintered-bearing design and integrated neoprene sealing are documented manufacturer claims."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Reconfirm manufacturer application/version, actual length/articulation and box contents; obtain approved lubrication instructions and credible durability follow-up.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-016",
+      "upgrade_id": "UPG-207",
+      "title": "Factory lower-grille condenser debris shield adaptation lead",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "HVAC / condenser protection",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Source application documented; subject-car fitment/campaign status not established.",
+      "problem_or_limitation": "Intercepts road debris before it reaches the condenser; possible early-body retrofit requires mounting and airflow validation, with no quantified failure reduction.",
+      "application": {
+        "model_years": "2005-2006 donor application only",
+        "market": "USA bulletin for2005-06; early2004 retrofit unresolved",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not separately restricted",
+        "production": "No2004 application documented; production VIN image unread",
+        "plant": "See source production restrictions"
+      },
+      "factory_engineering": {
+        "original_design": "No previous mesh kit listed",
+        "part_relationships": {
+          "original": "No previous mesh kit listed",
+          "revised": "53112-12190 (documented2005-06 donor kit)"
+        },
+        "documentation": "Toyota AC002-06 offers plastic protection mesh kit53112-12190 with ties for2005-06 Corolla;2004 is outside the stated bulletin years.",
+        "production_adoption": "See source; current individual hardware unverified"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; especially do not substitute Matrix/Camry kits or modules",
+        "required_companion_components": [
+          "See current Toyota procedure and source-specific equipment requirements"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-condenser06"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent subject-configuration outcome verified in this pass",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Condenser stone protection mesh retrofit study",
+        "healthy_original_benefit": "Intercepts road debris before it reaches the condenser; possible early-body retrofit requires mounting and airflow validation, with no quantified failure reduction.",
+        "trigger": "Source-specific condition/application and installed-part checks",
+        "possible_negative_consequences": "Cooling/A/C airflow restriction, debris loading, insecure attachment or bumper damage; no generic dense insect screen substitution assumed.",
+        "fitment_confidence": "candidate; market/build mismatch unresolved",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "advanced",
+        "required_tools": [
+          "Measure early bumper opening and stand-off; obtain complete mounting figures; evaluate fan-on A/C/coolant behavior; secure serviceable mesh without assuming later drill pattern"
+        ],
+        "installation_risks": "Cooling/A/C airflow restriction, debris loading, insecure attachment or bumper damage; no generic dense insect screen substitution assumed.",
+        "upgrade_interactions": "Preserve cooling airflow, water management, trim or restraint function as applicable; no blind donor substitution",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "different_market_or_later_build_scope",
+        "june_2003_application": "exact_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota AC002-06 offers plastic protection mesh kit53112-12190 with ties for2005-06 Corolla;2004 is outside the stated bulletin years."
+        ],
+        "engineering_inferences": [
+          "Intercepts road debris before it reaches the condenser; possible early-body retrofit requires mounting and airflow validation, with no quantified failure reduction."
+        ],
+        "unverified_claims": [
+          "No subject-car measured gain or independent long-term installed outcome"
+        ],
+        "missing_research": [
+          "2004 mounting geometry and cooling-airflow validation",
+          "Full donor drawings and current part availability",
+          "Complete price and measured debris/thermal tradeoff"
+        ],
+        "next_action": "Compare early2004 bumper geometry to donor instructions and obtain mesh dimensions/open area; no drilling or purchase based on year-family similarity.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-017",
+      "upgrade_id": "UPG-208",
+      "title": "Modified radio/vent bezel gap countermeasure investigation",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Cabin / trim fit",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "Visible bezel/dash gap; no diagnosed rattle assumed.",
+      "application": {
+        "model_years": "Revised2003-2005 Corolla scope",
+        "market": "Canada; USA application unverified",
+        "engine": "Not powertrain dependent unless stated",
+        "transmission": "Not limited unless stated",
+        "production": "Before cutoff table not retrieved; early June2003 eligibility unresolved."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "Original bezel gap/fit; number not captured",
+          "revised": "Modified bezel number not captured"
+        },
+        "documentation": "Canada1239/BC-03-013 identifies modified bezel for radio/A-C vent to dash gap.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-bezel1239"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Modified radio/vent bezel gap countermeasure investigation",
+        "healthy_original_benefit": "No demonstrated function gain over a correctly fitting original bezel; modified part may address confirmed fit issue.",
+        "trigger": "Visible bezel/dash gap; no diagnosed rattle assumed.",
+        "possible_negative_consequences": "Wrong color/clip/vent fit, dash scratches; aftermarket radio bezel may change relevance.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic trim tools",
+          "Build-correct radio/vent removal procedure"
+        ],
+        "installation_risks": "Wrong color/clip/vent fit, dash scratches; aftermarket radio bezel may change relevance.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Canada1239/BC-03-013 identifies modified bezel for radio/A-C vent to dash gap."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Retrieve complete parts/cutoff tables and establish US June-2003 application before ordering or designing an installation.",
+        "purchase_approved": false
+      },
+      "intervention_category": "restoration"
+    },
+    {
+      "research_id": "FCM-018",
+      "upgrade_id": "UPG-184",
+      "title": "Toyota source and plant restriction for P0741 investigation",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_evidence_existing_candidate",
+      "subsystem": "Transmission / torque-converter diagnostics",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Documented model/configuration scope; NOT proof of original installed hardware or individual eligibility.",
+      "problem_or_limitation": "P0741 plus factory diagnostics; no symptom currently reported.",
+      "application": {
+        "model_years": "2004-2005 Corolla1ZZ",
+        "market": "USA NUMMI documented; TMMC not listed",
+        "engine": "1ZZ-FE",
+        "transmission": "A245E in NUMMI table; Felicity transmission code provisional",
+        "production": "NUMMI threshold only; not automatically applicable to Canadian June2003 build."
+      },
+      "factory_engineering": {
+        "original_design": "See documented previous parts; internal design not disclosed.",
+        "part_relationships": {
+          "original": "VSS/ECM/transaxle mismatch or real lockup fault; multiple causes",
+          "revised": "Correct-application driven gear33403-29395; ECM/transaxle identification, not blanket improved solenoid kit"
+        },
+        "documentation": "TC008-04 provides multi-cause P0741 workflow, but its production table lists NUMMI A245E; Canadian application unverified.",
+        "production_adoption": "Not established unless explicitly stated in application."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; shared 1ZZ-FE alone is insufficient.",
+        "required_companion_components": []
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-tc008"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "Not retrieved",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Toyota source and plant restriction for P0741 investigation",
+        "healthy_original_benefit": "Symptom-specific countermeasure; no justification to replace a functioning revised component.",
+        "trigger": "P0741 plus factory diagnostics; no symptom currently reported.",
+        "possible_negative_consequences": "Blind ECM/gear replacement or forced lockup can cause incorrect operation; hazardous stall testing not authorized as routine DIY.",
+        "fitment_confidence": "Unresolved application; no installation or buying recommendation",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Qualified scan diagnostics",
+          "Actual transaxle/ECM identification",
+          "Current Toyota information"
+        ],
+        "installation_risks": "Blind ECM/gear replacement or forced lockup can cause incorrect operation; hazardous stall testing not authorized as routine DIY.",
+        "upgrade_interactions": "Use complete current Toyota procedure; preserve safety/emissions systems.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "research_lead_scope_only",
+        "june_2003_application": "not_verified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "TC008-04 provides multi-cause P0741 workflow, but its production table lists NUMMI A245E; Canadian application unverified."
+        ],
+        "engineering_inferences": [],
+        "unverified_claims": [
+          "No measured fuel, power, lifespan or NVH gain on Felicity."
+        ],
+        "missing_research": [
+          "Current EPC/TIS supersessions and availability",
+          "Identify actual installed hardware and confirm condition",
+          "Matching long-term owner outcomes"
+        ],
+        "next_action": "Find TMMC-specific Toyota counterpart/current application before using the NUMMI bulletin as a repair directive.",
+        "purchase_approved": false
+      },
+      "intervention_category": "diagnostic_reference"
+    },
+    {
+      "research_id": "FCM-019",
+      "upgrade_id": "UPG-209",
+      "title": "Factory sill protection tape against concealed paint damage",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / corrosion prevention",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "Source application documented; subject-car fitment/campaign status not established.",
+      "problem_or_limitation": "Adds a localized paint barrier where original scuff-plate contact and contamination can damage paint; prevention mechanism supported, lifespan gain not measured.",
+      "application": {
+        "model_years": "2003-2006",
+        "market": "Canada bulletin; US applicability unresolved",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not separately restricted",
+        "production": "TMMC Corolla before2T1B#32E26C551900; June2003 earlier in chronology but US panel equivalence unverified",
+        "plant": "See source production restrictions"
+      },
+      "factory_engineering": {
+        "original_design": "No previous kit listed",
+        "part_relationships": {
+          "original": "No previous kit listed",
+          "revised": "04006-05102"
+        },
+        "documentation": "Toyota Canada TSB2423R identifies moisture/contaminants under scuff plates and specifies front/rear sill tape kit04006-05102.",
+        "production_adoption": "See source; current individual hardware unverified"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; especially do not substitute Matrix/Camry kits or modules",
+        "required_companion_components": [
+          "See current Toyota procedure and source-specific equipment requirements"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-disc-sill2423"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent subject-configuration outcome verified in this pass",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Under-scuff door sill paint isolation tape kit",
+        "healthy_original_benefit": "Adds a localized paint barrier where original scuff-plate contact and contamination can damage paint; prevention mechanism supported, lifespan gain not measured.",
+        "trigger": "Source-specific condition/application and installed-part checks",
+        "possible_negative_consequences": "Trapping existing corrosion or moisture, poor adhesion, incorrect hole coverage or damaged trim; a generic decorative sill strip is not the documented shaped kit.",
+        "fitment_confidence": "candidate; market/build mismatch unresolved",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Plastic trim tools; verified kit/panel-hole match; correct surface preparation and cured paint before film; body repair if corrosion extends beyond the procedure"
+        ],
+        "installation_risks": "Trapping existing corrosion or moisture, poor adhesion, incorrect hole coverage or damaged trim; a generic decorative sill strip is not the documented shaped kit.",
+        "upgrade_interactions": "Preserve cooling airflow, water management, trim or restraint function as applicable; no blind donor substitution",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "different_market_or_later_build_scope",
+        "june_2003_application": "exact_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota Canada TSB2423R identifies moisture/contaminants under scuff plates and specifies front/rear sill tape kit04006-05102."
+        ],
+        "engineering_inferences": [
+          "Adds a localized paint barrier where original scuff-plate contact and contamination can damage paint; prevention mechanism supported, lifespan gain not measured."
+        ],
+        "unverified_claims": [
+          "No subject-car measured gain or independent long-term installed outcome"
+        ],
+        "missing_research": [
+          "US-market physical/panel equivalence",
+          "Current kit availability and complete job price",
+          "Remaining illustrations and subject-car condition",
+          "Independent long-term outcome"
+        ],
+        "next_action": "Confirm US TMMC sill geometry and current kit availability; verify prep/paint condition and all procedure illustrations before application.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-020",
+      "upgrade_id": "UPG-210",
+      "title": "SRS ECU plus transient-noise filter recall remedy",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Electrical / restraint reliability",
+      "classification": "factory_safety_recall",
+      "evidence_level": "A",
+      "evidence_level_scope": "Source application documented; subject-car fitment/campaign status not established.",
+      "problem_or_limitation": "Addresses latent risk of unintended airbag/pretensioner activation even if no fault lamp is present; this is recall risk reduction, not a comfort/performance modification.",
+      "application": {
+        "model_years": "2003-2004 Corolla",
+        "market": "USA recall; eligibility/completion not verified",
+        "plant": "See source production restrictions",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not separately restricted",
+        "production": "TMMC productionJanuary6,2002-May2,2004 includes June2003 documentary period; individual VIN and repair history required"
+      },
+      "factory_engineering": {
+        "original_design": "Original TRW SRS ECU; possibly filter-only historical remedy",
+        "part_relationships": {
+          "original": "Original TRW SRS ECU; possibly filter-only historical remedy",
+          "revised": "Historical Corolla ECU89170-02191 or89170-02201 by side-airbag equipment; harness04002-66112"
+        },
+        "documentation": "Toyota15V043/DSB adds ECU replacement to the earlier filter remedy; the dealer parts table distinguishes Corolla side-airbag equipment.",
+        "production_adoption": "See source; current individual hardware unverified"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; especially do not substitute Matrix/Camry kits or modules",
+        "required_companion_components": [
+          "See current Toyota procedure and source-specific equipment requirements"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-cont-srs-dir",
+          "src-cont-srs-dealer",
+          "src-cont-lookup"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent subject-configuration outcome verified in this pass",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "SRS ECU plus transient-noise filter recall remedy",
+        "healthy_original_benefit": "Addresses latent risk of unintended airbag/pretensioner activation even if no fault lamp is present; this is recall risk reduction, not a comfort/performance modification.",
+        "trigger": "Individual recall inquiry before symptoms",
+        "possible_negative_consequences": "Wrong ECU/restraint configuration or incomplete campaign repair; filter-only history is not proof the later remedy is complete. No redesigned-ASIC claim.",
+        "fitment_confidence": "probable documentary application only",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Toyota dealer campaign/history inquiry and current trained-technician remedy; no owner SRS disassembly for this research"
+        ],
+        "installation_risks": "Wrong ECU/restraint configuration or incomplete campaign repair; filter-only history is not proof the later remedy is complete. No redesigned-ASIC claim.",
+        "upgrade_interactions": "Preserve cooling airflow, water management, trim or restraint function as applicable; no blind donor substitution",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "documentary_period_only; individual_eligibility_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota15V043/DSB adds ECU replacement to the earlier filter remedy; the dealer parts table distinguishes Corolla side-airbag equipment."
+        ],
+        "engineering_inferences": [
+          "Addresses latent risk of unintended airbag/pretensioner activation even if no fault lamp is present; this is recall risk reduction, not a comfort/performance modification."
+        ],
+        "unverified_claims": [
+          "No subject-car measured gain or independent long-term installed outcome"
+        ],
+        "missing_research": [
+          "Individual Toyota campaign/repair-history result",
+          "Actual side-airbag equipment and installed module/filter",
+          "Current dealer remedy confirmation"
+        ],
+        "next_action": "Have Toyota verify private VIN campaign completion and exact restraint configuration; eligible open recall repair is the appropriate route, not used-module shopping.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-021",
+      "upgrade_id": "UPG-211",
+      "title": "Passenger airbag latest specified inflator/assembly remedy",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Restraints / inflator materials",
+      "classification": "factory_safety_recall",
+      "evidence_level": "A",
+      "evidence_level_scope": "Source application documented; subject-car fitment/campaign status not established.",
+      "problem_or_limitation": "Addresses rupture risk from degraded inflator propellant; a prior recall repair alone does not prove the latest specified remedy is installed.",
+      "application": {
+        "model_years": "Certain2003-2008 Corolla;2018 announcement includes2003-05",
+        "market": "USA recall; eligibility and installed part unverified",
+        "plant": "See source production restrictions",
+        "engine": "Not powertrain dependent",
+        "transmission": "Not separately restricted",
+        "production": "Model-family coverage includes2004; actual vehicle/part/campaign eligibility unresolved"
+      },
+      "factory_engineering": {
+        "original_design": "Original or previously recalled/replaced Takata passenger inflator; actual identity unknown",
+        "part_relationships": {
+          "original": "Original or previously recalled/replaced Takata passenger inflator; actual identity unknown",
+          "revised": "2022 campaign refs04008-10212 or04009-61212 plus04008-10312; current Toyota selection required"
+        },
+        "documentation": "Toyota announced improved non-Takata replacements in2018;2022 instructions identify parts no longer to install, including specified earlier Takata desiccated remedies.",
+        "production_adoption": "See source; current individual hardware unverified"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "Not established; especially do not substitute Matrix/Camry kits or modules",
+        "required_companion_components": [
+          "See current Toyota procedure and source-specific equipment requirements"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-cont-inflator-2018",
+          "src-cont-inflator-2022",
+          "src-cont-advisory-2024",
+          "src-cont-lookup"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent subject-configuration outcome verified in this pass",
+        "contradictions": []
+      },
+      "practical_assessment": {
+        "intended_improvement": "Passenger airbag latest specified inflator/assembly remedy",
+        "healthy_original_benefit": "Addresses rupture risk from degraded inflator propellant; a prior recall repair alone does not prove the latest specified remedy is installed.",
+        "trigger": "Individual recall inquiry before symptoms",
+        "possible_negative_consequences": "Wrong or obsolete inflator, used airbag provenance, improper SRS work or failure to record campaign completion; ECU recall is a separate remedy.",
+        "fitment_confidence": "probable documentary application only",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Toyota dealer current campaign inquiry, approved parts and trained installation; no owner inflator disassembly or resistance testing"
+        ],
+        "installation_risks": "Wrong or obsolete inflator, used airbag provenance, improper SRS work or failure to record campaign completion; ECU recall is a separate remedy.",
+        "upgrade_interactions": "Preserve cooling airflow, water management, trim or restraint function as applicable; no blind donor substitution",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "exact_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota announced improved non-Takata replacements in2018;2022 instructions identify parts no longer to install, including specified earlier Takata desiccated remedies."
+        ],
+        "engineering_inferences": [
+          "Addresses rupture risk from degraded inflator propellant; a prior recall repair alone does not prove the latest specified remedy is installed."
+        ],
+        "unverified_claims": [
+          "No subject-car measured gain or independent long-term installed outcome"
+        ],
+        "missing_research": [
+          "Individual campaign and replacement-part history",
+          "Current dealer-approved parts/remedy",
+          "Whether2024 advisory applies to this VIN"
+        ],
+        "next_action": "Ask Toyota to check full passenger-airbag campaign history and current remedy, together with15V043; follow any advisory applying to the actual VIN.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-022",
+      "upgrade_id": "UPG-212",
+      "title": "Toyota increased 1ZZ-FE oil level with revised dipstick",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine lubrication / oil level",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota USA 2003-05 Corolla 1ZZ service bulletin application; actual dipstick and private VDS unverified.",
+      "problem_or_limitation": "Toyota post-production revision increases allowable oil fill by 0.5 L with matching revised gauge; rationale beyond level update not independently quantified.",
+      "application": {
+        "model_years": "2003-2005 Corolla",
+        "market": "USA",
+        "plant": "No separate plant restriction in bulletin",
+        "engine": "1ZZ-FE; Toyota VDS BR30E/BR32E/BR38E",
+        "transmission": "No exclusion specified",
+        "production": "Toyota bulletin includes 2004; June2003 factory build plausible, as-built VDS and installed dipstick still to be confirmed."
+      },
+      "factory_engineering": {
+        "original_design": "Original gauge 15301-22030 in TSB; dealer catalog also lists local 15301-0D050/0D051.",
+        "part_relationships": {
+          "original": "15301-22030 (Toyota bulletin); 15301-0D050 and -0D051 from separate Toyota catalog",
+          "revised": "15301-22050",
+          "original_level": "3.9qt with / 3.7qt without filter",
+          "revised_level": "4.4qt with / 4.2qt without filter"
+        },
+        "documentation": "Toyota T-SB-0134-08 July15 2008: 0.5L raised service level and identifiable revised dipstick. No new oil pan or piston specified.",
+        "production_adoption": "Revised service gauge; exact factory installation cutover not documented in bulletin"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No alternative aftermarket gauge verified; same 1ZZ engine family not sufficient.",
+        "required_companion_components": [
+          "Use correct Toyota 15301-22050 gauge and check level with matching markings.",
+          "Correct oil grade, filter and normal service procedure."
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass2-oil0134",
+          "src-pass2-dipstick-dealer",
+          "src-pass2-dipstick-epc"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent matched long-term updated-gauge result retrieved",
+        "contradictions": [
+          "Supplied October2003+ Corolla manual still states original 3.9/3.7qt; later Toyota bulletin explicitly supersedes capacity with new gauge.",
+          "Toyota bulletin names previous 15301-22030 only; retail EPC additionally lists local 15301-0D050/051."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised Toyota oil-level reference allowing additional 0.5L oil per service.",
+        "healthy_original_benefit": "Additional Toyota-authorized oil inventory; lifespan/thermal/consumption improvement not measured.",
+        "trigger": "Inspection indicates original older gauge and owner elects revised Toyota factory service specification.",
+        "possible_negative_consequences": "Overfill due to mixing old dipstick with new fill quantity or assuming current installed part; no demonstrated cure for oil-burning engine.",
+        "fitment_confidence": "model-year Toyota bulletin supported; subject car/gauge unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 23.79,
+          "basis": "Toyota online dealer price dipstick alone 2026-10-29; excludes shipping tax oil and availability",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-pass2-dipstick-dealer",
+            "part": "15301-22050",
+            "unit_usd": 23.79,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "basic",
+        "required_tools": [
+          "Verify actual dipstick ID/handle mark; normal oil checking and service supplies."
+        ],
+        "installation_risks": "Avoid overfilling and never estimate oil level from changed fill volume alone.",
+        "upgrade_interactions": "Distinct from European EG-6020 internal piston short-block lubrication revision; do not double-count or claim ring repair.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "individual_private_vds_not_confirmed",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota USA T-SB-0134-08 names 15301-22030 to15301-22050 and gives 4.4qt/4.2qt service amounts for specified 2003-05 Corolla 1ZZ."
+        ],
+        "engineering_inferences": [
+          "Higher oil inventory could help some operating margins; durability/temperature/consumption gains remain unproven."
+        ],
+        "unverified_claims": [
+          "No exact vehicle current dipstick identified",
+          "No validated oil consumption/longevity improvement"
+        ],
+        "missing_research": [
+          "Read owner's actual oil gauge handle mark and dimensions",
+          "Privately verify bulletin VDS and factory catalog part selection",
+          "Find repeatable independent owner long-term outcome for the exact new gauge"
+        ],
+        "next_action": "Inspect installed dipstick and confirm vehicle VDS; if updating use matched new dipstick and revised service capacity, with correct oil-level checks.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-023",
+      "upgrade_id": "UPG-213",
+      "title": "Toyota rear door opening seal C-pillar retaining clips",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / rear door weatherstrip",
+      "classification": "factory_countermeasure",
+      "evidence_level": "D",
+      "evidence_level_scope": "TMMC year/plant scope documented but VIN and exact clips not read",
+      "problem_or_limitation": "Rear door opening seal loosens near C-pillar",
+      "application": {
+        "model_years": "2003-2005",
+        "market": "USA and Canada",
+        "plant": "TMMC",
+        "engine": "not specified",
+        "transmission": "not specified",
+        "production": "Before bulletin VIN breakpoint; actual June2003 VIN table not read"
+      },
+      "factory_engineering": {
+        "original_design": "Original body-opening weatherstrip insufficiently retained at rear C-pillar",
+        "part_relationships": {
+          "original": "Original rubber opening seal",
+          "revised": "Two specified added Toyota retaining clips, number pending bulletin image"
+        },
+        "documentation": "BO020-04 Toyota USA and 2149R Toyota Canada: fit two clips to quarter-panel flange and reseat weatherstrip",
+        "production_adoption": "VIN production break image not yet read"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No valid generic clips identified; window-glass run clips differ",
+        "required_companion_components": [
+          "Exact Toyota body-opening clips and illustration"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass2-bo02004",
+          "src-pass2-canada2149r"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No same-repair independent long-term owner outcome retrieved",
+        "contradictions": [
+          "Toyota bulletin VIN and parts tables embedded as images, not yet authenticated"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Improve rear door opening weatherstrip retention",
+        "healthy_original_benefit": "Only a documented fix if the seal is loose; no evidence a healthy seal needs it",
+        "trigger": "Loose rear door opening rubber at C-pillar",
+        "possible_negative_consequences": "Incorrect clip may damage flange/paint/rubber",
+        "fitment_confidence": "Unverified early build and part",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Correct Toyota bulletin illustrations",
+          "Trim tools"
+        ],
+        "installation_risks": "Do not disturb side airbag trim or drainage",
+        "upgrade_interactions": "Not rear window-glass run TSB or sill paint-protection tape",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "plant_year_documented",
+        "june_2003_application": "vin_table_unread",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota TSB instructs fitting two clips near rear C-pillar on early TMMC Corolla"
+        ],
+        "engineering_inferences": [
+          "Additional mechanical retention may prevent local seal looseness"
+        ],
+        "unverified_claims": [
+          "No clip SKU or price",
+          "No vehicle-level NVH measurement"
+        ],
+        "missing_research": [
+          "Read bulletin parts/VIN images",
+          "Check actual seal condition",
+          "Find independent exact-remedy follow-up"
+        ],
+        "next_action": "Read BO020-04 parts table; check VIN privately and seal condition before selecting clips",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-024",
+      "upgrade_id": "UPG-214",
+      "title": "Toyota windshield outer molding aerodynamic reed noise resealing",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Body / windshield wind NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota USA bulletin indexed specifically for 2004 Corolla; actual condition unverified",
+      "problem_or_limitation": "High-speed aerodynamic lift causes windshield rubber outer molding buzz",
+      "application": {
+        "model_years": "2004 US Corolla",
+        "market": "USA",
+        "plant": "No exclusion documented",
+        "engine": "Any Corolla engine",
+        "transmission": "Any",
+        "production": "June2003 installed molding uninspected"
+      },
+      "factory_engineering": {
+        "original_design": "Windshield exterior molding may flutter at speed",
+        "part_relationships": {
+          "original": "Existing molding",
+          "revised": "Sealing process; historical 3M 08551"
+        },
+        "documentation": "Toyota T-SB-0257-08 supersedes NV004-07: tape molding-to-body test, then exterior molding sealer",
+        "production_adoption": "New rubber or hardware not documented"
+      },
+      "alternative_solutions": {
+        "supplier": "3M historical",
+        "manufacturer_part_number": "08551 obsolete",
+        "cross_manufacturer_interchange": "Unknown",
+        "required_companion_components": [
+          "Manufacturer-approved current paint/rubber-safe sealer"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass4-windscreen-tsb",
+          "src-pass4-windscreen-procedure",
+          "src-pass4-canada2729",
+          "src-pass4-3m-tds",
+          "src-pass4-obsolete",
+          "src-pass4-edmunds-wind"
+        ],
+        "independent_outcome_ids": [
+          "OUT-006",
+          "OUT-007"
+        ],
+        "long_term_followup": "Two 2006 Corolla initial dealer-reseal successes; exact material and long-term outcome unknown",
+        "contradictions": [
+          "3M 08551 obsolete",
+          "Not all wind whistle originates at windshield"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Correct confirmed highway windshield buzz",
+        "healthy_original_benefit": "No improvement shown if quiet healthy molding",
+        "trigger": "Buzz disappears with Toyota tape test",
+        "possible_negative_consequences": "Incompatible sealer may damage paint/rubber; do not interfere with bonded-glass adhesive",
+        "fitment_confidence": "2004 USA bulletin; owner car uninspected",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Tape",
+          "Plastic trim tool",
+          "Approved sealer and cleaner"
+        ],
+        "installation_risks": "Incorrect chemical and disturbance of glass structure",
+        "upgrade_interactions": "Separate from UPG-196 stopper tick and UPG-130 window run",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "subject_vehicle_unverified",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota T-SB-0257-08 applies to 2004 Corolla",
+          "Sealer 3M08551 now listed obsolete"
+        ],
+        "engineering_inferences": [
+          "Bonded outer molding lip limits wind flutter"
+        ],
+        "unverified_claims": [
+          "Actual car symptom and replacement chemical unknown"
+        ],
+        "missing_research": [
+          "Vehicle molding condition",
+          "Current approved sealant",
+          "Exact procedure long-term outcome"
+        ],
+        "next_action": "Check noise then obtain safe material; do not buy preemptively",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-025",
+      "upgrade_id": "UPG-130",
+      "title": "Improved Corolla door-glass window run for wind noise",
+      "reviewed_on": "2026-10-29",
+      "novelty": "existing_candidate_evidence_enrichment",
+      "subsystem": "Body / door-glass run NVH",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota NV006-05 specifically covers 2003-05 Corolla (NAP); production VIN/part tables still require verification",
+      "problem_or_limitation": "Air leakage and wind hiss at front/rear sliding door glass perimeter",
+      "application": {
+        "model_years": "2003-2005 Corolla",
+        "market": "USA Toyota bulletin",
+        "plant": "North American production, verify TMMC by parts table",
+        "engine": "Any",
+        "transmission": "Any",
+        "production": "June2003 source family supported; early VIN-specific rubber numbers not yet extracted"
+      },
+      "factory_engineering": {
+        "original_design": "Original window run permitted road-speed wind noise",
+        "part_relationships": {
+          "original": "Early door glass window-run PN pending parts table",
+          "revised": "Improved run PN differs by production VIN; exact numbers not yet authenticated"
+        },
+        "documentation": "Toyota NV006-05 revised 2006: improved front/rear door glass window runs and separate fit procedures",
+        "production_adoption": "Early/late VIN splits documented but image not read"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No generic adhesive backed channel interchange established",
+        "required_companion_components": [
+          "VIN-correct left/right front or rear run only if symptom diagnosed"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass4-windowrun-nv006",
+          "src-pass4-edmunds-wind"
+        ],
+        "independent_outcome_ids": [
+          "OUT-008"
+        ],
+        "long_term_followup": "2004 Corolla owner reported successful driver's door run replacement but no multi-month outcome or exact Toyota PN",
+        "contradictions": [
+          "Owner calls new run adhesive-backed; Toyota bulletin text does not independently establish revised adhesive structure"
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Remove wind noise from door-glass channel using Toyota improved run",
+        "healthy_original_benefit": "Symptom-dependent; no improvement demonstrated if original seals properly",
+        "trigger": "Localized wind leak at run near mirror/door window",
+        "possible_negative_consequences": "Wrong run can bind glass and affect water drainage",
+        "fitment_confidence": "Toyota 2004 model-year supported; actual part/VIN unverified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "intermediate",
+        "required_tools": [
+          "Correct VIN-indexed Toyota window run/installation bulletin",
+          "Door trim tools and glass alignment checks"
+        ],
+        "installation_risks": "Protect side airbags, drains, glass and water barrier",
+        "upgrade_interactions": "Not windshield reed-noise UPG-214 or rear C-pillar opening seal UPG-213",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "production_table_unread",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota NV006-05 documents improved 2003-05 Corolla window runs",
+          "2004 Corolla owner describes successful updated run"
+        ],
+        "engineering_inferences": [
+          "Better glass run fit reduces local wind leakage"
+        ],
+        "unverified_claims": [
+          "Exact new Toyota part number",
+          "No long-term same-SKU owner data"
+        ],
+        "missing_research": [
+          "Read TMMC early VIN parts table",
+          "Price current authentic window run",
+          "Obtain long-term exact repaired owner record"
+        ],
+        "next_action": "Inspect both front corner runs and confirm correct early-build improved run before a purchase",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-026",
+      "upgrade_id": "UPG-074",
+      "title": "TransGo SK A246 matched TCC and solenoid-modulator hydraulic wear repair for A245E EPC",
+      "reviewed_on": "2026-10-29",
+      "novelty": "existing_candidate_evidence_enrichment",
+      "subsystem": "Automatic transaxle A245E / hydraulic reliability",
+      "classification": "supplier_engineering",
+      "evidence_level": "C",
+      "evidence_level_scope": "Supplier specifies 2003-08 Corolla A245E with EPC solenoid. Physical June2003 valve body identity and damaged part uninspected.",
+      "problem_or_limitation": "A245E valve-body wear at TCC relay boost valve and solenoid modulator circuit can disturb torque converter clutch/shift hydraulic control; no fault reported on this car.",
+      "application": {
+        "model_years": "2003-2008 Corolla A245E",
+        "market": "USA manufacturer catalog",
+        "plant": "No supplier plant restriction; installed unit must have matching EPC valve body",
+        "engine": "1ZZ-FE 1.8L",
+        "transmission": "A245E with electronic pressure control (EPC) solenoid; manufacturer excludes earlier non-EPC A245-HD2",
+        "production": "June2003 factory A245E confirmed by label; internal valve body and SLT terminal variant need direct inspection."
+      },
+      "factory_engineering": {
+        "original_design": "Hydraulic TCC boost valve/bushing and solenoid-modulator bore can wear, leading to lockup and shift complaints.",
+        "part_relationships": {
+          "original": "A245E OEM hydraulic boost valve and solenoid modulator hardware, internal OE part numbers unverified",
+          "revised": "TransGo SK A246 aftermarket matched hydraulic valve/bushing repair (NOT Toyota factory retrofit)"
+        },
+        "documentation": "TransGo manufacturer specifies USA-made hardened TCC relay boost valve/bushing and redesigned solenoid-modulator assembly plus spring/plug/retainer. Toyota TC002-03 reset of learned values after transmission service must use specific applicable procedure, not a kit validation.",
+        "production_adoption": "Never adopted as Toyota factory change according to retrieved documentation; supplier repair only."
+      },
+      "alternative_solutions": {
+        "supplier": "TransGo",
+        "manufacturer_part_number": "SK A246",
+        "cross_manufacturer_interchange": "A245-HD2 non-EPC older model excluded; Sonnax 2005+ upper casting 9132 parts not early model authorized; EPC solenoid pin 52-0403 vs 52-0419 not interchangeable.",
+        "required_companion_components": [
+          "Transmission pan gasket/filter and Type T-IV ATF as required by exact procedure",
+          "Confirm EPC/SLT connector, valve body anatomy and current SK A246 instructions",
+          "Correct Toyota learned-value reset only if model-specific TC002-03 chart supports it."
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-powertrain-transgo-detail",
+          "src-powertrain-transgo-price",
+          "src-powertrain-rostra-slt",
+          "src-powertrain-tc002",
+          "src-upg-transgo-inst",
+          "src-powertrain-p0741-owner"
+        ],
+        "independent_outcome_ids": [
+          "OUT-009"
+        ],
+        "long_term_followup": "No independent long-term TransGo SK A246 installation evidence. OUT-009: 2005 Corolla P0741 owner reported outcome after fluid/filter service (different intervention), with imperfect follow-up and intermittent prior recurrence.",
+        "contradictions": [
+          "Sonnax later casting solutions have 2005+ restriction not applicable by transmission name alone.",
+          "Model-year solenoid connector change can be mistaken for production-month change; actual installed unit unknown.",
+          "Firsthand P0741 owner experience reports improvement with fluid/filter replacement without any TransGo kit; symptom code cannot diagnose a worn valve-body bore alone."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Restore worn A245E hydraulic TCC apply/release and solenoid modulation without installing a replacement transmission.",
+        "healthy_original_benefit": "No durability/efficiency improvement proven over a healthy original valve body.",
+        "trigger": "Confirmed shift flare/lockup complaint and professional diagnosis of hydraulic bore/boost valve wear rather than ECM, wiring, converter or other cause.",
+        "possible_negative_consequences": "Wrong valve-body variant or contamination, incorrect solenoid/assembly changes, unsafe fluid pressure and converter damage.",
+        "fitment_confidence": "manufacturer scope supports A245E with EPC; actual valve body unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 90,
+          "basis": "2026-10-29 Norcal parts listing kit alone; ATF, gaskets, filter, tools, labor, tax, shipping excluded",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-powertrain-transgo-price",
+            "part": "TransGo SK A246",
+            "unit_usd": 90,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Precision valve-body teardown/bench cleanliness and exact installation diagram",
+          "Pressure test/scan diagnostics and correct ATF service",
+          "Specific Toyota reset-method table if repair needs learned-values reset"
+        ],
+        "installation_risks": "Transaxle failure from incorrect internal hydraulic work and misidentified EPC hardware; vendor says transaxle removal not required but teardown still advanced.",
+        "upgrade_interactions": "Separate from Toyota EG028-04 emissions ECM reflash, TC008-04 P0741 fault isolation, and 2005+ P2716 ECM recall/countermeasure.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "manufacturer_catalog_2003_2008",
+        "june_2003_application": "as_built_A245E_only_epc_uninspected",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "TransGo SK A246 specifically lists Corolla 2003-08 A245E with EPC",
+          "Includes USA-made hardened TCC boost valve and bushing and redesigned solenoid-modulator hardware",
+          "$90 kit-only online listing observed"
+        ],
+        "engineering_inferences": [
+          "Replacing worn hydraulic sealing areas can restore correct TCC and modulator performance when these are the diagnosed causes."
+        ],
+        "unverified_claims": [
+          "No quantified durability, mpg, horsepower, or shift improvement on a healthy OEM A245E",
+          "No long-term exact-kit 2004 field success verified"
+        ],
+        "missing_research": [
+          "Physical SLT/EPC connector, valve-body casting and existing repairs",
+          "Current TransGo internal instruction revision and full service cost",
+          "Matched independent owner multi-month results",
+          "Exact Toyota TC002-03 reset method for this vehicle"
+        ],
+        "next_action": "Only if shift/lockup fault is diagnosed, inspect transmission EPC/casting and reconcile service history before hydraulic repair; do not buy preemptively.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-027",
+      "upgrade_id": "UPG-215",
+      "title": "Toyota EG028-04 early TMMC 1ZZ coordinated ECM calibration and genuine catalyst remedy",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine controls / emission diagnostics",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota EG028-04 explicitly 2003-04 1ZZ Corolla; aftermarket bulletin reproduces TMMC cutoff but original Toyota break image not directly validated. DOES NOT prove UPG-048 high-flow aftermarket power gains. Catalog UPG-215 is genuine factory paired remedy, not aftermarket UPG-048.",
+      "problem_or_limitation": "Early Corolla 1ZZ catalyst efficiency P0420 MIL and sulfur odor when original ECM calibration/catalyst combination implicated.",
+      "application": {
+        "model_years": "2003-2004 Corolla",
+        "market": "USA",
+        "plant": "Shokki/NUMMI/TMMC listed in supplier reproduction; only original Toyota VIN image can finalize break",
+        "engine": "1ZZ-FE",
+        "transmission": "No exclusion in published summary; 2003 Delco ATM ECM has unique nonreflashable issue, not extrapolated to 2004",
+        "production": "TMMC supplier technical reference 2T1BR3#E#4C312392; June2003 likely before change but full private VIN and current ECM calibration not verified."
+      },
+      "factory_engineering": {
+        "original_design": "Original 1ZZ ECM fuel-cut/calibration and catalyst combination associated with complaint.",
+        "part_relationships": {
+          "original": "17410-0D150 or 17410-22470 front exhaust pipe in prior Toyota bulletin tables",
+          "revised": "Toyota genuine repair front pipe 17410-0D360 (applicability depends on EPC and emissions label) with factory authorized calibration"
+        },
+        "documentation": "Toyota EG028-04 revised October2004 directs ECM reflash and genuine catalyst assembly; same procedure as EG016-04 sulfur odor performed only once. Supplier note supplies TMMC cutoff.",
+        "production_adoption": "Toyota bulletin lists production change VINs; direct factory table for early TMMC still requires visual verification."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No generic aftermarket converter or ECU tuning package assumed equivalent; UPG-048 aftermarket high-flow remains separate, without claimed OEM adoption.",
+        "required_companion_components": [
+          "Toyota-authorized calibration selected for actual ECU part number and emissions type",
+          "Toyota-approved catalyst repair part for exact vehicle and exhaust family",
+          "Engine/emission diagnostics and proof remedy not already performed"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-powertrain-eg028-us",
+          "src-powertrain-eg028-break",
+          "src-cont-eg028"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No exact ECU+catalyst 2004 TMMC repair history verified",
+        "contradictions": [
+          "Earlier repository gap said TMMC VIN not retrieved; independent service bulletin now supplies a cross-reference but original Toyota image remains unverified.",
+          "Existing UPG-048 product is aftermarket high-flow concept, not the factory dual repair."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Toyota corrective action for eligible early 1ZZ engine emissions fault P0420 using coordinated ECM and catalyst change.",
+        "healthy_original_benefit": "No advantage on a healthy, no-code car; not a performance or mpg upgrade.",
+        "trigger": "Diagnosed P0420 after exclusion of air/fuel/exhaust leaks/O2 sensor issues and match to official VIN/calibration criteria.",
+        "possible_negative_consequences": "ECM brick from improper flashing; incorrect catalyst/emissions configuration or improper workmanship and unnecessary cost.",
+        "fitment_confidence": "Toyota model engine year support; 2003 TMMC plant cutoff secondary only and individual vehicle not verified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Toyota TIS exact calibration records",
+          "Dealer-level ECM flashing power and scan equipment",
+          "Emissions diagnostic equipment and proper catalyst installation procedure"
+        ],
+        "installation_risks": "Do not replace or eliminate catalyst or tune emission monitoring without verified lawful authorization.",
+        "upgrade_interactions": "EG028-04 and EG016-04 are the same Toyota corrective repair and must not be performed twice; no inference from generic MagnaFlow aftermarket converter.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "supplier_cutoff_only_private_vin_not_compared",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota revised EG028-04 documents a combined ECU calibration and catalyst repair for 2003-04 Corolla 1ZZ",
+          "Supplier 099-1662 reproduces TMMC 2T1BR3#E#4C312392 cutoff",
+          "Original Toyota document states EG016-04 and EG028-04 represent a single same intervention."
+        ],
+        "engineering_inferences": [
+          "Factory matched new software and catalyst may address specific early-code complaint where conditions align."
+        ],
+        "unverified_claims": [
+          "No emissions code on the owner vehicle reported",
+          "No aftermarket high-flow horsepower claim verified",
+          "No exact owner TMMC service success verified"
+        ],
+        "missing_research": [
+          "Read original Toyota EG028 production VIN diagram",
+          "Privately check exact VIN and ECM calibration/authorized-modification label",
+          "Condition and legality of original versus any already changed catalyst",
+          "Long-term direct repair reports"
+        ],
+        "next_action": "If P0420 presents, verify factory original revision, code diagnosis and past service before considering specialized OEM remedy; keep high-flow replacement research separate.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-028",
+      "upgrade_id": "UPG-216",
+      "title": "Revised magnetic clutch relay countermeasure",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Electrical / HVAC",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota model/year and exact relay document scope; internal redesign and actual vehicle not established.",
+      "problem_or_limitation": "Affected old magnetic-clutch relay can disengage, interrupting A/C.",
+      "application": {
+        "model_years": "2002-2004",
+        "market": "USA",
+        "plant": "No exclusion stated",
+        "engine": "No engine exclusion stated",
+        "transmission": "No exclusion stated",
+        "production": "Affected relay marking90987-02022 is the inspection gate; no date breakpoint stated."
+      },
+      "factory_engineering": {
+        "original_design": "DENSO156700-2470 /Toyota90987-02022; contact and coil details undisclosed.",
+        "part_relationships": {
+          "original": "90987-02022 /DENSO156700-2470",
+          "revised": "90987-02028 /DENSO156700-3290",
+          "current_service_replacement": "02028 remains listed; purported04002-83 relation requires Toyota application confirmation"
+        },
+        "documentation": "EL011-05 names2002-04Corolla and countermeasure90987-02022 to90987-02028. DENSO maps corresponding156700-2470 to156700-3290; internal design change undisclosed.",
+        "production_adoption": "Not stated in retrieved bulletin."
+      },
+      "alternative_solutions": {
+        "supplier": "DENSO",
+        "manufacturer_part_number": "156700-3290 is maker identifier, not a verified retail SKU",
+        "cross_manufacturer_interchange": "Not established; do not substitute generic same-size relay",
+        "required_companion_components": [
+          "Inspect socket; damaged terminals require separate diagnosis"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-revision-ac-tsb",
+          "src-revision-ac-denso",
+          "src-revision-ac-dealer",
+          "src-revision-ac-current",
+          "src-revision-ac-owner"
+        ],
+        "independent_outcome_ids": [
+          "OUT-011"
+        ],
+        "long_term_followup": "No qualifying exact-intervention Corolla result found",
+        "contradictions": [
+          "Seller later04002-83 consolidation versus bulletin specified02028; Toyota04002-83 page only links04002, not02028."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Reduce recurrence of documented relay interruption",
+        "healthy_original_benefit": "Avoid the documented old-relay disengagement mechanism if the affected part is still fitted; prevention magnitude and life advantage on a healthy relay are unquantified.",
+        "trigger": "Affected old relay identified; symptom-specific factory repair or optional preventive consideration after inspection",
+        "possible_negative_consequences": "Wrong relay pinout, suppression or rating can alter clutch operation; flashing A/C is not necessarily a relay fault; no compressor bypass or generic relay substitution.",
+        "fitment_confidence": "probable document scope; individual relay uninspected",
+        "estimated_us_parts_cost": {
+          "amount_usd": 76.28,
+          "basis": "Smithtown Toyota displayed parts-only listing accessed2026-10-29; stock/tax/freight/tools/labor not established.",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-revision-ac-dealer",
+            "part": "90987-02028",
+            "unit_usd": 76.28,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "basic",
+        "required_tools": [
+          "Correct fusebox diagram",
+          "Current Toyota instructions"
+        ],
+        "installation_risks": "Wrong relay pinout, suppression or rating can alter clutch operation; flashing A/C is not necessarily a relay fault; no compressor bypass or generic relay substitution.",
+        "upgrade_interactions": "Keep factory clutch lockup protection and compressor diagnosis intact.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "document_scope_includes_model_year; affected relay still requires inspection",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "EL011-05 names2002-04Corolla and countermeasure90987-02022 to90987-02028. DENSO maps corresponding156700-2470 to156700-3290; internal design change undisclosed."
+        ],
+        "engineering_inferences": [
+          "Avoid the documented old-relay disengagement mechanism if the affected part is still fitted; prevention magnitude and life advantage on a healthy relay are unquantified."
+        ],
+        "unverified_claims": [
+          "No quantified failure probability or lifespan improvement",
+          "Internal contact/coil redesign unknown"
+        ],
+        "missing_research": [
+          "Actual relay/socket inspection",
+          "Current EPC supersession for exact MG CLT position",
+          "Installed Corolla outcomes",
+          "Internal maker redesign explanation"
+        ],
+        "next_action": "Inspect actual MG CLT relay marking and socket condition; confirm current genuine part for that position; resolve seller04002-83 claim; seek exact installed Corolla follow-up.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    }
+  ],
+  "exclusions": [
+    {
+      "exclusion_id": "FCX-001",
+      "title": "EG022-07 cold idle hunting",
+      "source_ids": [
+        "src-disc-eg022-exclusion"
+      ],
+      "reason": "Manual transmission only; not applicable to Felicity automatic. Search snippets omit this qualifier.",
+      "disposition": "excluded_no_candidate_count"
+    },
+    {
+      "exclusion_id": "FCX-002",
+      "title": "T-SB-0037-11 headliner water leak",
+      "source_ids": [
+        "src-disc-headliner-exclusion"
+      ],
+      "reason": "Retrieved application lists Avalon, Camry/Camry HV and Solara, not Corolla. Broad title cannot establish fitment.",
+      "disposition": "excluded_no_candidate_count"
+    },
+    {
+      "exclusion_id": "FCX-003",
+      "title": "NV012-06 seat movement/frame replacement",
+      "source_ids": [
+        "src-disc-seatnv012"
+      ],
+      "reason": "2004-06 title is broader than captured parts table: rows start May2004. June2003 application not established; do not order later seat/frame or change restraint configuration.",
+      "disposition": "excluded_from_recommendations_application_unproven",
+      "related_upgrade_id": "UPG-200"
+    },
+    {
+      "exclusion_id": "FCX-004",
+      "title": "EG053-06 later fuel pump manufacturing change",
+      "source_ids": [
+        "src-cont-eg053-exclusion"
+      ],
+      "reason": "2005-06 Corolla/Matrix2WD bulletin does not establish2004 fitment or preventive pump benefit.",
+      "disposition": "excluded_no_candidate_count"
+    },
+    {
+      "exclusion_id": "FCX-005",
+      "title": "EL001-03 dead-battery DRL relay update",
+      "source_ids": [
+        "src-cont-drl-exclusion"
+      ],
+      "reason": "Documented model year2003, not2004. Healthy relay explicitly must not be replaced under this bulletin.",
+      "disposition": "excluded_no_candidate_count"
+    }
+  ],
+  "service_practices": [
+    {
+      "practice_id": "FSP-001",
+      "title": "Avoid chemical contamination of electrical switches",
+      "source_ids": [
+        "src-disc-switch182"
+      ],
+      "category": "maintenance_handling_precaution",
+      "model_year_scope": "USA Corolla1988-2017 includes2004; no build cutoff",
+      "finding": "Toyota warns chemicals/silicone can contaminate contacts; keep trim/seal products away from switches and electrical components; do not use spray-cleaning as switch repair.",
+      "healthy_original_relevance": "Avoid induced electrical faults during detailing/NVH/weatherseal work.",
+      "new_candidate_count": 0,
+      "part_revision": null,
+      "installation_status": "not_applicable"
+    }
+  ],
+  "reconciled_remote_commit": "e853a734c838c37dacf1eadbbd77bcc79f0c6e0a"
+}

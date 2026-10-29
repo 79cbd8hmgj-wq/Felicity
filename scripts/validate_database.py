@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the current Felicity CSV repository without editing vehicle data."""
 import csv
+from datetime import date
 import re
 import sys
 from pathlib import Path
@@ -15,17 +16,22 @@ FILES = {
     "parts": ("part_record_id", ["component_id", "source_id"]),
     "repairs": ("repair_id", ["vehicle_id", "component_id"]),
     "claims": ("claim_id", ["vehicle_id", "source_id"]),
+    "upgrade_candidates": ("upgrade_id", []),
+    "upgrade_research": ("research_id", ["upgrade_id"]),
+    "upgrade_value_matrix": ("upgrade_id", ["source_research_id"]),
 }
-TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components"}
+TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components", "upgrade_id": "upgrade_candidates", "source_research_id": "upgrade_research"}
 STATUS = {
     "components": ("verification_status", {"reference", "research_pending", "label_verified", "equipment_unknown", "partially_observed", "not_inspected"}),
-    "specifications": ("status", {"factory_reference", "observed", "owner_confirmed", "pending"}),
+    "specifications": ("status", {"factory_reference", "factory_reference_original", "factory_revised_specification", "observed", "owner_confirmed", "pending"}),
     "service_tasks": ("status", {"pending", "history_unknown", "not_inspected", "done"}),
     "parts": ("verification_status", {"candidate", "probable", "verified"}),
+    "upgrade_candidates": ("fitment_status", {"candidate_unverified", "candidate", "probable", "confirmed", "vehicle-validated"}),
+    "upgrade_research": ("fitment_status", {"candidate", "probable", "confirmed", "vehicle-validated"}),
 }
 PRIVACY_HEADERS = {"vin", "full_vin", "license_plate", "license_number", "insurance_number"}
 
-def validate(root: Path):
+def validate(root: Path, require_upgrade_coverage=False):
     """Return a list of actionable errors. Empty data tables are valid."""
     errors, tables = [], {}
     for name, (key, _references) in FILES.items():
@@ -68,6 +74,8 @@ def validate(root: Path):
             for number, row in rows:
                 value = row[field].strip()
                 if not value and (name, field) in {
+                    ("upgrade_research", "upgrade_id"),
+                    ("upgrade_value_matrix", "source_research_id"),
                     ("specifications", "source_id"),
                     ("specifications", "component_id"),
                     ("service_tasks", "component_id"),
@@ -109,15 +117,112 @@ def validate(root: Path):
         if "build_applicability" not in headers:
             errors.append("specifications: missing build_applicability column")
         else:
-            allowed = {"manual_scope_oct_2003_onward", "individual_vehicle_observed"}
+            allowed = {"manual_scope_oct_2003_onward", "individual_vehicle_observed", "usa_2003_2005_1zz_tsb_gauge_unverified"}
             for number, row in rows:
                 if row["build_applicability"] not in allowed:
                     errors.append(f"specifications:{number}: invalid build_applicability")
+                revised_scope = "usa_2003_2005_1zz_tsb_gauge_unverified"
+                if ((row["status"] == "factory_revised_specification") !=
+                        (row["build_applicability"] == revised_scope)):
+                    errors.append(f"specifications:{number}: incompatible revised status and build_applicability")
+    if "upgrade_research" in tables:
+        headers, rows, _ = tables["upgrade_research"]
+        required = {"source_ids", "reviewed_on", "verified_facts", "production_applicability",
+                    "fitment_rationale", "benefit_basis", "measured_vehicle_benefit",
+                    "engineering_hypothesis", "disadvantages", "diy_level", "diy_requirements",
+                    "cost_usd", "cost_basis", "next_validation", "review_state"}
+        missing = required - set(headers)
+        if missing:
+            errors.append(f"upgrade_research: missing required columns {sorted(missing)}")
+        else:
+            source_ids = tables.get("sources", ([], [], set()))[2]
+            for number, row in rows:
+                for field in required - {"cost_usd"}:
+                    if not row[field].strip():
+                        errors.append(f"upgrade_research:{number}: blank required {field}")
+                for source in row["source_ids"].split("|"):
+                    if source not in source_ids:
+                        errors.append(f"upgrade_research:{number}: missing sources reference {source!r}")
+                try:
+                    date.fromisoformat(row["reviewed_on"])
+                except ValueError:
+                    errors.append(f"upgrade_research:{number}: invalid reviewed_on")
+                if row["diy_level"] not in {"basic", "intermediate", "advanced", "professional"}:
+                    errors.append(f"upgrade_research:{number}: invalid diy_level")
+                if row["benefit_basis"] not in {"hypothesis", "manufacturer_claim", "factory_reference", "oem_corrective_action", "independent_test", "vehicle_measurement"}:
+                    errors.append(f"upgrade_research:{number}: invalid benefit_basis")
+                if row["review_state"] not in {"open", "documented", "independently_reviewed"}:
+                    errors.append(f"upgrade_research:{number}: invalid review_state")
+                if row["cost_usd"] and not re.fullmatch(r"\d+(\.\d{1,2})?", row["cost_usd"]):
+                    errors.append(f"upgrade_research:{number}: invalid cost_usd")
+                if row["fitment_status"] in {"confirmed", "vehicle-validated"}:
+                    if not row.get("confirmation_evidence", "").strip():
+                        errors.append(f"upgrade_research:{number}: promoted fitment requires confirmation_evidence")
+    if "upgrade_candidates" in tables and "upgrade_research" in tables:
+        researched = {r["upgrade_id"] for _, r in tables["upgrade_research"][1]}
+        candidates = tables["upgrade_candidates"][2]
+        for number, row in tables["upgrade_candidates"][1]:
+            if row.get("research_status") == "literature_reviewed" and row["upgrade_id"] not in researched:
+                errors.append(f"upgrade_candidates:{number}: literature_reviewed without research evidence")
+        if require_upgrade_coverage:
+            for identifier in sorted(candidates - researched):
+                errors.append(f"upgrade_candidates: no research record for {identifier}")
+            expected = {f"UPG-{n:03}" for n in range(1, 149)}
+            if not expected.issubset(candidates):
+                errors.append("upgrade_candidates: original 148 stable IDs must be preserved")
+        catalog_rows = {r["upgrade_id"]: r for _, r in tables["upgrade_candidates"][1]}
+        for number, row in tables["upgrade_research"][1]:
+            catalog = catalog_rows.get(row["upgrade_id"])
+            if catalog and catalog.get("research_status") == "literature_reviewed":
+                if catalog["fitment_status"] != row["fitment_status"]:
+                    errors.append(f"upgrade_research:{number}: fitment differs from catalog")
+    if "upgrade_value_matrix" in tables:
+        headers, rows, matrix_ids = tables["upgrade_value_matrix"]
+        required = {"source_ids", "source_research_id", "source_fitment_status", "purchase_ready", "decision"}
+        missing = required - set(headers)
+        if missing:
+            errors.append(f"upgrade_value_matrix: missing required columns {sorted(missing)}")
+        else:
+            research_rows = {r["research_id"]: r for _, r in tables.get("upgrade_research", ([], [], set()))[1]}
+            source_ids = tables.get("sources", ([], [], set()))[2]
+            catalog_ids = tables.get("upgrade_candidates", ([], [], set()))[2]
+            for number, row in rows:
+                if row["upgrade_id"] not in catalog_ids:
+                    errors.append(f"upgrade_value_matrix:{number}: missing candidate {row['upgrade_id']}")
+                linked = research_rows.get(row["source_research_id"])
+                if linked and linked["upgrade_id"] != row["upgrade_id"]:
+                    errors.append(f"upgrade_value_matrix:{number}: research belongs to different candidate")
+                if linked and linked["fitment_status"] != row["source_fitment_status"]:
+                    errors.append(f"upgrade_value_matrix:{number}: fitment differs from linked research")
+                for source in row["source_ids"].split("|"):
+                    if source not in source_ids:
+                        errors.append(f"upgrade_value_matrix:{number}: missing source {source!r}")
+                for source in filter(None, row.get("procedure_source_ids", "").split("|")):
+                    if source not in source_ids:
+                        errors.append(f"upgrade_value_matrix:{number}: missing procedure source {source!r}")
+                if row["purchase_ready"] not in {"yes", "no"}:
+                    errors.append(f"upgrade_value_matrix:{number}: invalid purchase_ready")
+                if row["decision"] not in {"not_reassessed", "worth_buying", "worth_buying_for_specific_purpose", "promising_but_unverified", "poor_value", "not_an_improvement_over_healthy_oem", "outside_current_diy_scope"}:
+                    errors.append(f"upgrade_value_matrix:{number}: invalid decision")
+                if row["purchase_ready"] == "yes":
+                    if row["source_fitment_status"] == "candidate":
+                        errors.append(f"upgrade_value_matrix:{number}: purchase-ready fitment still candidate")
+                    for field in {"healthy_oem_baseline", "incremental_function_over_healthy_oem", "observed_product_cost_usd", "price_basis", "procedure_source_ids", "installation_requirements", "benefit_confidence", "buying_scope", "lifting_required", "fabrication_required", "wiring_required", "calibration_required"}:
+                        if not row.get(field, "").strip():
+                            errors.append(f"upgrade_value_matrix:{number}: purchase-ready missing {field}")
+                    if row["decision"] not in {"worth_buying", "worth_buying_for_specific_purpose"}:
+                        errors.append(f"upgrade_value_matrix:{number}: purchase-ready decision conflicts")
+                for field in {"observed_product_cost_usd", "shipping_usd", "supporting_cost_usd", "annual_fuel_savings_usd", "payback_years"}:
+                    value = row.get(field, "")
+                    if value and not re.fullmatch(r"\d+(\.\d+)?", value):
+                        errors.append(f"upgrade_value_matrix:{number}: invalid numeric {field}")
+            if require_upgrade_coverage and catalog_ids != matrix_ids:
+                errors.append("upgrade_value_matrix: candidate coverage differs from catalog")
     return errors
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    errors = validate(root)
+    errors = validate(root, require_upgrade_coverage="--require-upgrade-coverage" in sys.argv)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

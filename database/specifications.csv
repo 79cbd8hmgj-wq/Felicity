@@ -21,7 +21,12 @@ spec-019,tires,installed_marking,215/45R18 89V,,src-tire,,one photographed wheel
 spec-020,body,manufacturing_month,2003-06,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
 spec-021,body,paint_code,1C8,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
 spec-022,body,trim_code,FA11,,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
-spec-023,drivetrain,transaxle,A245E,,src-label,,individual vehicle,observed,,transmission,individual_vehicle_observed
+spec-023,drivetrain,transaxle,A245E,,src-label,,individual vehicle,observed,"A/TM field reread2026-10-29; factory transaxle designation, not confirmation of the currently installed unit or internal revision.",transmission,individual_vehicle_observed
 spec-024,body,gross_vehicle_weight_rating,3585,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
 spec-025,body,front_gross_axle_weight_rating,1885,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
 spec-026,body,rear_gross_axle_weight_rating,1720,lb,src-label,,individual vehicle,observed,,structure,individual_vehicle_observed
+spec-027,body,factory_model_code,ZZE130L-DEPNKA,,src-label,,individual vehicle factory label,observed,MODEL field directly read2026-10-29,structure,individual_vehicle_observed
+spec-028,drivetrain,axle_code,02A,,src-label,,individual vehicle factory label,observed,A/TM field; no differential ratio inferred,transmission,individual_vehicle_observed
+spec-029,body,manufacturing_country,Canada,,src-label,,individual vehicle factory label,observed,MADE IN CANADA text directly read2026-10-29,structure,individual_vehicle_observed
+spec-030,lubrication,oil_refill_with_filter_revised,4.4,US qt,src-pass2-oil0134,2,"2003-05 USA Corolla 1ZZ, VDS BR30E BR32E BR38E, matching revised dipstick 15301-22050",factory_revised_specification,Toyota T-SB-0134-08: increased0.5 L (0.5 US qt). Original3.9qt row retained; confirm installed gauge and private vehicle applicability before using revised amount.,engine,usa_2003_2005_1zz_tsb_gauge_unverified
+spec-031,lubrication,oil_refill_without_filter_revised,4.2,US qt,src-pass2-oil0134,2,"2003-05 USA Corolla 1ZZ, VDS BR30E BR32E BR38E, matching revised dipstick 15301-22050",factory_revised_specification,Toyota T-SB-0134-08: increased0.5 L (0.5 US qt). Original3.7qt row retained; check revised gauge and do not overfill.,engine,usa_2003_2005_1zz_tsb_gauge_unverified

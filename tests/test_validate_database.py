@@ -15,6 +15,9 @@ HEADERS = {
     "parts": "part_record_id,component_id,source_id,verification_status",
     "repairs": "repair_id,vehicle_id,component_id",
     "claims": "claim_id,vehicle_id,source_id",
+    "upgrade_candidates": "upgrade_id,fitment_status,research_status",
+    "upgrade_value_matrix": "upgrade_id,source_ids,source_research_id,source_fitment_status,purchase_ready,decision",
+    "upgrade_research": "research_id,upgrade_id,fitment_status,source_ids,reviewed_on,verified_facts,production_applicability,fitment_rationale,benefit_basis,measured_vehicle_benefit,engineering_hypothesis,disadvantages,diy_level,diy_requirements,cost_usd,cost_basis,next_validation,review_state",
 }
 
 class DatabaseValidationTests(unittest.TestCase):
@@ -98,6 +101,122 @@ class DatabaseValidationTests(unittest.TestCase):
     def test_private_identifier_column_is_rejected(self):
         (self.root / "database/vehicle.csv").write_text("vehicle_id,source_id,full_vin\n")
         self.assertTrue(any("private identifier" in e for e in validate(self.root)))
+
+    def test_reviewed_candidate_needs_evidence(self):
+        self.append("upgrade_candidates", "UPG-001,candidate,literature_reviewed")
+        self.assertTrue(any("without research evidence" in e for e in validate(self.root)))
+
+    def research(self, **changes):
+        row = dict.fromkeys(HEADERS["upgrade_research"].split(","), "documented")
+        row.update(research_id="UR-001", upgrade_id="UPG-001", fitment_status="candidate",
+                   source_ids="src", reviewed_on="2026-10-25", benefit_basis="hypothesis",
+                   diy_level="basic", cost_usd="", review_state="open")
+        row.update(changes)
+        self.append("sources", "src")
+        self.append("upgrade_candidates", "UPG-001,candidate,literature_reviewed")
+        with (self.root / "database/upgrade_research.csv").open("a", newline="") as f:
+            csv.DictWriter(f, fieldnames=row.keys()).writerow(row)
+
+    def test_research_record_valid(self):
+        self.research()
+        self.assertEqual([], validate(self.root))
+
+    def test_unknown_research_source_rejected(self):
+        self.research(source_ids="src|missing")
+        self.assertTrue(any("missing sources reference" in e for e in validate(self.root)))
+
+    def test_unsubstantiated_confirmed_fitment_rejected(self):
+        self.research(fitment_status="confirmed")
+        self.assertTrue(any("requires confirmation_evidence" in e for e in validate(self.root)))
+
+    def test_research_cost_and_date_rejected(self):
+        self.research(cost_usd="cheap", reviewed_on="yesterday")
+        errors = validate(self.root)
+        self.assertTrue(any("invalid cost_usd" in e for e in errors))
+        self.assertTrue(any("invalid reviewed_on" in e for e in errors))
+
+    def test_blank_upgrade_reference_rejected(self):
+        self.research(upgrade_id="")
+        self.assertTrue(any("blank required reference upgrade_id" in e for e in validate(self.root)))
+
+    def test_full_coverage_requires_every_original_candidate(self):
+        self.research()
+        self.assertTrue(any("148 stable IDs" in e for e in validate(self.root, True)))
+
+    def test_full_coverage_rejects_missing_review(self):
+        self.append("upgrade_candidates", "UPG-002,candidate,research_hypothesis")
+        self.assertTrue(any("no research record for UPG-002" in e for e in validate(self.root, True)))
+
+    def test_catalog_fitment_disagreement_rejected(self):
+        self.research(fitment_status="probable")
+        self.assertTrue(any("fitment differs from catalog" in e for e in validate(self.root)))
+
+    def matrix(self, **changes):
+        row = dict(upgrade_id="UPG-001", source_ids="src", source_research_id="UR-001",
+                   source_fitment_status="candidate", purchase_ready="no", decision="promising_but_unverified")
+        row.update(changes)
+        with (self.root / "database/upgrade_value_matrix.csv").open("a", newline="") as f:
+            csv.DictWriter(f, fieldnames=row.keys()).writerow(row)
+
+    def test_valid_matrix_references(self):
+        self.research()
+        self.matrix()
+        self.assertEqual([], validate(self.root))
+
+    def test_matrix_cross_candidate_link_rejected(self):
+        self.research()
+        self.matrix(upgrade_id="UPG-002")
+        errors = validate(self.root)
+        self.assertTrue(any("different candidate" in e for e in errors))
+
+    def test_matrix_missing_source_rejected(self):
+        self.research()
+        self.matrix(source_ids="missing")
+        self.assertTrue(any("missing source" in e for e in validate(self.root)))
+
+    def test_purchase_ready_requires_review_details(self):
+        self.research()
+        self.matrix(purchase_ready="yes")
+        errors = validate(self.root)
+        self.assertTrue(any("purchase-ready missing" in e for e in errors))
+        self.assertTrue(any("decision conflicts" in e for e in errors))
+
+    def test_matrix_fitment_drift_rejected(self):
+        self.research()
+        self.matrix(source_fitment_status="confirmed")
+        self.assertTrue(any("fitment differs from linked research" in e for e in validate(self.root)))
+
+    def test_matrix_requires_research_link(self):
+        self.research()
+        self.matrix(source_research_id="")
+        self.assertTrue(any("blank required reference source_research_id" in e for e in validate(self.root)))
+
+    def test_purchase_ready_candidate_rejected(self):
+        self.research()
+        self.matrix(purchase_ready="yes", decision="worth_buying_for_specific_purpose")
+        self.assertTrue(any("purchase-ready fitment still candidate" in e for e in validate(self.root)))
+
+    def test_revised_toyota_oil_level_specification_accepted(self):
+        """Toyota post-publication fill value must have its own build scope."""
+        self.append("sources", "toyota-tsb")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,toyota-tsb,factory_revised_specification,engine,usa_2003_2005_1zz_tsb_gauge_unverified")
+        self.assertEqual([], validate(self.root))
+
+    def test_original_toyota_oil_level_specification_accepted(self):
+        """Preserve earlier printed manual specification as an original reference."""
+        self.append("sources", "older-manual")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,older-manual,factory_reference_original,engine,manual_scope_oct_2003_onward")
+        self.assertEqual([], validate(self.root))
+
+    def test_revised_oil_scope_and_status_cannot_be_mixed(self):
+        """The newer fill must not be misidentified as a manual-era specification."""
+        self.append("sources", "toyota-tsb")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,toyota-tsb,factory_revised_specification,engine,manual_scope_oct_2003_onward")
+        self.assertTrue(any("incompatible" in e for e in validate(self.root)))
+
 
 if __name__ == "__main__":
     unittest.main()

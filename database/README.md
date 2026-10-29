@@ -1,5 +1,7 @@
 # Felicity structured database v1
 
+**Phase 2 retail extension (2026-10-29):** DSC-P2-001–063 append to the original DSC-40 external catalog (108 total evaluations). New [product detail](phase2_product_details_2026-10-29.csv), [evidence relationship](phase2_evidence_links_2026-10-29.csv), [stock/access](phase2_local_stock_2026-10-29.csv) and [supplier-category coverage](phase2_supplier_category_coverage_2026-10-29.csv) tables preserve price units, indexed-only uncertainty and separate branch evidence. See [schema](../docs/PHASE2_DISCOVERY_SCHEMA.md) and [report](../research/PHASE2_DEEP_RETAIL_DISCOVERY_2026-10-29.md). Run `python scripts/validate_phase2_discovery.py` alongside the existing checks.
+
 Machine-readable CSV tables with stable identifiers, provenance, applicability and verification states. Readable in spreadsheet software, Python, SQLite, DuckDB, or a web app. **No unredacted VIN or ownership documents.**
 
 See [engineering source and interchange evidence standard](../docs/EVIDENCE_STANDARD.md) for applicability, citations, confidence levels and performance-modification research.
@@ -53,3 +55,17 @@ Every existing specification has a `component_id` referring to `components.csv` 
 ## Integrity verification distinction
 
 On 2026-10-25 a direct cross-table check of the nine current CSV files found zero duplicate primary IDs and zero missing nonblank references in existing records. This is a check of database consistency, not an executed run of the Python tests and not a verification of every engineering specification. GitHub Actions status remains unconfirmed.
+
+## Countermeasure discovery extension (2026-10-29)
+
+`factory_countermeasures.json` adds structured factory/supplier studies keyed by stable FCM IDs and linked to existing UPG catalog IDs. It records original/revised relationships, documentary application, June2003 applicability, actual-vehicle verification and installation status separately. Null cost means unknown, not free. Intervention categories distinguish engineering improvements, restoration/serviceability and diagnostic references. Exclusions and maintenance handling practices do not inflate the candidate count.
+
+`consumer_outcomes.csv` is an evidence ledger, **not Felicity's repair log**. Each OUT ID identifies the reporter's vehicle, intervention/result, follow-up limitations and whether it qualifies for Level B. Cross-market, different-part and unresolved reports remain useful evidence without becoming successful exact-remedy corroboration.
+
+Run `python scripts/validate_countermeasures.py` as well as the existing tests/CSV validator. The supplemental check validates links, identifiers, price structure and evidence/installation promotion gates. It cannot certify source truth, current stock, safe installation or physical fitment. See the [discovery report](../research/FACTORY_DISCOVERY_PASS_2026-10-29.md) and [unresolved backlog](../research/COUNTERMEASURE_BACKLOG_2026-10-29.md).
+
+## Toyota 2008 oil-level revision — original vs revised (2026-10-29)
+
+Original OM12859U (published for October 2003+ production) shows the 1ZZ-FE **3.9 US qt with-filter** and **3.7 US qt without-filter** refill amounts, which remain in `spec-006` / `spec-007` as **original-manual references**. Toyota USA **T-SB-0134-08** subsequently specifies a revised 1ZZ-FE dipstick **15301-22050** and corresponding **4.4/4.2 US qt** refill amounts (with/without filter) for listed 2003–2005 US Corolla applications. These separate values are stored in `spec-030` / `spec-031` as `factory_revised_specification` with `usa_2003_2005_1zz_tsb_gauge_unverified` build-scope status. **Do not simply add 0.5 qt** while relying on an unidentified older oil-level gauge. Confirm current installed dipstick and private vehicle applicability; no engine-durability benefit is asserted. See [second discovery pass](../research/FACTORY_DISCOVERY_PASS_2_OIL_LEVEL_BRAKE_NVH_2026-10-29.md).
+
+Regression tests in `tests/test_validate_database.py` and schema checks in `scripts/validate_database.py` accept distinct original/revised spec categories and **reject revised values mislabeled as earlier-manual scope**. These tests are committed but their completed hosted execution must be checked; source/data integrity is not the same as physical vehicle fitment.
