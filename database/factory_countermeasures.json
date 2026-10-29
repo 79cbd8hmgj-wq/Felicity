@@ -1843,6 +1843,111 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-022",
+      "upgrade_id": "UPG-212",
+      "title": "Toyota increased 1ZZ-FE oil level with revised dipstick",
+      "reviewed_on": "2026-10-29",
+      "novelty": "new_candidate",
+      "subsystem": "Engine lubrication / oil level",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota USA 2003-05 Corolla 1ZZ service bulletin application; actual dipstick and private VDS unverified.",
+      "problem_or_limitation": "Toyota post-production revision increases allowable oil fill by 0.5 L with matching revised gauge; rationale beyond level update not independently quantified.",
+      "application": {
+        "model_years": "2003-2005 Corolla",
+        "market": "USA",
+        "plant": "No separate plant restriction in bulletin",
+        "engine": "1ZZ-FE; Toyota VDS BR30E/BR32E/BR38E",
+        "transmission": "No exclusion specified",
+        "production": "Toyota bulletin includes 2004; June2003 factory build plausible, as-built VDS and installed dipstick still to be confirmed."
+      },
+      "factory_engineering": {
+        "original_design": "Original gauge 15301-22030 in TSB; dealer catalog also lists local 15301-0D050/0D051.",
+        "part_relationships": {
+          "original": "15301-22030 (Toyota bulletin); 15301-0D050 and -0D051 from separate Toyota catalog",
+          "revised": "15301-22050",
+          "original_level": "3.9qt with / 3.7qt without filter",
+          "revised_level": "4.4qt with / 4.2qt without filter"
+        },
+        "documentation": "Toyota T-SB-0134-08 July15 2008: 0.5L raised service level and identifiable revised dipstick. No new oil pan or piston specified.",
+        "production_adoption": "Revised service gauge; exact factory installation cutover not documented in bulletin"
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "No alternative aftermarket gauge verified; same 1ZZ engine family not sufficient.",
+        "required_companion_components": [
+          "Use correct Toyota 15301-22050 gauge and check level with matching markings.",
+          "Correct oil grade, filter and normal service procedure."
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-pass2-oil0134",
+          "src-pass2-dipstick-dealer",
+          "src-pass2-dipstick-epc"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No independent matched long-term updated-gauge result retrieved",
+        "contradictions": [
+          "Supplied October2003+ Corolla manual still states original 3.9/3.7qt; later Toyota bulletin explicitly supersedes capacity with new gauge.",
+          "Toyota bulletin names previous 15301-22030 only; retail EPC additionally lists local 15301-0D050/051."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Revised Toyota oil-level reference allowing additional 0.5L oil per service.",
+        "healthy_original_benefit": "Additional Toyota-authorized oil inventory; lifespan/thermal/consumption improvement not measured.",
+        "trigger": "Inspection indicates original older gauge and owner elects revised Toyota factory service specification.",
+        "possible_negative_consequences": "Overfill due to mixing old dipstick with new fill quantity or assuming current installed part; no demonstrated cure for oil-burning engine.",
+        "fitment_confidence": "model-year Toyota bulletin supported; subject car/gauge unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 23.79,
+          "basis": "Toyota online dealer price dipstick alone 2026-10-29; excludes shipping tax oil and availability",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-pass2-dipstick-dealer",
+            "part": "15301-22050",
+            "unit_usd": 23.79,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "basic",
+        "required_tools": [
+          "Verify actual dipstick ID/handle mark; normal oil checking and service supplies."
+        ],
+        "installation_risks": "Avoid overfilling and never estimate oil level from changed fill volume alone.",
+        "upgrade_interactions": "Distinct from European EG-6020 internal piston short-block lubrication revision; do not double-count or claim ring repair.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "individual_private_vds_not_confirmed",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota USA T-SB-0134-08 names 15301-22030 to15301-22050 and gives 4.4qt/4.2qt service amounts for specified 2003-05 Corolla 1ZZ."
+        ],
+        "engineering_inferences": [
+          "Higher oil inventory could help some operating margins; durability/temperature/consumption gains remain unproven."
+        ],
+        "unverified_claims": [
+          "No exact vehicle current dipstick identified",
+          "No validated oil consumption/longevity improvement"
+        ],
+        "missing_research": [
+          "Read owner's actual oil gauge handle mark and dimensions",
+          "Privately verify bulletin VDS and factory catalog part selection",
+          "Find repeatable independent owner long-term outcome for the exact new gauge"
+        ],
+        "next_action": "Inspect installed dipstick and confirm vehicle VDS; if updating use matched new dipstick and revised service capacity, with correct oil-level checks.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
     }
   ],
   "exclusions": [
