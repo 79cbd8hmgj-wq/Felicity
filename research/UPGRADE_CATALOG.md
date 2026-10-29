@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **230 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **238 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -16,6 +16,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Second discovery expansion — new classes beyond existing 225 concepts (2026-10-29)
 
 [Five additional new-technology concepts UPG-226–230](ADDITIONAL_MODERNIZATION_DISCOVERY_PASS_2_2026-10-29.md) document ambient/wiper-triggered automatic lighting, a Corolla-specific CURT Class I utility receiver, supplementary fused accessory distribution, heated exterior mirror control, and custom snow/saltwater footwell containment. These are not repeat reviews of factory fixes, tire brands or suspension options. **230 distinct concepts, 230 linked research records, 319 registered sources.** None is VIN-verified, installed or purchase-ready; absolute benefit relative to healthy factory equipment remains unmeasured.
+
+## Third discovery wave: new mechanical, thermal, safety and security architecture (2026-10-29)
+
+[Eight new engineering systems UPG-231–238](NEW_HARDWARE_ARCHITECTURE_DISCOVERY_PASS_3_2026-10-29.md) add hydraulic steering magnetic filtration, independent pressurized engine pre-lubrication, automatic underhood fire suppression, conditional 2004 OEM ABS+EBD architecture feasibility, passive battery radiant/acid shielding, 120V stationary cabin preheating, active intrusion-sensing vehicle security, and partially open rain-excluding ventilation. These are **new functions**, not alternate brands of existing dampers or brake pads. All remain candidate-only / unverified, and no purchase-ready or subject-car installed claims apply. **238 canonical concepts, 238 reviews, 336 sources**; review counted only after CI succeeds.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
