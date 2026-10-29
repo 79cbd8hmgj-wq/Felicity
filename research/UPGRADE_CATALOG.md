@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **248 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **251 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -32,6 +32,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Wave 6: Canadian-market Toyota washer fluid warning and electric trunk actuation (2026-10-29)
 
 [Two new source-backed capabilities UPG-247–248](NEW_FACTORY_AND_REMOTE_CONTROL_DISCOVERY_PASS_6_2026-10-29.md) add Toyota's Canada-only **W1 washer-fluid-level sensor and cluster warning circuit** (original 2004 Corolla EWD533U, genuine `85397-AA040`, connector `90980-11068`) and a 2003–08 Corolla-catalogued **electrically actuated trunk cable-unlatching system** (AutoLoc PK-24294241), a function separate from the original manual remote lever. **248 candidates, 248 linked research records, 362 sources.** These are not installed or purchase-ready, and full individual June-2003 US build retrofit compatibility remains unknown. The original May-2004 nozzle part change `85381-02100 → 85381-12280` was recorded as an unapproved lead with no verified spray or durability improvement; **no extra ID created**.
+
+## Wave 7: new rear-axle, steering-rack, and jounce-load-path engineering (2026-10-29)
+
+[Three mechanical concepts UPG-249–251](MECHANICAL_COMPLIANCE_DISCOVERY_WAVE_7_2026-10-29.md) add distinct **rear torsion-beam pivot compliance** (`Energy Suspension 8.3121`, `PSB222` alternative), **steering rack isolation compliance** (`8.10102`) and **microcellular urethane compression-jounce shaping** (`Monroe 63640`). **251 concepts, 251 linked studies, 375 sources**. Manufacturer applications exist, but **healthy-stock benefit, ride penalty and exact June-2003 TMMC fit remain unverified**; original rear-beam `48725-02230` must not be silently substituted with Japanese-build `48725-12580`. Factory VVT-i solenoid supersessions and an obsolete generic remote window closer were deliberately not admitted as new upgrades. None purchase-ready or vehicle-tested.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
