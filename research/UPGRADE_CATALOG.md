@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **225 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **230 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -12,6 +12,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Discovery-first expansion beyond repeated subjects (2026-10-29)
 
 [New technology discovery pass](NEW_TECHNOLOGY_DISCOVERY_PASS_2026-10-29.md) adds **nine distinct physically described improvement classes** with corresponding candidates, research, sources and value matrix: **UPG-217** internal cavity wax, **UPG-218** integrated heated seats, **UPG-219** ultrasonic reverse warning, **UPG-220** early Corolla OEM fog lamps, **UPG-221** dedicated winter tire/wheel set, **UPG-222** Toyota mudguards, **UPG-223** progressive hood lift struts, **UPG-224** radar blind-spot/rear cross-traffic detection and **UPG-225** remote start. Novelty was checked against all existing 216 categories. The products are of unequal practicality and maturity; manufacturer fitment is not a VIN installation approval, all are `purchase_ready=no` and none are installed. **Next research should continue pursuing other genuinely different technologies**, not keep expanding evidence for the same suspension, brake and service correction items.
+
+## Second discovery expansion — new classes beyond existing 225 concepts (2026-10-29)
+
+[Five additional new-technology concepts UPG-226–230](ADDITIONAL_MODERNIZATION_DISCOVERY_PASS_2_2026-10-29.md) document ambient/wiper-triggered automatic lighting, a Corolla-specific CURT Class I utility receiver, supplementary fused accessory distribution, heated exterior mirror control, and custom snow/saltwater footwell containment. These are not repeat reviews of factory fixes, tire brands or suspension options. **230 distinct concepts, 230 linked research records, 319 registered sources.** None is VIN-verified, installed or purchase-ready; absolute benefit relative to healthy factory equipment remains unmeasured.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
