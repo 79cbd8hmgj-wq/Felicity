@@ -9,6 +9,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 - **literature_reviewed**: initial findings or explicit evidence gaps recorded; full verification remains open.
 - **candidate / probable**: current fitment classes; none confirmed or vehicle-validated. Original `candidate_unverified` describes the discovery state only.
 
+## Decision-focused balanced daily-driver package (2026-10-29)
+
+The [balanced performance and quality package](BALANCED_PERFORMANCE_QUALITY_PACKAGE_2026-10-29.md) narrows the broad candidate inventory into an evidence-ranked, staged plan for this vehicle, with actual manufacturer application references, tire-geometry checks, conditional DIY work, costs and specific vehicle-validation gates. The package does **not** classify any candidate as VIN-verified or installed.
+
 ## Priority for evidence acquisition (not ranking owner's goals)
 
 1. **Factory-proven revisions:** Toyota EG045-07 intake gasket and further TSB/supersession investigation.
