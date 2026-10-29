@@ -9,6 +9,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 - **literature_reviewed**: initial findings or explicit evidence gaps recorded; full verification remains open.
 - **candidate / probable**: current fitment classes; none confirmed or vehicle-validated. Original `candidate_unverified` describes the discovery state only.
 
+## Toyota windshield wind-noise and door-glass countermeasures (2026-10-29)
+
+[Pass 4: windshield reed-noise and independent owner outcomes](FACTORY_DISCOVERY_PASS_4_WINDSHIELD_REED_NOISE_2026-10-29.md) adds **UPG-214 / FCM-024**, a Toyota **T-SB-0257-08** documented repair for exterior windshield molding flutter, and **FCM-025** for existing **UPG-130** Toyota **NV006-05** revised door-glass window runs. **OUT-006–008** record three independent firsthand owner reports, with symptom and part/method/durability limitations preserved. The original 3M 08551 sealer is distributor-listed obsolete; no currently verified drop-in replacement and **no new item is purchase-ready**. Research inventory now **214 concepts**, **25 factory studies**, **8 owner outcomes**, including speculative items. Neither modification addresses bilateral pothole clunks.
+
 ## Decision-focused balanced daily-driver package (2026-10-29)
 
 The [balanced performance and quality package](BALANCED_PERFORMANCE_QUALITY_PACKAGE_2026-10-29.md) narrows the broad candidate inventory into an evidence-ranked, staged plan for this vehicle, with actual manufacturer application references, tire-geometry checks, conditional DIY work, costs and specific vehicle-validation gates. The package does **not** classify any candidate as VIN-verified or installed.
