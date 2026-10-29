@@ -23,7 +23,7 @@ FILES = {
 TARGETS = {"vehicle_id": "vehicle", "component_id": "components", "source_id": "sources", "parent_id": "components", "upgrade_id": "upgrade_candidates", "source_research_id": "upgrade_research"}
 STATUS = {
     "components": ("verification_status", {"reference", "research_pending", "label_verified", "equipment_unknown", "partially_observed", "not_inspected"}),
-    "specifications": ("status", {"factory_reference", "observed", "owner_confirmed", "pending"}),
+    "specifications": ("status", {"factory_reference", "factory_reference_original", "factory_revised_specification", "observed", "owner_confirmed", "pending"}),
     "service_tasks": ("status", {"pending", "history_unknown", "not_inspected", "done"}),
     "parts": ("verification_status", {"candidate", "probable", "verified"}),
     "upgrade_candidates": ("fitment_status", {"candidate_unverified", "candidate", "probable", "confirmed", "vehicle-validated"}),
@@ -117,10 +117,14 @@ def validate(root: Path, require_upgrade_coverage=False):
         if "build_applicability" not in headers:
             errors.append("specifications: missing build_applicability column")
         else:
-            allowed = {"manual_scope_oct_2003_onward", "individual_vehicle_observed"}
+            allowed = {"manual_scope_oct_2003_onward", "individual_vehicle_observed", "usa_2003_2005_1zz_tsb_gauge_unverified"}
             for number, row in rows:
                 if row["build_applicability"] not in allowed:
                     errors.append(f"specifications:{number}: invalid build_applicability")
+                revised_scope = "usa_2003_2005_1zz_tsb_gauge_unverified"
+                if ((row["status"] == "factory_revised_specification") !=
+                        (row["build_applicability"] == revised_scope)):
+                    errors.append(f"specifications:{number}: incompatible revised status and build_applicability")
     if "upgrade_research" in tables:
         headers, rows, _ = tables["upgrade_research"]
         required = {"source_ids", "reviewed_on", "verified_facts", "production_applicability",
