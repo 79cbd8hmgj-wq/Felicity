@@ -1,0 +1,110 @@
+link_id,discovery_id,source_id,role,scope
+P2LINK-001,DSC-P2-001,src-p2-ce51e9b362d5,product_or_offer,see product evidence stage; no branch inference
+P2LINK-002,DSC-P2-001,src-p2-336a82d3c3c3,product_or_offer,see product evidence stage; no branch inference
+P2LINK-003,DSC-P2-002,src-p2-32f9d14da1d9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-004,DSC-P2-003,src-p2-3aa897e08b10,product_or_offer,see product evidence stage; no branch inference
+P2LINK-005,DSC-P2-004,src-p2-08a4bd213e8e,product_or_offer,see product evidence stage; no branch inference
+P2LINK-006,DSC-P2-005,src-p2-23eac374a7d2,product_or_offer,see product evidence stage; no branch inference
+P2LINK-007,DSC-P2-006,src-p2-bf83a81f418e,product_or_offer,see product evidence stage; no branch inference
+P2LINK-008,DSC-P2-007,src-p2-54e12680fa05,product_or_offer,see product evidence stage; no branch inference
+P2LINK-009,DSC-P2-008,src-p2-1be730295ff0,product_or_offer,see product evidence stage; no branch inference
+P2LINK-010,DSC-P2-008,src-p2-fa4490e63ad1,product_or_offer,see product evidence stage; no branch inference
+P2LINK-011,DSC-P2-009,src-p2-a49d50908e25,product_or_offer,see product evidence stage; no branch inference
+P2LINK-012,DSC-P2-010,src-p2-fdebd45cec88,product_or_offer,see product evidence stage; no branch inference
+P2LINK-013,DSC-P2-011,src-p2-8a4ae8beea1b,product_or_offer,see product evidence stage; no branch inference
+P2LINK-014,DSC-P2-011,src-p2-00ff18e06895,product_or_offer,see product evidence stage; no branch inference
+P2LINK-015,DSC-P2-012,src-p2-b162fa6e3e01,product_or_offer,see product evidence stage; no branch inference
+P2LINK-016,DSC-P2-012,src-p2-6281aa178e8d,product_or_offer,see product evidence stage; no branch inference
+P2LINK-017,DSC-P2-013,src-p2-f3994b20a3a9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-018,DSC-P2-014,src-p2-8ff268e5569b,product_or_offer,see product evidence stage; no branch inference
+P2LINK-019,DSC-P2-015,src-p2-98eb00fb8df4,product_or_offer,see product evidence stage; no branch inference
+P2LINK-020,DSC-P2-015,src-p2-d040c6260c84,product_or_offer,see product evidence stage; no branch inference
+P2LINK-021,DSC-P2-016,src-p2-98eb00fb8df4,product_or_offer,see product evidence stage; no branch inference
+P2LINK-022,DSC-P2-017,src-p2-efda27e6bc20,product_or_offer,see product evidence stage; no branch inference
+P2LINK-023,DSC-P2-018,src-p2-667e45d7186b,product_or_offer,see product evidence stage; no branch inference
+P2LINK-024,DSC-P2-019,src-p2-50cfb48dee32,product_or_offer,see product evidence stage; no branch inference
+P2LINK-025,DSC-P2-020,src-p2-4bee17ea084d,product_or_offer,see product evidence stage; no branch inference
+P2LINK-026,DSC-P2-020,src-p2-a7c0af7a9560,product_or_offer,see product evidence stage; no branch inference
+P2LINK-027,DSC-P2-021,src-p2-49ab8710fa26,product_or_offer,see product evidence stage; no branch inference
+P2LINK-028,DSC-P2-022,src-p2-9f5853308827,product_or_offer,see product evidence stage; no branch inference
+P2LINK-029,DSC-P2-022,src-p2-54f57b3feaeb,product_or_offer,see product evidence stage; no branch inference
+P2LINK-030,DSC-P2-023,src-p2-c279ffd72800,product_or_offer,see product evidence stage; no branch inference
+P2LINK-031,DSC-P2-024,src-p2-c7325a738a17,product_or_offer,see product evidence stage; no branch inference
+P2LINK-032,DSC-P2-024,src-p2-2c18ca0e59eb,product_or_offer,see product evidence stage; no branch inference
+P2LINK-033,DSC-P2-025,src-p2-48d5d73e8ef9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-034,DSC-P2-026,src-p2-24c4bffeefc1,product_or_offer,see product evidence stage; no branch inference
+P2LINK-035,DSC-P2-027,src-p2-17f4ebf9928c,product_or_offer,see product evidence stage; no branch inference
+P2LINK-036,DSC-P2-028,src-p2-82bf3388cd19,product_or_offer,see product evidence stage; no branch inference
+P2LINK-037,DSC-P2-029,src-p2-5c8eaaf3c64d,product_or_offer,see product evidence stage; no branch inference
+P2LINK-038,DSC-P2-030,src-p2-c17d3a0eed26,product_or_offer,see product evidence stage; no branch inference
+P2LINK-039,DSC-P2-031,src-p2-defe381ab747,product_or_offer,see product evidence stage; no branch inference
+P2LINK-040,DSC-P2-032,src-p2-65f4cff845dd,product_or_offer,see product evidence stage; no branch inference
+P2LINK-041,DSC-P2-033,src-p2-32144e949a2f,product_or_offer,see product evidence stage; no branch inference
+P2LINK-042,DSC-P2-034,src-p2-0b7e781eb69e,product_or_offer,see product evidence stage; no branch inference
+P2LINK-043,DSC-P2-034,src-p2-622067dafab2,product_or_offer,see product evidence stage; no branch inference
+P2LINK-044,DSC-P2-035,src-p2-59735d657e1d,product_or_offer,see product evidence stage; no branch inference
+P2LINK-045,DSC-P2-036,src-p2-6777c2ec0d04,product_or_offer,see product evidence stage; no branch inference
+P2LINK-046,DSC-P2-036,src-p2-79e0d82daa55,product_or_offer,see product evidence stage; no branch inference
+P2LINK-047,DSC-P2-037,src-p2-afad6847ab25,product_or_offer,see product evidence stage; no branch inference
+P2LINK-048,DSC-P2-038,src-p2-b1e46a0edd7e,product_or_offer,see product evidence stage; no branch inference
+P2LINK-049,DSC-P2-039,src-p2-599b884fecb1,product_or_offer,see product evidence stage; no branch inference
+P2LINK-050,DSC-P2-040,src-p2-eb04e7ea62a9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-051,DSC-P2-041,src-p2-84806eface24,product_or_offer,see product evidence stage; no branch inference
+P2LINK-052,DSC-P2-042,src-p2-8658f3461f64,product_or_offer,see product evidence stage; no branch inference
+P2LINK-053,DSC-P2-043,src-p2-67ee5448f8e1,product_or_offer,see product evidence stage; no branch inference
+P2LINK-054,DSC-P2-044,src-p2-a04556a1f4cf,product_or_offer,see product evidence stage; no branch inference
+P2LINK-055,DSC-P2-045,src-p2-5c56330ca322,product_or_offer,see product evidence stage; no branch inference
+P2LINK-056,DSC-P2-046,src-p2-2995e1e78148,product_or_offer,see product evidence stage; no branch inference
+P2LINK-057,DSC-P2-047,src-p2-1dadc131bd72,product_or_offer,see product evidence stage; no branch inference
+P2LINK-058,DSC-P2-048,src-p2-21f86e1945fe,product_or_offer,see product evidence stage; no branch inference
+P2LINK-059,DSC-P2-049,src-p2-76da231e18aa,product_or_offer,see product evidence stage; no branch inference
+P2LINK-060,DSC-P2-049,src-p2-2130c2edae2a,product_or_offer,see product evidence stage; no branch inference
+P2LINK-061,DSC-P2-050,src-p2-a5f058b618eb,product_or_offer,see product evidence stage; no branch inference
+P2LINK-062,DSC-P2-050,src-p2-1d46568ebf3e,product_or_offer,see product evidence stage; no branch inference
+P2LINK-063,DSC-P2-051,src-p2-ab7b281c0fc5,product_or_offer,see product evidence stage; no branch inference
+P2LINK-064,DSC-P2-052,src-p2-5098ab8f7aa1,product_or_offer,see product evidence stage; no branch inference
+P2LINK-065,DSC-P2-053,src-p2-3082fa4b1904,product_or_offer,see product evidence stage; no branch inference
+P2LINK-066,DSC-P2-054,src-p2-65dd56202d56,product_or_offer,see product evidence stage; no branch inference
+P2LINK-067,DSC-P2-055,src-p2-8912310a97f4,product_or_offer,see product evidence stage; no branch inference
+P2LINK-068,DSC-P2-056,src-p2-07c21759df3b,product_or_offer,see product evidence stage; no branch inference
+P2LINK-069,DSC-P2-057,src-p2-9b06de48aca9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-070,DSC-P2-058,src-p2-6941241ee05c,product_or_offer,see product evidence stage; no branch inference
+P2LINK-071,DSC-P2-059,src-p2-e5dbb17bc8d9,product_or_offer,see product evidence stage; no branch inference
+P2LINK-072,DSC-P2-060,src-p2-c37f48a68658,product_or_offer,see product evidence stage; no branch inference
+P2LINK-073,DSC-P2-025,src-p2-daf43d83645b,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-074,DSC-P2-027,src-p2-3018034f6758,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-075,DSC-P2-029,src-p2-7b27eb6e0d6e,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-076,DSC-P2-031,src-p2-42d86adf3ae9,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-077,DSC-P2-032,src-p2-42d86adf3ae9,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-078,DSC-P2-033,src-p2-7b27eb6e0d6e,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-079,DSC-P2-038,src-p2-453a8cb1dde5,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-080,DSC-P2-008,src-p2-3018034f6758,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-081,DSC-P2-010,src-p2-f6ed7057b8c4,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-082,DSC-P2-055,src-p2-f6ed7057b8c4,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-083,DSC-P2-056,src-p2-f6ed7057b8c4,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-084,DSC-P2-057,src-p2-f6ed7057b8c4,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-085,DSC-P2-058,src-p2-f6ed7057b8c4,supplier_brand_line,Fisher corporate brand/category only; exact SKU and branch access/stock not established
+P2LINK-086,DSC-P2-005,src-p2-11ca042e23c3,supplier_brand_line,Universal Albany advertises AeroFlow; exact SKU supply/quote unconfirmed
+P2LINK-087,DSC-P2-006,src-p2-11ca042e23c3,supplier_brand_line,Universal Albany advertises AeroFlow; exact SKU supply/quote unconfirmed
+P2LINK-088,DSC-P2-007,src-p2-11ca042e23c3,supplier_brand_line,Universal Albany advertises AeroFlow; exact SKU supply/quote unconfirmed
+P2LINK-089,DSC-P2-031,src-p2-1e813f0d706b,manufacturer_family_geometry,Resolve exact drawing/interface before adapting
+P2LINK-090,DSC-P2-032,src-p2-1e813f0d706b,manufacturer_family_geometry,Resolve exact drawing/interface before adapting
+P2LINK-091,DSC-P2-033,src-p2-1e813f0d706b,manufacturer_family_geometry,Resolve exact drawing/interface before adapting
+P2LINK-092,DSC-P2-014,src-p2-98eb00fb8df4,comparison,Fluid properties from maker table; not Toyota approval
+P2LINK-093,DSC-P2-015,src-p2-98eb00fb8df4,comparison,Fluid properties from maker table; not Toyota approval
+P2LINK-094,DSC-P2-016,src-p2-98eb00fb8df4,comparison,Fluid properties from maker table; not Toyota approval
+P2LINK-095,DSC-P2-061,src-p2-19e34e77a348,product_identity,first_party_page_read
+P2LINK-096,DSC-P2-062,src-p2-d43aaa389ec2,product_identity,cross_reference_lead_only
+P2LINK-097,DSC-P2-063,src-p2-851e657e1c89,product_identity,retail_page_read
+P2LINK-098,DSC-P2-017,src-p2-70a30cc17f63,product_comparison,primary_catalog_indexed; physical fit remains separate
+P2LINK-099,DSC-P2-018,src-p2-58ac319e4251,product_comparison,retailer_page_read; physical fit remains separate
+P2LINK-100,DSC-P2-061,src-p2-f114a1b20745,product_comparison,indexed_listing_only; physical fit remains separate
+P2LINK-101,DSC-P2-062,src-p2-f114a1b20745,product_comparison,indexed_listing_only; physical fit remains separate
+P2LINK-102,DSC-P2-035,src-p2-6d4118fbb324,product_comparison,page_read; physical fit remains separate
+P2LINK-103,DSC-P2-001,src-p2-4b04e738bb02,competing_offer,indexed_price_extraction_omitted_price; physical fit remains separate
+P2LINK-104,DSC-P2-001,src-p2-17659aa3bc3b,competing_offer,indexed_price_only; physical fit remains separate
+P2LINK-105,DSC-P2-015,src-p2-2a0a7d9ee98d,competing_offer,indexed_price_only; physical fit remains separate
+P2LINK-106,DSC-P2-034,src-p2-9b532ea30eaf,competing_offer,indexed_price_call_stock_before_order; physical fit remains separate
+P2LINK-107,DSC-P2-052,src-p2-c85eed18b9f2,competing_offer,indexed_price_only; physical fit remains separate
+P2LINK-108,DSC-P2-052,src-p2-1143ff5d68e7,competing_offer,indexed_price_with_not_available_for_sale; physical fit remains separate
+P2LINK-109,DSC-P2-049,src-p2-d77cb2c66e2d,competing_offer,indexed_price_only; physical fit remains separate

@@ -23,3 +23,4 @@ jobs:
       - run: python scripts/validate_database.py --require-upgrade-coverage
       - run: python scripts/validate_countermeasures.py
       - run: python scripts/validate_supplier_discovery.py
+      - run: python scripts/validate_phase2_discovery.py
