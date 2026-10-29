@@ -1,6 +1,6 @@
 # Felicity open-ended upgrade discovery policy
 
-**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 29 2026, the catalog includes **215** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
+**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 29 2026, the catalog includes **216** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
 
 ## Whole-car engineering objective — top priority, 2026-10-29
 
@@ -12,9 +12,9 @@ Prioritize work across **at least these independent vectors**: comfort/impact ha
 
 Read the [active balanced research pass](../research/BALANCED_WHOLE_CAR_ENGINEERING_PASS_2026-10-29.md) and [earlier touring/quality package](../research/MODERNIZATION_PROGRAM.md). Existing IDs were kept; new physical products strengthen matching studies rather than inflate counts. No future arbitrary ceiling on research discovery.
 
-## Healthy-car retrofit priority — owner clarification 2026-10-29
+## Toyota factory retrofit and preventive durability research — one focus area
 
-**Highest-priority mandate:** The owner's 2004 Corolla currently has no reported engine/transmission diagnostic trouble codes, and the user wants **retrofit-ready physical improvements over early-production factory parts**, not a catalog dominated by repairs that require MIL/DTCs. Search Toyota later-production design changes, genuine improved superseded parts, and manufacturer-engineered full-system conversions for the exact **June-2003-built US TMMC Corolla LE, 1ZZ-FE/A245E**. See [governing strategy and specific parts](../research/HEALTHY_CAR_PREVENTIVE_ENGINEERING_STRATEGY_2026-10-29.md).
+**Within the reliability and factory revision workstream:** The owner's 2004 Corolla currently has no reported engine/transmission diagnostic trouble codes, and the user wants **retrofit-ready physical improvements over early-production factory parts**, not a catalog dominated by repairs that require MIL/DTCs. Search Toyota later-production design changes, genuine improved superseded parts, and manufacturer-engineered full-system conversions for the exact **June-2003-built US TMMC Corolla LE, 1ZZ-FE/A245E**. See [governing strategy and specific parts](../research/HEALTHY_CAR_PREVENTIVE_ENGINEERING_STRATEGY_2026-10-29.md).
 
 Prioritize preventive designs and service-window opportunities **that could have value before a fault**. Compare the risk of disturbing a healthy original system against documented materials/geometry improvement, target failure mechanism, OEM retrofit compatibility and independent owner long-term outcomes. Never infer superiority from a newer year or part number alone.
 
