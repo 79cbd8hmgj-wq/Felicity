@@ -1,5 +1,8 @@
 # Felicity: healthy-car preventive engineering and later-production retrofit strategy
 
+> **Scope update (2026-10-29):** This document covers the **preventive-reliability subset** of Felicity, not its entire mission. The owner confirmed that *repair prevention is only one part* of the project. The governing balanced whole-car engineering program now includes meaningful improvements over a healthy original Corolla in ride, handling, braking, NVH, efficiency, power delivery, cabin comfort and long-term durability. Read [Balanced whole-car engineering pass](BALANCED_WHOLE_CAR_ENGINEERING_PASS_2026-10-29.md) and [program policy](../docs/OPEN_ENDED_UPGRADE_RESEARCH.md). Do not restrict future research to Toyota countermeasures or preventive parts.
+
+
 **Decision date:** 2026-10-29. **Owner clarification:** Vehicle operates without reported DTCs; the goal is *not* to chase codes or rebuild a healthy powertrain. The core research mission is to identify **known design weaknesses** in a June-2003 Canadian-built US 2004 Corolla LE (1ZZ-FE, A245E) and **genuinely better alternative parts or later Toyota-production designs that can be retrofitted** to that exact vehicle. A conditional symptom-only factory service fix is useful diagnostic reference, but not the top modernization priority.
 
 ## Governing decision rule
