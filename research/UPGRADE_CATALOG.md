@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **251 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **255 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -48,6 +48,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Full basic/intermediate DIY inventory, 117 existing ideas (2026-10-29)
 
 [Complete 117-row DIY and parts-counter crosswalk](DIY_BASIC_INTERMEDIATE_FULL_117_CATALOG_2026-10-29.md) indexes **all 43 basic + 74 intermediate** ideas (out of 251 total) and tags **47 common retail product categories** as *possible* AutoZone/Advance candidates — **not as verified local stock or proven Corolla improvements**. Includes source-backed examples of PCV, oil filters, intake/valve-cover seals, Group 35 batteries, carbon cabin filtration, wipers, corrosion protection and an explicit distinction between routine repair and real healthy-factory improvements. The earlier 7-item walk-in report is a **shortlist only**; no concept count, fitment or purchase approval changed.
+
+## Wave 8: New evidence from outside the repository — retail and manufacturer innovations (2026-10-29)
+
+[External discovery pass UPG-252–255](EXTERNAL_MARKET_DISCOVERY_PASS_8_2026-10-29.md) directly searched AutoZone, Advance Auto, Honda engineering bulletins, Sylvania, Magnefine, WeatherTech and Rshield **outside the existing Felicity database**. Four non-duplicate mechanisms emerged: compliant same-55W `9006` higher-performance halogen road illumination, treated rodent-deterrent underhood harness protection, auxiliary transmission-return magnetic fine filtration (high-risk hose work; no healthy-car install approval), and transparent factory-shaped headlamp optical-surface protection (Corolla `LG0870` **currently unavailable**, AutoZone `LG0901` actually for Prius). Also researched affordable **$34.99 Slime 40050** 12V roadside inflater, separated as a tool rather than inflated UPG count, with its **15A** socket requirement. **255 total concepts / 255 research & value-matrix rows / 408 registered sources**; no exact-car validation or purchase approval. Product categories are not automatically aftermarket improvements over healthy Toyota hardware.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
