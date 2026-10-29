@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **246 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **248 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -28,6 +28,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Wave 5: exposed corrosion, heated wipers, surround vision, stored-start energy and factory rear heat ducts (2026-10-29)
 
 [Five distinct functions UPG-242–246](NEW_ENGINEERING_DISCOVERY_PASS_5_2026-10-29.md) document a flexible exterior chassis salt barrier, heated blade and pivot anti-icing, four-camera stitched overhead parking vision, a smart main battery with independent stored-start energy (high-price/cold-weather caution), and genuine Toyota NAP rear-seat heater air routing if not already factory installed. **246 concepts, 246 linked research rows, 354 sources.** All remain research-only. Maker 14V maximum for heated blades conflicts with potential normal automotive charging variation until approved; Toyota rear heat ducts may already be fitted and must be physically inspected. All prior IDs preserved, no inflated installed/purchase-ready counts.
+
+## Wave 6: Canadian-market Toyota washer fluid warning and electric trunk actuation (2026-10-29)
+
+[Two new source-backed capabilities UPG-247–248](NEW_FACTORY_AND_REMOTE_CONTROL_DISCOVERY_PASS_6_2026-10-29.md) add Toyota's Canada-only **W1 washer-fluid-level sensor and cluster warning circuit** (original 2004 Corolla EWD533U, genuine `85397-AA040`, connector `90980-11068`) and a 2003–08 Corolla-catalogued **electrically actuated trunk cable-unlatching system** (AutoLoc PK-24294241), a function separate from the original manual remote lever. **248 candidates, 248 linked research records, 362 sources.** These are not installed or purchase-ready, and full individual June-2003 US build retrofit compatibility remains unknown. The original May-2004 nozzle part change `85381-02100 → 85381-12280` was recorded as an unapproved lead with no verified spray or durability improvement; **no extra ID created**.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
