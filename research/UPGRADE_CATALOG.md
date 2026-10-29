@@ -30,6 +30,10 @@ The [Toyota factory countermeasure and owner evidence catalog](TOYOTA_FACTORY_CO
 5. **A245E-specific research:** cooling and torque converter/solenoid control are separate projects; generic automatic-transmission parts or software must not be assumed suitable.
 6. **Braking and cabin upgrades:** investigate actual vehicle variants, legal requirements, test methods and cost. A generic brake-disc conversion or LED bulb kit is not deemed compatible by listing alone.
 
+## Toyota windshield / door-window wind-noise countermeasures (2026-10-29)
+
+[Factory discovery pass 4](FACTORY_DISCOVERY_PASS_4_WINDSHIELD_REED_NOISE_2026-10-29.md) adds UPG-214 / FCM-024 (Toyota T-SB-0257-08: exterior windshield molding reed-vibration sealing), and FCM-025 linked to existing UPG-130 (Toyota NV006-05: improved sliding door-glass runs). Three real-owner reports are included as OUT-006–008, but exact repaired components and long-term results remain unverified. Totals: 214 concepts / 25 studies / 8 reports; no new installation approved.
+
 ## Grounding and limitations
 
 - [TRD 1ZZ-FE supercharger installation PDF](https://www.mr2roc.org/Repository/misc/referencelibrary/trd1zzsuperchargerinstall.pdf) explicitly covers 2003–04 Corolla automatic and calls for matching TRD ECU; standard intake airbox matters.
