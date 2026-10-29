@@ -2227,6 +2227,215 @@
         "purchase_approved": false
       },
       "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-026",
+      "upgrade_id": "UPG-074",
+      "title": "TransGo SK A246 matched TCC and solenoid-modulator hydraulic wear repair for A245E EPC",
+      "reviewed_on": "2026-10-29",
+      "novelty": "existing_candidate_evidence_enrichment",
+      "subsystem": "Automatic transaxle A245E / hydraulic reliability",
+      "classification": "supplier_engineering",
+      "evidence_level": "C",
+      "evidence_level_scope": "Supplier specifies 2003-08 Corolla A245E with EPC solenoid. Physical June2003 valve body identity and damaged part uninspected.",
+      "problem_or_limitation": "A245E valve-body wear at TCC relay boost valve and solenoid modulator circuit can disturb torque converter clutch/shift hydraulic control; no fault reported on this car.",
+      "application": {
+        "model_years": "2003-2008 Corolla A245E",
+        "market": "USA manufacturer catalog",
+        "plant": "No supplier plant restriction; installed unit must have matching EPC valve body",
+        "engine": "1ZZ-FE 1.8L",
+        "transmission": "A245E with electronic pressure control (EPC) solenoid; manufacturer excludes earlier non-EPC A245-HD2",
+        "production": "June2003 factory A245E confirmed by label; internal valve body and SLT terminal variant need direct inspection."
+      },
+      "factory_engineering": {
+        "original_design": "Hydraulic TCC boost valve/bushing and solenoid-modulator bore can wear, leading to lockup and shift complaints.",
+        "part_relationships": {
+          "original": "A245E OEM hydraulic boost valve and solenoid modulator hardware, internal OE part numbers unverified",
+          "revised": "TransGo SK A246 aftermarket matched hydraulic valve/bushing repair (NOT Toyota factory retrofit)"
+        },
+        "documentation": "TransGo manufacturer specifies USA-made hardened TCC relay boost valve/bushing and redesigned solenoid-modulator assembly plus spring/plug/retainer. Toyota TC002-03 reset of learned values after transmission service must use specific applicable procedure, not a kit validation.",
+        "production_adoption": "Never adopted as Toyota factory change according to retrieved documentation; supplier repair only."
+      },
+      "alternative_solutions": {
+        "supplier": "TransGo",
+        "manufacturer_part_number": "SK A246",
+        "cross_manufacturer_interchange": "A245-HD2 non-EPC older model excluded; Sonnax 2005+ upper casting 9132 parts not early model authorized; EPC solenoid pin 52-0403 vs 52-0419 not interchangeable.",
+        "required_companion_components": [
+          "Transmission pan gasket/filter and Type T-IV ATF as required by exact procedure",
+          "Confirm EPC/SLT connector, valve body anatomy and current SK A246 instructions",
+          "Correct Toyota learned-value reset only if model-specific TC002-03 chart supports it."
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-powertrain-transgo-detail",
+          "src-powertrain-transgo-price",
+          "src-powertrain-rostra-slt",
+          "src-powertrain-tc002",
+          "src-upg-transgo-inst"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No verified independent 2004 TMMC A245E SK A246 installation and long-term follow-up",
+        "contradictions": [
+          "Sonnax later casting solutions have 2005+ restriction not applicable by transmission name alone.",
+          "Model-year solenoid connector change can be mistaken for production-month change; actual installed unit unknown."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Restore worn A245E hydraulic TCC apply/release and solenoid modulation without installing a replacement transmission.",
+        "healthy_original_benefit": "No durability/efficiency improvement proven over a healthy original valve body.",
+        "trigger": "Confirmed shift flare/lockup complaint and professional diagnosis of hydraulic bore/boost valve wear rather than ECM, wiring, converter or other cause.",
+        "possible_negative_consequences": "Wrong valve-body variant or contamination, incorrect solenoid/assembly changes, unsafe fluid pressure and converter damage.",
+        "fitment_confidence": "manufacturer scope supports A245E with EPC; actual valve body unverified",
+        "estimated_us_parts_cost": {
+          "amount_usd": 90,
+          "basis": "2026-10-29 Norcal parts listing kit alone; ATF, gaskets, filter, tools, labor, tax, shipping excluded",
+          "as_of": "2026-10-29"
+        },
+        "price_observations": [
+          {
+            "source_id": "src-powertrain-transgo-price",
+            "part": "TransGo SK A246",
+            "unit_usd": 90,
+            "quantity": 1,
+            "availability": "listing_only"
+          }
+        ],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Precision valve-body teardown/bench cleanliness and exact installation diagram",
+          "Pressure test/scan diagnostics and correct ATF service",
+          "Specific Toyota reset-method table if repair needs learned-values reset"
+        ],
+        "installation_risks": "Transaxle failure from incorrect internal hydraulic work and misidentified EPC hardware; vendor says transaxle removal not required but teardown still advanced.",
+        "upgrade_interactions": "Separate from Toyota EG028-04 emissions ECM reflash, TC008-04 P0741 fault isolation, and 2005+ P2716 ECM recall/countermeasure.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "manufacturer_catalog_2003_2008",
+        "june_2003_application": "as_built_A245E_only_epc_uninspected",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "TransGo SK A246 specifically lists Corolla 2003-08 A245E with EPC",
+          "Includes USA-made hardened TCC boost valve and bushing and redesigned solenoid-modulator hardware",
+          "$90 kit-only online listing observed"
+        ],
+        "engineering_inferences": [
+          "Replacing worn hydraulic sealing areas can restore correct TCC and modulator performance when these are the diagnosed causes."
+        ],
+        "unverified_claims": [
+          "No quantified durability, mpg, horsepower, or shift improvement on a healthy OEM A245E",
+          "No long-term exact-kit 2004 field success verified"
+        ],
+        "missing_research": [
+          "Physical SLT/EPC connector, valve-body casting and existing repairs",
+          "Current TransGo internal instruction revision and full service cost",
+          "Matched independent owner multi-month results",
+          "Exact Toyota TC002-03 reset method for this vehicle"
+        ],
+        "next_action": "Only if shift/lockup fault is diagnosed, inspect transmission EPC/casting and reconcile service history before hydraulic repair; do not buy preemptively.",
+        "purchase_approved": false
+      },
+      "intervention_category": "engineering_improvement"
+    },
+    {
+      "research_id": "FCM-027",
+      "upgrade_id": "UPG-048",
+      "title": "Toyota EG028-04 early TMMC 1ZZ coordinated ECM calibration and genuine catalyst remedy",
+      "reviewed_on": "2026-10-29",
+      "novelty": "existing_candidate_evidence_enrichment",
+      "subsystem": "Engine controls / emission diagnostics",
+      "classification": "factory_countermeasure",
+      "evidence_level": "A",
+      "evidence_level_scope": "Toyota EG028-04 explicitly 2003-04 1ZZ Corolla; aftermarket bulletin reproduces TMMC cutoff but original Toyota break image not directly validated. DOES NOT prove UPG-048 high-flow aftermarket power gains.",
+      "problem_or_limitation": "Early Corolla 1ZZ catalyst efficiency P0420 MIL and sulfur odor when original ECM calibration/catalyst combination implicated.",
+      "application": {
+        "model_years": "2003-2004 Corolla",
+        "market": "USA",
+        "plant": "Shokki/NUMMI/TMMC listed in supplier reproduction; only original Toyota VIN image can finalize break",
+        "engine": "1ZZ-FE",
+        "transmission": "No exclusion in published summary; 2003 Delco ATM ECM has unique nonreflashable issue, not extrapolated to 2004",
+        "production": "TMMC supplier technical reference 2T1BR3#E#4C312392; June2003 likely before change but full private VIN and current ECM calibration not verified."
+      },
+      "factory_engineering": {
+        "original_design": "Original 1ZZ ECM fuel-cut/calibration and catalyst combination associated with complaint.",
+        "part_relationships": {
+          "original": "17410-0D150 or 17410-22470 front exhaust pipe in prior Toyota bulletin tables",
+          "revised": "Toyota genuine repair front pipe 17410-0D360 (applicability depends on EPC and emissions label) with factory authorized calibration"
+        },
+        "documentation": "Toyota EG028-04 revised October2004 directs ECM reflash and genuine catalyst assembly; same procedure as EG016-04 sulfur odor performed only once. Supplier note supplies TMMC cutoff.",
+        "production_adoption": "Toyota bulletin lists production change VINs; direct factory table for early TMMC still requires visual verification."
+      },
+      "alternative_solutions": {
+        "supplier": null,
+        "manufacturer_part_number": null,
+        "cross_manufacturer_interchange": "MagnaFlow 454200 is existing unproven UPG-048 aftermarket candidate; not a factory-approved drop-in for matched calibration, no high-flow performance proof.",
+        "required_companion_components": [
+          "Toyota-authorized calibration selected for actual ECU part number and emissions type",
+          "Toyota-approved catalyst repair part for exact vehicle and exhaust family",
+          "Engine/emission diagnostics and proof remedy not already performed"
+        ]
+      },
+      "evidence": {
+        "source_ids": [
+          "src-powertrain-eg028-us",
+          "src-powertrain-eg028-break",
+          "src-cont-eg028"
+        ],
+        "independent_outcome_ids": [],
+        "long_term_followup": "No exact ECU+catalyst 2004 TMMC repair history verified",
+        "contradictions": [
+          "Earlier repository gap said TMMC VIN not retrieved; independent service bulletin now supplies a cross-reference but original Toyota image remains unverified.",
+          "Existing UPG-048 product is aftermarket high-flow concept, not the factory dual repair."
+        ]
+      },
+      "practical_assessment": {
+        "intended_improvement": "Toyota corrective action for eligible early 1ZZ engine emissions fault P0420 using coordinated ECM and catalyst change.",
+        "healthy_original_benefit": "No advantage on a healthy, no-code car; not a performance or mpg upgrade.",
+        "trigger": "Diagnosed P0420 after exclusion of air/fuel/exhaust leaks/O2 sensor issues and match to official VIN/calibration criteria.",
+        "possible_negative_consequences": "ECM brick from improper flashing; incorrect catalyst/emissions configuration or improper workmanship and unnecessary cost.",
+        "fitment_confidence": "Toyota model engine year support; 2003 TMMC plant cutoff secondary only and individual vehicle not verified",
+        "estimated_us_parts_cost": null,
+        "price_observations": [],
+        "diy_complexity": "professional",
+        "required_tools": [
+          "Toyota TIS exact calibration records",
+          "Dealer-level ECM flashing power and scan equipment",
+          "Emissions diagnostic equipment and proper catalyst installation procedure"
+        ],
+        "installation_risks": "Do not replace or eliminate catalyst or tune emission monitoring without verified lawful authorization.",
+        "upgrade_interactions": "EG028-04 and EG016-04 are the same Toyota corrective repair and must not be performed twice; no inference from generic MagnaFlow aftermarket converter.",
+        "purchase_ready": false
+      },
+      "verification": {
+        "model_year_application": "confirmed_document_scope",
+        "june_2003_application": "supplier_cutoff_only_private_vin_not_compared",
+        "actual_installed_vehicle": "not_verified",
+        "installed_and_tested": false,
+        "confirmed_facts": [
+          "Toyota revised EG028-04 documents a combined ECU calibration and catalyst repair for 2003-04 Corolla 1ZZ",
+          "Supplier 099-1662 reproduces TMMC 2T1BR3#E#4C312392 cutoff",
+          "Original Toyota document states EG016-04 and EG028-04 represent a single same intervention."
+        ],
+        "engineering_inferences": [
+          "Factory matched new software and catalyst may address specific early-code complaint where conditions align."
+        ],
+        "unverified_claims": [
+          "No emissions code on the owner vehicle reported",
+          "No aftermarket high-flow horsepower claim verified",
+          "No exact owner TMMC service success verified"
+        ],
+        "missing_research": [
+          "Read original Toyota EG028 production VIN diagram",
+          "Privately check exact VIN and ECM calibration/authorized-modification label",
+          "Condition and legality of original versus any already changed catalyst",
+          "Long-term direct repair reports"
+        ],
+        "next_action": "If P0420 presents, verify factory original revision, code diagnosis and past service before considering specialized OEM remedy; keep high-flow replacement research separate.",
+        "purchase_approved": false
+      },
+      "intervention_category": "diagnostic_reference"
     }
   ],
   "exclusions": [
