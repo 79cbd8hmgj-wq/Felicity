@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **241 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **246 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -24,6 +24,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Wave 4: new coolant-level, forward warning, active filtration functions (2026-10-29)
 
 [Discovery wave 4: three new source-backed systems UPG-239–241](NEW_SYSTEMS_DISCOVERY_WAVE_4_2026-10-29.md) adds a **direct liquid-coolant-loss alarm** separate from ECT gauges, a **professional forward collision/lane warning camera** separate from reversing/side radar, and **powered independent cabin filtration** separate from passive HVAC filters. **241 concepts / 241 research records / 343 registered sources**. Evidence limits include unknown Corolla 35mm hose connection, professional fleet-only Mobileye access and safe cabin mounting. The report also records why generic newer motor mount supersessions, generic acoustic glass, incompatible HUDWAY Drive and replacement digital fan controllers were **not** promoted to new upgrades. All remain research-only, no installed or purchase-ready status.
+
+## Wave 5: exposed corrosion, heated wipers, surround vision, stored-start energy and factory rear heat ducts (2026-10-29)
+
+[Five distinct functions UPG-242–246](NEW_ENGINEERING_DISCOVERY_PASS_5_2026-10-29.md) document a flexible exterior chassis salt barrier, heated blade and pivot anti-icing, four-camera stitched overhead parking vision, a smart main battery with independent stored-start energy (high-price/cold-weather caution), and genuine Toyota NAP rear-seat heater air routing if not already factory installed. **246 concepts, 246 linked research rows, 354 sources.** All remain research-only. Maker 14V maximum for heated blades conflicts with potential normal automotive charging variation until approved; Toyota rear heat ducts may already be fitted and must be physically inspected. All prior IDs preserved, no inflated installed/purchase-ready counts.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
