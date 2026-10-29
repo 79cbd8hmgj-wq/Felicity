@@ -53,3 +53,11 @@ Every existing specification has a `component_id` referring to `components.csv` 
 ## Integrity verification distinction
 
 On 2026-10-25 a direct cross-table check of the nine current CSV files found zero duplicate primary IDs and zero missing nonblank references in existing records. This is a check of database consistency, not an executed run of the Python tests and not a verification of every engineering specification. GitHub Actions status remains unconfirmed.
+
+## Countermeasure discovery extension (2026-10-29)
+
+`factory_countermeasures.json` adds structured factory/supplier studies keyed by stable FCM IDs and linked to existing UPG catalog IDs. It records original/revised relationships, documentary application, June2003 applicability, actual-vehicle verification and installation status separately. Null cost means unknown, not free. Intervention categories distinguish engineering improvements, restoration/serviceability and diagnostic references. Exclusions and maintenance handling practices do not inflate the candidate count.
+
+`consumer_outcomes.csv` is an evidence ledger, **not Felicity's repair log**. Each OUT ID identifies the reporter's vehicle, intervention/result, follow-up limitations and whether it qualifies for Level B. Cross-market, different-part and unresolved reports remain useful evidence without becoming successful exact-remedy corroboration.
+
+Run `python scripts/validate_countermeasures.py` as well as the existing tests/CSV validator. The supplemental check validates links, identifiers, price structure and evidence/installation promotion gates. It cannot certify source truth, current stock, safe installation or physical fitment. See the [discovery report](../research/FACTORY_DISCOVERY_PASS_2026-10-29.md) and [unresolved backlog](../research/COUNTERMEASURE_BACKLOG_2026-10-29.md).

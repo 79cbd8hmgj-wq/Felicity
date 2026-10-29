@@ -21,3 +21,4 @@ jobs:
           python-version: '3.11'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/validate_database.py --require-upgrade-coverage
+      - run: python scripts/validate_countermeasures.py
