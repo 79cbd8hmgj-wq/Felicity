@@ -6,7 +6,7 @@ The owner supplied a matching-year 2004 Corolla manual (Toyota OM12859U, explici
 
 ## Upgrade research
 
-**Latest discovery:** [Body protection and restraint follow-up](research/BODY_RESTRAINT_COUNTERMEASURES_2026-10-29.md) preserves the earlier research and extends the catalog to211 concepts with21 structured studies and5 independent outcome records. Newly recovered parts/production tables strengthen existing body and seat studies; two separate restraint recall remedies add documentary coverage. Ten studies have Level A documentary scope, one has Level C supplier evidence and ten remain Level D leads; none is installed or validated on this car. See the [compatibility backlog](research/COUNTERMEASURE_BACKLOG_2026-10-29.md).
+**Latest discovery:** [1ZZ-FE oil-level/dipstick factory revision and brake noise procedure](research/FACTORY_DISCOVERY_PASS_2_OIL_LEVEL_BRAKE_NVH_2026-10-29.md) extends the research inventory to **212 catalog concepts** and **22 countermeasure studies**. Toyota USA T-SB-0134-08 (2008) revises the 2003–2005 Corolla 1ZZ-FE service dipstick (15301-22030 → 15301-22050) and prescribed fill (3.9 → 4.4 US qt with filter; 3.7 → 4.2 US qt without); use only the matched revised dipstick and verified model application, not a blind additional half-quart. BR003-05 is distinct reversing-brake-squeal service evidence linked to existing UPG-107, not another duplicate upgrade. This report supersedes the earlier [211-concept body/restraint milestone](research/BODY_RESTRAINT_COUNTERMEASURES_2026-10-29.md) **for counts only**; previous factory findings, five outcome records and evidence restrictions remain unchanged. No new parts are marked installed or purchase-ready. See the [backlog](research/COUNTERMEASURE_BACKLOG_2026-10-29.md).
 
 **Prior program:** [Engineering modernization plan](research/MODERNIZATION_PROGRAM.md): six conditional priorities, whole-catalog triage, complete-job cost/time allowances and integrated packages. Its193-concept counts describe the October25 milestone. No measured vehicle gains or physical fitment confirmations are claimed.
 
@@ -38,13 +38,13 @@ Separate **owner reports**, **factory model reference**, **diagnostic observatio
 
 ## Open-ended upgrade discovery and decisions (October 2026)
 
-**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **211 catalog IDs**, each with a linked review, and can grow further. Concepts include verified documentary remedies and unresolved hypotheses; the number is not a count of proven improvements. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
+**There is no fixed upgrade count.** The first 148 formed a seed list; the database has expanded to **212 catalog IDs**, each with a linked review, and can grow further. Concepts include verified documentary remedies and unresolved hypotheses; the number is not a count of proven improvements. See the [uncapped discovery policy](docs/OPEN_ENDED_UPGRADE_RESEARCH.md) and [healthy-OEM decision matrix](database/upgrade_value_matrix.csv).
 
 The [current cheap/easy buying guide](research/CHEAP_EASY_BUYING_GUIDE.md) provides the reviewed buying-oriented view, not the limit of research. Current inexpensive/easy preferences apply to purchases, **not** to the long-term discovery catalog. Continue comparing measurable differences against healthy OEM and the actual installed setup, with cost, installation complexity, reliability, thermal/electrical/fuel performance, safety and evidence quality.
 
 ## Structured database
 
-The [machine-readable CSV database](database/README.md) contains identity, 28 component groups, 26 reference specifications, condition observations, 10 service tasks, evidence sources, plus empty parts and completed-repairs ledgers. No part fitment or repair is invented. CSV records are a research foundation, not proof that a subsystem has been physically inspected.
+The [machine-readable CSV database](database/README.md) contains identity, 28 component groups, original-manual and revised factory specifications, condition observations, 10 service tasks, evidence sources, plus empty parts and completed-repairs ledgers. No part fitment or repair is invented. CSV records are a research foundation, not proof that a subsystem has been physically inspected.
 
 **Important early-build caveat:** the supplied Toyota OM12859U manual expressly addresses 2004 Corolla vehicles produced from October 2003, while this vehicle's label says June 2003. Compare date-specific parts and technical specifications against factory documents for the earlier production period before ordering parts.
 
