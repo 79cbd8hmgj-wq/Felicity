@@ -1,0 +1,60 @@
+# Felicity — external, store-first 25-mile DIY upgrade discovery (October 29, 2026)
+
+**Correction of research direction:** Research must begin by exploring independently accessible **store shelves, supplier catalogs, maker application guides and local specialist parts counters** for DIY-installable changes that actually add comfort, usability, safety, efficiency, refinement or capability to the **2004 U.S. Toyota Corolla LE, June 2003 TMMC 1ZZ-FE/A245E**. **Do not start with, or limit discovery to, Felicity's upgrade database.** Only afterward compare each genuinely different physical function to an existing UPG ID; then update evidence or introduce a new ID. Ordinary service replacements are not healthy-OE modernization.
+
+This is an **external market reconnaissance**, not a list of items in stock at a selected store and not an endorsement to purchase before confirming actual car configuration and local availability. Prices are item-page quotes observed during research on 2026-10-29; taxes, shipping and branch-specific pickup status are unknown.
+
+## 1. Store geography: expanded to 36 addressed leads
+
+Starting list: 28 candidate supplier location records, eight market channels, approximate 25-mile Rensselaer center. Eight additional location candidates discovered outside the previous record list and added to `database/local_parts_supplier_candidates.csv`:
+
+| New ID | External business / address | Evidence level | What this adds |
+|---|---|---|---|
+| LOC-029 | Advance Auto Parts, **745 Pawling Ave, Troy NY 12180** | Official Troy store locator: https://stores.advanceautoparts.com/ny/troy | Third Troy branch #4313; different location-specific DIY inventory |
+| LOC-030 | Advance Auto Parts, **405 2nd Ave, Troy NY 12182** | Official branch #6388: https://stores.advanceautoparts.com/ny/troy/405-2nd-ave | Retail, parts, loaner tools, on-site tests and store pickup |
+| LOC-031 | Advance Auto Parts, **618 Hoosick Rd, Troy NY 12180** | Official branch #7822: https://stores.advanceautoparts.com/ny/troy/618-hoosick-rd | Additional DIY retail branch; hydraulic hose assembly service listed, exact work and fees not yet confirmed |
+| LOC-032 | Harbor Freight, **841 Hoosick Rd, Troy NY 12180** | Official store #3342: https://www.harborfreight.com/storelocator/841-hoosick-rd-troy-12180?number=3342 | Trim tools, electrical tools, measuring tools, garage supports; no claim of Toyota OEM parts |
+| LOC-033 | NAPA / Ravena Auto Supply, **2437 Route 9W, Ravena NY 12143** | Official store: https://www.napaonline.com/en/ny/ravena/store/27980 | Independent-affiliated counter and parts procurement; **7:30AM weekday opening is dealer-only**, verify customer entry time |
+| LOC-034 | Autopart International, **75 102nd St, Troy NY 12180** | Dedicated listing: https://www.waze.com/live-map/directions/us/ny/troy/autopart-international?to=place.ChIJLb4Ek8IP3okRxTQejcZmj5w | Import-specialist supply lead; retail walk-in status not verified |
+| LOC-035 | Ackner's Speed Shop / Ackner Racing, **1921 Dover Ln, Castleton NY 12033** | BBB business listing: https://www.bbb.org/us/ny/castleton/profile/new-auto-parts/ackners-speed-shop-0041-235980699 | Specialty/racing parts lead, **operating status and walk-in access remain unverified** |
+| LOC-036 | United Auto Supply, **25 Industrial Park Rd Ste 2, Albany NY 12206** | Directory: https://www.yellowpages.com/rensselaer-ny/united-auto-supply | Distribution/warehouse channel for supplier research, **not proven consumer retail access** |
+
+These are **eight additional location candidates**, not eight distinct retail chains. The 36 total include duplicates by brand as useful alternate pickup branches, and not all qualify as public walk-in suppliers. **Precise 25-mile geocoded radius and driving distances have NOT been computed.** Any outer-boundary store requires checking before recommending a trip.
+
+## 2. Outside-in product findings: physical DIY improvements and conditional equipment
+
+| External discovery (not derived from catalog searching) | Store/catalog and observed online price | Actual utility / install difficulty | Felicity reconciliation |
+|---|---|---|---|
+| **AVS 94620** four-piece external adhesive window rain deflectors | Advance 2004 Corolla selected listing **$69.99**, https://shop.advanceautoparts.com/find/2004-toyota-corolla-door-window-deflectors | **Basic DIY**, no drilling, can leave windows partially cracked in light rain. Verify body/window seals, correct 2004 kit and adhesive surface. Could introduce wind noise and edge lift. | Evidence strengthens **UPG-238**; do not invent another UPG for outside-mount vs in-channel brand variant without engineering justification |
+| **Schrader SCHRFK4S** four-sensor solar-display TPMS retrofit | AutoZone **$213.99**, https://www.autozone.com/p/schrader-tpms-solutions-tire-pressure-monitoring-system-tpms-sensor-retrofit-kit-schrfk4s/1178224; O'Reilly https://www.oreillyauto.com/detail/c/schrader/tire---wheel/tpms--tire---wheel-tools/tire-pressure-monitoring-system-tools/b11c86600e47/schrader-tpms-retrofit-kit/sch0/schrfk4s/v/a/134754/automotive-truck-2016-gmc-canyon | Real-time pressure/temperature and alerts beyond non-TPMS 2004 equipment, but **internal valve sensors require tire demount/balance service**, not a simple driveway install. Verify tire/wheel compatibility and honest full price. | Evidence strengthens **UPG-154**, not a new basic DIY job |
+| **K&N DVF6035** activated-carbon cabin filter | AutoZone 2004 Corolla filtered page **$24.99**, https://www.autozone.com/filters-and-pcv/cabin-air-filter/toyota/corolla/2004 | **Basic DIY if exact OE filter cavity accepts it**. Carbon media can add odor/gaseous contaminant adsorption relative to ordinary particulate media; actual smell/lifetime/airflow improvement not measured. | Evidence strengthens **UPG-128** |
+| **WeatherTech 40215** raised-lip custom trunk liner | NAPA online **$128.45** https://www.napaonline.com/accessories/weathertech-cargo-liner/1104632b; maker 2004 category https://www.weathertech.com/shop/2004_toyota_corolla/?cgid=fathers-day-favorites-sunshade | **Basic DIY**: place/remove in trunk, gives an actual physical saltwater/spill containment trough. Must not hide leaks, block spare/jack access or cover damp carpet; no fuel/ride benefit. | **Genuinely different trunk function** from floorwell UPG-230 and cargo net UPG-191; created **UPG-256 / UR-256** and decision row |
+| **DashMat 61558-00-25** model-year Corolla black dashboard cover | Advance model-year interior selector **$105.99**, https://shop.advanceautoparts.com/find/2004-toyota-corolla-interior-products | **Basic DIY**, passive glare/solar exposure barrier, but ensure airbag clearance, sensor vents and security of retention; owner may prefer simpler windshield sunshade. | Investigate within **UPG-149/161** thermal/glare family before judging new independent engineering class |
+| **Cruiser Accessories 34150** anti-rattle silicone plate surround | AutoZone **$21.49**, https://www.autozone.com/p/cruiser-accessories-license-plate-frame-34150/1151319 | **Basic DIY** for actual plate vibration and paint contact; use NY-compliant plate visibility/fasteners. Only a conditional rattle fix, **not a proven healthy-OE performance change**. | Record as minor store discovery but **no new UPG ID** without demonstrated novel meaningful function |
+| **Griot's 11422** no-power-tool headlamp restoration/ceramic coat | AutoZone **$29.99**, https://www.autozone.com/p/griot-s-garage-headlight-restoration-kit-11422/1087069 | **Basic/medium DIY**, restores oxidized lenses and coating, not brighter than healthy undamaged OE optics. No guaranteed lifetime claim adopted. | Repair/restoration or condition-based protection; no extra upgrade ID |
+| **NOCO GB20** lithium jump starter 500A | AutoZone **$79.99**, https://www.autozone.com/p/noco-vehicle-jump-starter-gb20/678846 | No vehicle installation; emergency **carry equipment**, not a mechanical upgrade. Store safely and charge periodically; support for 1ZZ size advertised. | Separate emergency kit inventory, not a retrofitted vehicle UPG |
+| **Slime 40089** cordless automatic-stop inflator | AutoZone **$59.99**, https://www.autozone.com/p/slime-tire-pump-40089/1507509 | No installation; no draw on the Corolla's marginal legacy 12V outlet, provides pressure top-offs. Independently verify gauge calibration; not a tire grip upgrade. | Existing inflator research in wave8 covers different SKUs. Treat as alternative **portable kit**, not duplicate UPG |
+
+*Important:* 2004 Toyota Corolla retailer category pages often mingle **universal/non-fitting products** with specific-fit parts. Confirm the exact part on checkout rather than assume every listed SKU fits. On this **June 2003** vehicle, the owner manual OM12859U covers *October 2003 onward*, so manufacturer EPC or actual physical dimensions control build-sensitive parts.
+
+## 3. What the independent search proves and does not prove
+
+- **Yes:** external store-first discovery adds extra local retailers and product-specific evidence without being constrained by existing concept names. Exact product descriptions, online prices and manufacturer/vendor links can raise research quality; one genuinely separate *trunk* function was sufficiently distinct to warrant new UPG-256.
+- **No:** neither the retailer's website nor product packaging establishes a locally stocked unit, a successful June2003 installation, independent measurable improvement, or reduced 2004 Corolla operating costs.
+- **DIY classification:** no-tools cabin filter / adhesive deflectors / cargo liner are basic. Internal TPMS sensors require tire shop. Jump starters, inflators and emergency kit items are portable **not installed**. A restoration product addresses aging rather than surpassing healthy OE.
+- **Safety gate:** The owner's bilateral loud front-end pothole impacts have never been diagnosed. Do not perform handling/brake tests or imply cosmetics repair the noise; complete suspension and brake hardware safety inspection before vehicle dynamics comparisons.
+
+## 4. Next search method (unbounded by Felicity IDs)
+
+**Always begin with independent stores and product families.** Search current primary retailer categories (AutoZone, Advance, NAPA, O'Reilly, Carquest, Auto Value), regional independents, import specialty counters, tools/garage stores, and OEM parts desks **without feeding the existing UPG list into the search**. Expand systematically across lighting, brakes, ride, cooling, electrical, cabin acoustics, warm/cold weather, materials, restoration and road-trip utility.
+
+Capture a **product-level proof ledger**: physical change and reason over healthy 2004 OE, manufacturer + exact part, applicability, category page false positives, DIY tools/time, safety/regulatory effects, complete item price and ***selected store pickup quote***. Search more than one branch per chain if inventory matters; maintain unknown fields openly. Record a concept as new only if its **physical function** is not already in Felicity. The catalog is a de-duplication and archival mechanism **after** discovery, never the research boundary.
+
+### Remaining market-access limitations
+
+- In-person-only stock and pricing are unknown; no calls, purchases or inventory reservations have been performed.
+- Additional independent counters may exist beyond the 36 identified. The current address list is **not complete** and has not been distance-certified.
+- Some specialty suppliers are professional/wholesale channels. Do not count warehouses as ordinary walk-in retail sources.
+- Manufacturer claims of improved comfort, air filtration, handling or optical properties are not measured personal-vehicle results.
+
+**Source quality note:** First-party location and product pages are preferred. Some specialty suppliers rely on third-party map/directory entries, which are weaker evidence. Supplier entities belong in `local_parts_supplier_candidates.csv` and product facts in technical sources, not the reverse.
