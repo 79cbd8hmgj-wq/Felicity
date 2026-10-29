@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **238 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **241 distinct engineering research concepts**, each with linked research and decision matrix, not 225 proven improvements or directly fitting products. The first 148 were screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md); subsequent IDs extend that inventory. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -20,6 +20,10 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 ## Third discovery wave: new mechanical, thermal, safety and security architecture (2026-10-29)
 
 [Eight new engineering systems UPG-231–238](NEW_HARDWARE_ARCHITECTURE_DISCOVERY_PASS_3_2026-10-29.md) add hydraulic steering magnetic filtration, independent pressurized engine pre-lubrication, automatic underhood fire suppression, conditional 2004 OEM ABS+EBD architecture feasibility, passive battery radiant/acid shielding, 120V stationary cabin preheating, active intrusion-sensing vehicle security, and partially open rain-excluding ventilation. These are **new functions**, not alternate brands of existing dampers or brake pads. All remain candidate-only / unverified, and no purchase-ready or subject-car installed claims apply. **238 canonical concepts, 238 reviews, 336 sources**; review counted only after CI succeeds.
+
+## Wave 4: new coolant-level, forward warning, active filtration functions (2026-10-29)
+
+[Discovery wave 4: three new source-backed systems UPG-239–241](NEW_SYSTEMS_DISCOVERY_WAVE_4_2026-10-29.md) adds a **direct liquid-coolant-loss alarm** separate from ECT gauges, a **professional forward collision/lane warning camera** separate from reversing/side radar, and **powered independent cabin filtration** separate from passive HVAC filters. **241 concepts / 241 research records / 343 registered sources**. Evidence limits include unknown Corolla 35mm hose connection, professional fleet-only Mobileye access and safe cabin mounting. The report also records why generic newer motor mount supersessions, generic acoustic glass, incompatible HUDWAY Drive and replacement digital fan controllers were **not** promoted to new upgrades. All remain research-only, no installed or purchase-ready status.
 
 ## Governing whole-car improvement priority (2026-10-29)
 
