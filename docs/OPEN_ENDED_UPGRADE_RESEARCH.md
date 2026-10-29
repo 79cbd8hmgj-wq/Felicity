@@ -2,6 +2,16 @@
 
 **Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 29 2026, the catalog includes **215** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
 
+## Whole-car engineering objective — top priority, 2026-10-29
+
+**THIS SECTION OVERRIDES THE NARROW PREVENTION-ONLY READING OF THE SECTION BELOW.** The user wants Felicity to improve **every meaningful dimension** of a sound, healthy factory-original 2004 Corolla: ride comfort, NVH, handling/braking, usable performance/power delivery, fuel and accessory efficiency, cabin technology/usability, long-term reliability and durability. Prevention and Toyota defect countermeasures are a valuable subset **not the entire goal**. A manufacturer-engineered damper providing a genuine new adjustable comfort/handling function qualifies even if Toyota never issued a suspension defect TSB. Updated tire technology may also qualify when comparable tests demonstrate relevant gains; 'later' alone is not evidence of improvement.
+
+Track three independent comparisons: **healthy factory original**, **current owner's modified or worn parts** (18-inch wheels and potentially aged struts), and **healthy modern same-geometry alternatives**. Avoid declaring a new product better than healthy OE only because it repairs worn parts, and avoid assigning quantified Corolla gains from tests on another vehicle or tire size. A stock-height engineering modification with explicit application, tradeoffs, complete job economics and controls is preferable to a large speculative catalog.
+
+Prioritize work across **at least these independent vectors**: comfort/impact harshness; cornering/braking; quietness/refinement; driving response; drivetrain/electrical efficiency; reliability/corrosion; convenience/comfort. Fault-specific ECM/catalyst/valve fixes stay in references and should not crowd out positive engineering optimization. Rear roll bars can change slippery-road oversteer and uneven-road harshness; stiffer dampers are not inherently more comfortable. Real vehicle safety defects, especially reported front-end clunks, are diagnosed first.
+
+Read the [active balanced research pass](../research/BALANCED_WHOLE_CAR_ENGINEERING_PASS_2026-10-29.md) and [earlier touring/quality package](../research/MODERNIZATION_PROGRAM.md). Existing IDs were kept; new physical products strengthen matching studies rather than inflate counts. No future arbitrary ceiling on research discovery.
+
 ## Healthy-car retrofit priority — owner clarification 2026-10-29
 
 **Highest-priority mandate:** The owner's 2004 Corolla currently has no reported engine/transmission diagnostic trouble codes, and the user wants **retrofit-ready physical improvements over early-production factory parts**, not a catalog dominated by repairs that require MIL/DTCs. Search Toyota later-production design changes, genuine improved superseded parts, and manufacturer-engineered full-system conversions for the exact **June-2003-built US TMMC Corolla LE, 1ZZ-FE/A245E**. See [governing strategy and specific parts](../research/HEALTHY_CAR_PREVENTIVE_ENGINEERING_STRATEGY_2026-10-29.md).
