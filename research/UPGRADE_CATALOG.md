@@ -1,7 +1,7 @@
 # Upgrade research catalog — broad discovery inventory
 
 **Scope:** 2004 US Corolla LE / June 2003 manufacture / 1ZZ-FE / A245E automatic.  
-**Status:** **148 distinct engineering research concepts**, all screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md), not 148 proven improvements or directly fitting products. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
+**Status:** **216 distinct engineering research concepts**, all screened in the [initial research pass](UPGRADE_RESEARCH_RESULTS.md), not 148 proven improvements or directly fitting products. See [evidence-linked review rows](../database/upgrade_research.csv) and [schema semantics](../docs/UPGRADE_RESEARCH_SCHEMA.md). No condition triage.
 
 The linked [CSV catalog](../database/upgrade_candidates.csv) contains every identified research direction with a stable ID, subsystem, intended benefit, evidence maturity, and verification gate. It distinguishes:
 - **documented_lead**: a published Toyota/TRD or manufacturer reference exists for the concept or a related model; not proof of this car's fitment.
@@ -13,7 +13,11 @@ The linked [CSV catalog](../database/upgrade_candidates.csv) contains every iden
 
 [Balanced whole-car engineering first pass](BALANCED_WHOLE_CAR_ENGINEERING_PASS_2026-10-29.md) is now the governing **research objective**: go beyond healthy factory original 2004 Corolla across **ride/NVH, road comfort, handling/braking, fuel/thermal/electrical efficiency, power delivery, reliability and cabin usability**. Pure preventive maintenance and fault-code TSB fixes are subordinate categories. Research concrete retrofit-ready modern technology even without a Toyota defect bulletin.
 
-**First concrete added evidence within existing IDs**: maker-listed **TEIN EnduraPro PLUS VSL00-B1DS2** OEM-height 16-setting dampers (UPG-083), Bilstein B6 rear `24-069243` handling option (UPG-080), Whiteline BTR77 2004 LE listed with manufacturer regional-code conflict (UPG-089), Tire Rack 2025 and 2026 comparative touring tire data (UPG-101), wheel/tire sidewall geometry versus observed 18-inch setup (UPG-104), KYB OE-restoration baseline (UPG-082). These are neither new catalog IDs nor installed products. Full TEIN HBS application, four-corner Bilstein completeness, Whiteline exact bracket fit and independent Corolla road results remain gates.
+**First concrete added evidence within existing IDs**: maker-listed **TEIN EnduraPro PLUS VSL00-B1DS2** OEM-height 16-setting dampers (UPG-083), Bilstein B6 complete catalog-listed set `35-053460` front LH, `35-053477` front RH and `24-069243` rear ×2 (US 2004 LE selection; not yet physical early-build inspection) (UPG-080), Whiteline BTR77 2004 LE listed with manufacturer regional-code conflict (UPG-089), Tire Rack 2025 and 2026 comparative touring tire data (UPG-101), wheel/tire sidewall geometry versus observed 18-inch setup (UPG-104), KYB OE-restoration baseline (UPG-082). These are neither new catalog IDs nor installed products. Full TEIN HBS application, four-corner Bilstein completeness, Whiteline exact bracket fit and independent Corolla road results remain gates.
+
+## October 29 continuation: four-corner B6 verification and measurable whole-car research
+
+[Evidence continuation on braking, A245E driveline, efficiency, NVH and suspension](WHOLE_CAR_MEASUREMENT_AND_B6_COMPLETION_2026-10-29.md) closes **UPG-080's former missing-front-SKU gap** using Bilstein's 2020 manufacturer E12 listing cross-checked against Tire Rack's specific 2004 Corolla LE front-left/front-right/rear application and ShockSurplus component specs. A current retailer **four-corner parts-only price of $878** is recorded, not a completed job estimate. Exact June-2003 TMMC fitment and real-world ride comfort remain gates. The same pass records the SAE 2010-36-0396 vibration peak-localization method under existing UPG-129 and strengthens the diagnostic/measurement sequence across previously existing UPG-101/106/107/129/183/184/194. No new upgrade IDs or install approvals.
 
 ## Toyota factory revision and supplier retrofit research (one pillar)
 
