@@ -1,6 +1,16 @@
 # Felicity open-ended upgrade discovery policy
 
-**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 25 2026, the catalog includes **193** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
+**Owner decision:** **No fixed numeric ceiling.** The first 148 research entries were a seed catalog, not the final universe of engineering upgrades. As of October 29 2026, the catalog includes **215** catalog IDs with matching research and decision rows (including archived overlapping measurement studies). Those counts are snapshots and must not be used as a stop condition.
+
+## Healthy-car retrofit priority — owner clarification 2026-10-29
+
+**Highest-priority mandate:** The owner's 2004 Corolla currently has no reported engine/transmission diagnostic trouble codes, and the user wants **retrofit-ready physical improvements over early-production factory parts**, not a catalog dominated by repairs that require MIL/DTCs. Search Toyota later-production design changes, genuine improved superseded parts, and manufacturer-engineered full-system conversions for the exact **June-2003-built US TMMC Corolla LE, 1ZZ-FE/A245E**. See [governing strategy and specific parts](../research/HEALTHY_CAR_PREVENTIVE_ENGINEERING_STRATEGY_2026-10-29.md).
+
+Prioritize preventive designs and service-window opportunities **that could have value before a fault**. Compare the risk of disturbing a healthy original system against documented materials/geometry improvement, target failure mechanism, OEM retrofit compatibility and independent owner long-term outcomes. Never infer superiority from a newer year or part number alone.
+
+Keep three distinct action classes: **(1) defensible proactive improvement after fitment check, (2) install when routine service opens the assembly, (3) fault-only repair/reference**. Explicitly downrank ECM reflash for P0420/P0133, shift-valve repairs without symptoms, and other DTC-specific interventions unless a physical preventable design defect is independently demonstrated. Separate **Toyota improved OE belt tensioner** from **Gates complete decoupler conversion**; never mix mismatched architecture. Retain the full speculative backlog for future verification but do not call its count completed upgrades.
+
+The reported **bilateral front suspension bangs** require mechanical/safety inspection and are independent of check-engine lights; the absence of DTCs does not prove chassis components sound.
 
 ## Continuous discovery scope
 
@@ -11,7 +21,7 @@ A potential upgrade can be cheap/easy, moderate DIY, or a complex longer-term en
 ### Admission criteria for additional candidates
 
 1. Identify a **distinct** intervention or subsystem-level optimization not represented by an existing upgrade ID. Before creating an ID, search all catalog concepts for duplicates; if a specific product is merely an alternative for an existing candidate, add it to evidence under that same candidate rather than create a misleading 'new' upgrade.
-2. Assign next stable ID (one above the highest existing numeric suffix; currently `UPG-194` next, no known upper bound); **never renumber** earlier IDs. Preserve UPG-001–148 historical identities.
+2. Assign next stable ID (one above the highest existing numeric suffix; calculate the next ID from the highest actual existing numeric suffix; no known upper bound); **never renumber** earlier IDs. Preserve UPG-001–148 historical identities.
 3. Link an initial technical screening record (`UR-<matching numerical suffix>`) and at least one actual, traceable source. An indirect general engineering study is explicitly **hypothesis support**, not proof of Corolla compatibility.
 4. Record **healthy factory baseline** and owner's *currently modified configuration* separately. State improvement mechanism and whether same-vehicle data, independent component tests, manufacturer claims, or hypotheses support it.
 5. Research installation access, special tooling, degree of DIY difficulty, safety, equipment/market/production compatibility, negative tradeoffs, measured performance benefit (or `unknown`), and dated costs (or blank/unknown).
