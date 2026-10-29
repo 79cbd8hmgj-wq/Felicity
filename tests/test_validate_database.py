@@ -196,5 +196,27 @@ class DatabaseValidationTests(unittest.TestCase):
         self.matrix(purchase_ready="yes", decision="worth_buying_for_specific_purpose")
         self.assertTrue(any("purchase-ready fitment still candidate" in e for e in validate(self.root)))
 
+    def test_revised_toyota_oil_level_specification_accepted(self):
+        """Toyota post-publication fill value must have its own build scope."""
+        self.append("sources", "toyota-tsb")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,toyota-tsb,factory_revised_specification,engine,usa_2003_2005_1zz_tsb_gauge_unverified")
+        self.assertEqual([], validate(self.root))
+
+    def test_original_toyota_oil_level_specification_accepted(self):
+        """Preserve earlier printed manual specification as an original reference."""
+        self.append("sources", "older-manual")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,older-manual,factory_reference_original,engine,manual_scope_oct_2003_onward")
+        self.assertEqual([], validate(self.root))
+
+    def test_revised_oil_scope_and_status_cannot_be_mixed(self):
+        """The newer fill must not be misidentified as a manual-era specification."""
+        self.append("sources", "toyota-tsb")
+        self.append("components", "engine,reference,")
+        self.append("specifications", "s1,toyota-tsb,factory_revised_specification,engine,manual_scope_oct_2003_onward")
+        self.assertTrue(any("incompatible" in e for e in validate(self.root)))
+
+
 if __name__ == "__main__":
     unittest.main()
